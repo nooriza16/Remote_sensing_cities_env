@@ -2,14 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "RemoteSensing_learning_diary",
+    "title": "CASA023 : Remote Sensing Cities and Environments",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+    "text": "1 RS Learning Diary\nThis is a Quarto book to document my learning journey in Remote Sensing Cities and Environments course during my time at CASA UCL 24/25, offering lessons and insights learned, applications, and reflections. The module is based on this https://andrewmaclachlan.github.io/CASA0023/, well for you who want to learn GIS beyond typical GIS Software, as in use R-Studio, you could also visit his other github page : https://andrewmaclachlan.github.io/CASA0005repo/index.html."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "CASA023 : Remote Sensing Cities and Environments",
+    "section": "1.1 Introduction",
+    "text": "1.1 Introduction\nHi, I’m Nooriza, a student currently pursuing a Master’s degree in Urban Spatial Science at UCL. I have an academic background in Geography with a specialization in Regional Development Studies and have gained substantial work experience in government consultancies in Indonesia."
   },
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction",
+    "title": "2  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
@@ -19,5 +26,19 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "index.html#why-do-i-choose-this-module",
+    "href": "index.html#why-do-i-choose-this-module",
+    "title": "CASA023 : Remote Sensing Cities and Environments",
+    "section": "1.2 Why do I choose this module?",
+    "text": "1.2 Why do I choose this module?\nLearning this course will, hopefully, help me address the challenges I faced during my previous work. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in large and complex regions like Indonesia.\n\nAnother thing motivated me to take Remote Sensing course is the desire to know how it feels to be a bird and to see the unseen. Don’t we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive?\nFeel free to explore my site to learn more about my learning experience. Hope it helps!"
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "3  Week 1",
+    "section": "",
+    "text": "4 Week 1 : Getting to Know Remote Sensing\n\nSneak Peak\n\nThis week is an introduction of Remote Sensing courses, introducing 2 sources of imagery :\n\nLandsat-8\n\n\n\n\n\n\nCopyright © NASA\n\n\n\n\n\nSentinel 2A\n\n\n\n\n\n\nCopyright © ESA and AIRBUS Defence & Space.\n\n\n\nEach has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach.\n\n\n\n5 Application\nIn what ways can we use Sentinel and Landsat data?\n\nSentinel-2 (operated by ESA) has 13 spectral bands across a wide range of wavelengths, which are especially useful for vegetation monitoring, land cover classification, and agricultural applications.\nLandsat 8 (operated by NASA and USGS) has 11 spectral bands, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.\n\nThey both could be use to vegetation monitoring, well……..are they really that difference?\n\nSentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for detailed vegetation analysis, agricultural monitoring, and atmospheric studies.\nLandsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other thermal analyses."
   }
 ]

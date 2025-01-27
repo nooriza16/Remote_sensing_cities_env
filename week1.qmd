@@ -1,3 +1,41 @@
 ---
-title: "week1"
+title: "Week 1"
 ---
+
+# Week 1 : Getting to Know Remote Sensing
+
+-   **Sneak Peak**
+
+This week is an introduction of Remote Sensing courses, introducing 2 sources of imagery :
+
+1.  Landsat-8
+
+-   <div>
+
+    ![Copyright © NASA](images/clipboard-1188776161.png){width="390"}
+
+    </div>
+
+2.  Sentinel 2A
+
+-   <div>
+
+    ![Copyright © ESA and AIRBUS Defence & Space.](images/clipboard-3938270325.png)
+
+    </div>
+
+    Each has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach.
+
+# Application
+
+**In what ways can we use Sentinel and Landsat data?**
+
+-   Sentinel-2 (operated by ESA) has *13 spectral bands* across a wide range of wavelengths, which are especially useful for vegetation monitoring, land cover classification, and agricultural applications.
+
+-   Landsat 8 (operated by NASA and USGS) has *11 spectral bands*, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.
+
+**They both could be use to vegetation monitoring, well........are they really that difference?**
+
+-   Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for detailed vegetation analysis, agricultural monitoring, and atmospheric studies.
+
+-   Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other thermal analyses.
