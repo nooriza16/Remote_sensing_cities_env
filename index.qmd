@@ -10,18 +10,16 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-# Preface
-
-This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering lessons and insights learned, applications, and reflections.
-
-To learn more about Quarto books, visit <https://quarto.org/docs/books>.
+This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering lessons and insights learned, applications, and reflections. The module is based on this <https://andrewmaclachlan.github.io/CASA0023/>, well for you who want to learn GIS beyond typical GIS Software, as in use R-Studio, you could also visit his other github page : <https://andrewmaclachlan.github.io/CASA0005repo/index.html>.
 
 ------------------------------------------------------------------------
 
 ## Introduction
 
-Hi, I’m Nooriza. I graduated with a degree in Regional Development and have several works experience in Indonesia, focusing on data acquisition and analysis for government projects.
+Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spatial Science at UCL.
 
-During my undergraduate studies, I learned the basics of Remote Sensing. Its importance and wide applications inspired me to dive deeper into the field and apply it to solve real-world problems.
+I have an academic background in Geography with a specialization in Regional Development studies and have gained substantial work experience in government consultancies in Indonesia. My work primarily focus on helping local governments or ministries with data acquisition, preparation and applied spatial analysis. My areas of expertise include thematic and basic geospatial data preparation, modeling healthcare accessibility in archipelagic regions, and supporting land-reform activities using spatial approach.
 
-Feel free to explore my site to learn more about my background and experience
+One thing that motivated me to take this course is the desire to know *how it feels to be a bird and to see the unseen.*
+
+Feel free to explore my site to learn more about my learning experience. Hope it helps!
