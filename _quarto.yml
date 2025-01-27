@@ -1,14 +1,15 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "RemoteSensing_learning_diary"
-  author: "Norah Jones"
+  author: "Nooriza Maharani"
   date: "1/27/2025"
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - week1.qmd
     - references.qmd
 
 bibliography: references.bib

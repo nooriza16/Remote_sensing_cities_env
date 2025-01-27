@@ -1,4 +1,8 @@
-# RS Learning Diary
+# My Learning Diary {.unnumbered}
+
+```{r}
+
+```
 
 ---
 title: "CASA023 : Remote Sensing Cities and Environments"
@@ -10,7 +14,7 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-# Preface
+## Preface
 
 This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering lessons and insights learned, applications, and reflections.
 
