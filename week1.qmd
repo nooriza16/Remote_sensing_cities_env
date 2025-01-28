@@ -10,13 +10,17 @@ This week is an introduction of Remote Sensing courses, introducing 2 sources of
 
 1.  Landsat-8
 
+    The Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.
+
 -   <div>
 
-    ![Copyright © NASA](images/clipboard-1188776161.png){width="390"}
+    ![Copyright © NASA](images/clipboard-1188776161.png){width="402"}
 
     </div>
 
 2.  Sentinel 2A
+
+    Sentinel 2 revisits the earth every 5 days (using both satellite A and B), meaning that it provides frequent observations and make it suitable to monitor rapid changes.
 
 -   <div>
 
@@ -34,8 +38,8 @@ This week is an introduction of Remote Sensing courses, introducing 2 sources of
 
 -   Landsat 8 (operated by NASA and USGS) has *11 spectral bands*, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.
 
-**They both could be use to vegetation monitoring, well........are they really that difference?**
+**They both could be used to vegetation monitoring, well........are they really that difference?**
 
--   Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for detailed vegetation analysis, agricultural monitoring, and atmospheric studies.
+-   Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for ***detailed vegetation analysis***, agricultural monitoring, and atmospheric studies. In the paper.....
 
--   Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other thermal analyses.
+-   Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other ***thermal analyses**.*
