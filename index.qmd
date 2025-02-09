@@ -1,7 +1,7 @@
 # RS Learning Diary
 
 ---
-title: "CASA023 : Remote Sensing Cities and Environments"
+title: "Introduction"
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
