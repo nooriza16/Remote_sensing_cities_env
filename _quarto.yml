@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "RemoteSensing_learning_diary"
+  title: "CASA 0023"
   author: "Nooriza Maharani"
   date: "1/27/2025"
   chapters:
