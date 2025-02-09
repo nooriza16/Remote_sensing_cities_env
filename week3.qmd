@@ -1,3 +1,9 @@
 ---
 title: "Image Correction"
+author: "Nooriza Maharani"
+date: "January 21, 2025"
+format:
+  html:
+    toc: true    # Enable Table of Contents
+    toc-depth: 2 # Show up to level 2 headings
 ---
