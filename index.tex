@@ -77,29 +77,6 @@
 \makeatletter
 \def\fps@figure{htbp}
 \makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 \KOMAoption{captions}{tableheading}
 \makeatletter
@@ -163,7 +140,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={CASA023 : Remote Sensing Cities and Environments},
+  pdftitle={Introduction},
   pdfauthor={Nooriza Maharani},
   colorlinks=true,
   linkcolor={blue},
@@ -172,13 +149,13 @@
   urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
-\title{CASA023 : Remote Sensing Cities and Environments}
+\title{Introduction}
 \author{Nooriza Maharani}
 \date{January 21, 2025}
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden, breakable, sharp corners, enhanced]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, enhanced, boxrule=0pt, breakable, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Table of contents}
 {
@@ -357,8 +334,8 @@ well\ldots\ldots..are they really that difference?}
 
 \bookmarksetup{startatroot}
 
-\hypertarget{week2}{%
-\chapter{week2}\label{week2}}
+\hypertarget{week-2}{%
+\chapter{Week 2}\label{week-2}}
 
 \bookmarksetup{startatroot}
 
@@ -388,15 +365,13 @@ create neat HTML slides in R.
 
 \bookmarksetup{startatroot}
 
-\hypertarget{references}{%
-\chapter*{References}\label{references}}
-\addcontentsline{toc}{chapter}{References}
+\hypertarget{week-3}{%
+\chapter{Week 3}\label{week-3}}
 
-\markboth{References}{References}
+\bookmarksetup{startatroot}
 
-\hypertarget{refs}{}
-\begin{CSLReferences}{0}{0}
-\end{CSLReferences}
+\hypertarget{week-4}{%
+\chapter{Week 4}\label{week-4}}
 
 
 
