@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Getting to Know Remote Sensing"
 ---
 
 # Week 1 : Getting to Know Remote Sensing

@@ -28,10 +28,6 @@ The reason I take Remote Sensing course is my desire to know *how it feels to be
 
 source : [Biomimicry and Birds](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
 
-![](images/ggd7oxp59qb31.jpeg)
-
-\(c\) Remote Sensing Memes for Spaced-Out Teens
-
 Meanwhile, practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
 
 Feel free to explore my site to learn more about my learning experience. Hope it helps!

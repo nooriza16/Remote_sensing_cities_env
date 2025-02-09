@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  9 FEB 2025 15:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.1)  9 FEB 2025 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1128,16 +1128,19 @@ File: images/clipboard-2217286199.png Graphic file (type bmp)
 [3
 
 ]
+
+LaTeX Warning: File `images/ggd7oxp59qb31.jpeg' not found on input line 207.
+
 ! Unable to load picture or PDF file 'images/ggd7oxp59qb31.jpeg'.
 <to be read again> 
                    }
 l.207 \includegraphics{images/ggd7oxp59qb31.jpeg}
                                                   
 Here is how much of TeX's memory you used:
- 36811 strings out of 475826
- 776939 string characters out of 5771477
+ 36854 strings out of 475826
+ 778437 string characters out of 5771477
  1471039 words of memory out of 5000000
- 59203 multiletter control sequences out of 15000+600000
+ 59246 multiletter control sequences out of 15000+600000
  561649 words of font info for 67 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  108i,8n,123p,10900b,393s stack positions out of 10000i,1000n,20000p,200000b,200000s
