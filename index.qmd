@@ -28,7 +28,7 @@ The reason I take Remote Sensing course is my desire to know *how it feels to be
 
 source : [Biomimicry and Birds](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
 
-[![](images/PIA02605_modest.jpg)](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
+[![](images/PIA02605_modest.jpg){fig-align="left"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
 source : NASA/JPL
 
