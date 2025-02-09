@@ -8,13 +8,13 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-# Week 1 : Getting to Know Remote Sensing
+# 
 
--   **Sneak Peak**
+# **Summary**
 
-This week is an introduction of Remote Sensing courses, introducing 2 sources of imagery :
+1.  This week practical is introducing 2 sources of imagery :
 
-1.  Landsat-8
+    a\. Landsat-8
 
     The Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.
 
@@ -24,9 +24,11 @@ This week is an introduction of Remote Sensing courses, introducing 2 sources of
 
     </div>
 
-2.  Sentinel 2A
+-   b\. Sentinel 2A
 
     Sentinel 2 revisits the earth every 5 days (using both satellite A and B), meaning that it provides frequent observations and make it suitable to monitor rapid changes.
+
+<!-- -->
 
 -   <div>
 
@@ -49,3 +51,27 @@ This week is an introduction of Remote Sensing courses, introducing 2 sources of
 -   Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for ***detailed vegetation analysis***, agricultural monitoring, and atmospheric studies. In the paper.....
 
 -   Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other ***thermal analyses**.*
+
+**Real world application of Sentinel and Landsat 8**
+
+-   **Landsat-8 application on detecting of vegetation evolution across China**
+
+    This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. [@han2025] use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government's long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.
+
+    ![](images/clipboard-1072383063.png){width="669"}
+
+    Figure 1: A sample result shows urban vegetation degradation in Hangzhou and an increase in vegetation in Zhengzhou. source : [@han2025].
+
+-   **Sentinel-2 application on plastic debris detecting on coastal area, Brazil**
+
+    In this study, [@nivedita2024]use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.
+
+    ![source :](images/Screenshot%202025-02-09%20164424.jpg)
+
+    Figure 2: Plastic Debris Detection. Source : [@nivedita2024]
+
+# Reflection
+
+After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions.
+
+This insight made me reflect on a similar challenge in my country, Indonesia, the world’s largest archipelago. The country needs to identify which small islands are inhabited in order to provide essential services to all of them. To address this, I’m considering using night imagery data as a tool to distinguish inhabited islands from uninhabited ones. The night time would indicate anthropogenic activities that are associated with light at night

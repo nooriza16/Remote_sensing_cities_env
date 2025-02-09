@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -141,8 +160,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#week-1-getting-to-know-remote-sensing" id="toc-week-1-getting-to-know-remote-sensing" class="nav-link active" data-scroll-target="#week-1-getting-to-know-remote-sensing"><span class="header-section-number">3</span> Week 1 : Getting to Know Remote Sensing</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4</span> Application</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"><span class="header-section-number">3</span> </a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">4</span> <strong>Summary</strong></a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -178,14 +199,14 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="week-1-getting-to-know-remote-sensing" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Week 1 : Getting to Know Remote Sensing</h1>
-<ul>
-<li><strong>Sneak Peak</strong></li>
-</ul>
-<p>This week is an introduction of Remote Sensing courses, introducing 2 sources of imagery :</p>
+<section id="section" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> </h1>
+</section>
+<section id="summary" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> <strong>Summary</strong></h1>
 <ol type="1">
-<li><p>Landsat-8</p>
+<li><p>This week practical is introducing 2 sources of imagery :</p>
+<p>a. Landsat-8</p>
 <p>The Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.</p></li>
 </ol>
 <ul>
@@ -197,11 +218,10 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </div></li>
-</ul>
-<ol start="2" type="1">
-<li><p>Sentinel 2A</p>
+<li><p>b. Sentinel 2A</p>
 <p>Sentinel 2 revisits the earth every 5 days (using both satellite A and B), meaning that it provides frequent observations and make it suitable to monitor rapid changes.</p></li>
-</ol>
+</ul>
+<!-- -->
 <ul>
 <li><div>
 <div class="quarto-figure quarto-figure-center">
@@ -214,8 +234,8 @@ ul.task-list li input[type="checkbox"] {
 Each has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach.</li>
 </ul>
 </section>
-<section id="application" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Application</h1>
+<section id="application" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Application</h1>
 <p><strong>In what ways can we use Sentinel and Landsat data?</strong></p>
 <ul>
 <li><p>Sentinel-2 (operated by ESA) has <em>13 spectral bands</em> across a wide range of wavelengths, which are especially useful for vegetation monitoring, land cover classification, and agricultural applications.</p></li>
@@ -226,8 +246,37 @@ Each has their own characteristics, while Sentinel-2A has 10m spatial resolution
 <li><p>Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for <strong><em>detailed vegetation analysis</em></strong>, agricultural monitoring, and atmospheric studies. In the paper…..</p></li>
 <li><p>Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other <em><strong>thermal analyses</strong>.</em></p></li>
 </ul>
+<p><strong>Real world application of Sentinel and Landsat 8</strong></p>
+<ul>
+<li><p><strong>Landsat-8 application on detecting of vegetation evolution across China</strong></p>
+<p>This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. <span class="citation" data-cites="han2025">(<a href="#ref-han2025" role="doc-biblioref">Han et al. 2025</a>)</span> use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government’s long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.</p>
+<p><img src="images/clipboard-1072383063.png" class="img-fluid" width="669"></p>
+<p>Figure 1: A sample result shows urban vegetation degradation in Hangzhou and an increase in vegetation in Zhengzhou. source : <span class="citation" data-cites="han2025">(<a href="#ref-han2025" role="doc-biblioref">Han et al. 2025</a>)</span>.</p></li>
+<li><p><strong>Sentinel-2 application on plastic debris detecting on coastal area, Brazil</strong></p>
+<p>In this study, <span class="citation" data-cites="nivedita2024">(<a href="#ref-nivedita2024" role="doc-biblioref">Nivedita et al. 2024</a>)</span>use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot 2025-02-09 164424.jpg" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">source :</figcaption>
+</figure>
+</div>
+<p>Figure 2: Plastic Debris Detection. Source : <span class="citation" data-cites="nivedita2024">(<a href="#ref-nivedita2024" role="doc-biblioref">Nivedita et al. 2024</a>)</span></p></li>
+</ul>
+</section>
+<section id="reflection" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Reflection</h1>
+<p>After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions.</p>
+<p>This insight made me reflect on a similar challenge in my country, Indonesia, the world’s largest archipelago. The country needs to identify which small islands are inhabited in order to provide essential services to all of them. To address this, I’m considering using night imagery data as a tool to distinguish inhabited islands from uninhabited ones. The night time would indicate anthropogenic activities that are associated&nbsp;with&nbsp;light at&nbsp;night</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-han2025" class="csl-entry" role="listitem">
+Han, Yuan, Jianhua He, Xiaoping Du, Xiao Han, and Yaolin Liu. 2025. <span>“Reconstructing Urban Vegetation Evolution in China Using Multimodal Deep Learning and 30-Years Landsat Archive.”</span> <em>Urban Forestry &amp; Urban Greening</em> 103 (January): 128582. <a href="https://doi.org/10.1016/j.ufug.2024.128582">https://doi.org/10.1016/j.ufug.2024.128582</a>.
+</div>
+<div id="ref-nivedita2024" class="csl-entry" role="listitem">
+Nivedita, V., S. Sabarunisha Begum, Ghadah Aldehim, Abdullah M. Alashjaee, Munya A. Arasi, Mohamed Yacin Sikkandar, T. Jayasankar, and S. Vivek. 2024. <span>“Plastic Debris Detection Along Coastal Waters Using Sentinel-2 Satellite Data and Machine Learning Techniques.”</span> <em>Marine Pollution Bulletin</em> 209 (December): 117106. <a href="https://doi.org/10.1016/j.marpolbul.2024.117106">https://doi.org/10.1016/j.marpolbul.2024.117106</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

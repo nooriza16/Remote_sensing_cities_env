@@ -24,7 +24,7 @@ Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spati
 
 The reason I take Remote Sensing course is my desire to know *how it feels to be a bird, seeing things from above, and to see the unseen.* Don't we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive?
 
-![](images/clipboard-2217286199.png){width="487"}
+![](images/clipboard-2217286199.png){fig-align="left" width="487"}
 
 source : [Biomimicry and Birds](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
 

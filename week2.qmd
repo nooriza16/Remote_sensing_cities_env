@@ -8,8 +8,17 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-# Xaringan
+# 
 
 Lecture this week reminded me of one of powerful figure in Uchiha Clan, the one who can manipulate reality once he activates this-so-called Xaringan. Well, but this Xaringan is not related to figures in Konoha's world but related to a certain library in R Studio that enable us to create neat HTML slides in R.
 
-# How's xaringan look like?
+# Summary
+
+xaringanExtra::[embed_xaringan](https://rdrr.io/pkg/xaringanExtra/man/embed_xaringan.html)(url = "URL of your presentation",
+ratio = "16:9")
+
+# Reflections
+
+For someone who is not familiar with html, learning Xaringan is definitely challenging compared to powerpoint, as we just usually click tabs on power point. Honestly, I thought that power point provides more themes, more visualization effects than Xaringan. However, as I delved further I realize that using Xaringan is providing us with flexibility even such as positioned our picture.
+
+So far, I feel like Xaringan is best at incorporating snippet code on presentation or interactive features that usually too heavy to load in power point. Besides, it helps me to give a sense of what html look like.
