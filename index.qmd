@@ -30,7 +30,7 @@ source : [Biomimicry and Birds](https://chirpforbirds.com/nature-advocacy/biomim
 
 [![](images/PIA02605_modest.jpg){fig-align="left"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
-source : NASA/JPL
+source : [NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA02605)
 
 For example the ASTER images of San Fransisco Bay above, it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
 
