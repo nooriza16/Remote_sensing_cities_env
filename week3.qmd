@@ -1,15 +1,15 @@
 ---
 title: "Image Correction"
-author: "Nooriza Maharani"
-date: "January 21, 2025"
 format:
   html:
     toc: true    # Enable Table of Contents
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-# Summary
+## Summary
 
-# Application
+## Application 
 
-# Reflections
+## Reflections
+
+I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. Besides, after this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but behind the imagery each pixel is composed by digital number collection and it could be linked with regression too !

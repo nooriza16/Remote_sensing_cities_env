@@ -7,7 +7,7 @@ format:
     toc: true    # Enable Table of Contents
 ---
 
-# **Summary**
+## **Summary**
 
 ![](images/clipboard-1084697230.png)
 
@@ -37,7 +37,7 @@ Meanwhile, this week practical is introducing 2 sources of imagery :
 
     Each has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach.
 
-# Application
+## Application
 
 **In what ways can we use Sentinel and Landsat data?**
 
@@ -69,8 +69,10 @@ They both could be used to vegetation monitoring, well........are they really th
 
     Figure 2: Plastic Debris Detection. Source : [@nivedita2024]
 
-# Reflection
+## Reflection
 
 After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions.
 
 This insight made me reflect on a similar challenge in my country, Indonesia, the world’s largest archipelago. The country needs to identify which small islands are inhabited in order to provide essential services to all of them. To address this, I’m considering using night imagery data as a tool to distinguish inhabited islands from uninhabited ones. The night time would indicate anthropogenic activities that are associated with light at night
+
+## References

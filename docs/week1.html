@@ -160,9 +160,10 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3</span> <strong>Summary</strong></a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5</span> Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">2.1</span> <strong>Summary</strong></a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">2.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">2.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">2.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -198,11 +199,12 @@ div.csl-indent {
 
 </header>
 
-<section id="summary" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> <strong>Summary</strong></h1>
+<section id="summary" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.1</span> <strong>Summary</strong></h2>
+<p><img src="images/clipboard-1084697230.png" class="img-fluid"></p>
+<p>Meanwhile, this week practical is introducing 2 sources of imagery :</p>
 <ol type="1">
-<li><p>This week practical is introducing 2 sources of imagery :</p>
-<p>a. Landsat-8</p>
+<li><p>a. Landsat-8</p>
 <p>The Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.</p></li>
 </ol>
 <ul>
@@ -230,14 +232,14 @@ div.csl-indent {
 Each has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach.</li>
 </ul>
 </section>
-<section id="application" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Application</h1>
+<section id="application" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="application"><span class="header-section-number">2.2</span> Application</h2>
 <p><strong>In what ways can we use Sentinel and Landsat data?</strong></p>
 <ul>
 <li><p>Sentinel-2 (operated by ESA) has <em>13 spectral bands</em> across a wide range of wavelengths, which are especially useful for vegetation monitoring, land cover classification, and agricultural applications.</p></li>
 <li><p>Landsat 8 (operated by NASA and USGS) has <em>11 spectral bands</em>, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.</p></li>
 </ul>
-<p><strong>They both could be used to vegetation monitoring, well……..are they really that difference?</strong></p>
+<p>They both could be used to vegetation monitoring, well……..are they really that difference?</p>
 <ul>
 <li><p>Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for <strong><em>detailed vegetation analysis</em></strong>, agricultural monitoring, and atmospheric studies. In the paper…..</p></li>
 <li><p>Landsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other <em><strong>thermal analyses</strong>.</em></p></li>
@@ -245,11 +247,11 @@ Each has their own characteristics, while Sentinel-2A has 10m spatial resolution
 <p><strong>Real world application of Sentinel and Landsat 8</strong></p>
 <ul>
 <li><p><strong>Landsat-8 application on detecting of vegetation evolution across China</strong></p>
-<p>This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. <span class="citation" data-cites="han2025">(<a href="#ref-han2025" role="doc-biblioref">Han et al. 2025</a>)</span> use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government’s long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.</p>
+<p>This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. <span class="citation" data-cites="han2025">Han et al. (<a href="#ref-han2025" role="doc-biblioref">2025</a>)</span> use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government’s long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.</p>
 <p><img src="images/clipboard-1072383063.png" class="img-fluid" width="669"></p>
 <p>Figure 1: A sample result shows urban vegetation degradation in Hangzhou and an increase in vegetation in Zhengzhou. source : <span class="citation" data-cites="han2025">(<a href="#ref-han2025" role="doc-biblioref">Han et al. 2025</a>)</span>.</p></li>
 <li><p><strong>Sentinel-2 application on plastic debris detecting on coastal area, Brazil</strong></p>
-<p>In this study, <span class="citation" data-cites="nivedita2024">(<a href="#ref-nivedita2024" role="doc-biblioref">Nivedita et al. 2024</a>)</span>use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.</p>
+<p>In this study, <span class="citation" data-cites="nivedita2024">Nivedita et al. (<a href="#ref-nivedita2024" role="doc-biblioref">2024</a>)</span> use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Screenshot 2025-02-09 164424.jpg" class="img-fluid figure-img"></p>
@@ -259,10 +261,13 @@ Each has their own characteristics, while Sentinel-2A has 10m spatial resolution
 <p>Figure 2: Plastic Debris Detection. Source : <span class="citation" data-cites="nivedita2024">(<a href="#ref-nivedita2024" role="doc-biblioref">Nivedita et al. 2024</a>)</span></p></li>
 </ul>
 </section>
-<section id="reflection" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Reflection</h1>
+<section id="reflection" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">2.3</span> Reflection</h2>
 <p>After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions.</p>
 <p>This insight made me reflect on a similar challenge in my country, Indonesia, the world’s largest archipelago. The country needs to identify which small islands are inhabited in order to provide essential services to all of them. To address this, I’m considering using night imagery data as a tool to distinguish inhabited islands from uninhabited ones. The night time would indicate anthropogenic activities that are associated&nbsp;with&nbsp;light at&nbsp;night</p>
+</section>
+<section id="references" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="references"><span class="header-section-number">2.4</span> References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
