@@ -7,7 +7,9 @@ book:
   author: "Nooriza Maharani"
   date: "1/27/2025"
   chapters:
-    - index.qmd
+      - id: introduction
+      file: index.qmd
+      unnumbered: true 
     - week1.qmd
     - week2.qmd
     - week3.qmd
