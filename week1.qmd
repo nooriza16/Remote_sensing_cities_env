@@ -9,9 +9,11 @@ format:
 
 # **Summary**
 
-1.  This week practical is introducing 2 sources of imagery :
+![](images/clipboard-1084697230.png)
 
-    a\. Landsat-8
+Meanwhile, this week practical is introducing 2 sources of imagery :
+
+1.  a\. Landsat-8
 
     The Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.
 
@@ -43,7 +45,7 @@ format:
 
 -   Landsat 8 (operated by NASA and USGS) has *11 spectral bands*, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.
 
-**They both could be used to vegetation monitoring, well........are they really that difference?**
+They both could be used to vegetation monitoring, well........are they really that difference?
 
 -   Sentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for ***detailed vegetation analysis***, agricultural monitoring, and atmospheric studies. In the paper.....
 
@@ -53,7 +55,7 @@ format:
 
 -   **Landsat-8 application on detecting of vegetation evolution across China**
 
-    This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. [@han2025] use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government's long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.
+    This paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. @han2025 use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government's long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.
 
     ![](images/clipboard-1072383063.png){width="669"}
 
@@ -61,7 +63,7 @@ format:
 
 -   **Sentinel-2 application on plastic debris detecting on coastal area, Brazil**
 
-    In this study, [@nivedita2024]use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.
+    In this study, @nivedita2024 use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.
 
     ![source :](images/Screenshot%202025-02-09%20164424.jpg)
 
