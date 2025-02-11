@@ -156,6 +156,201 @@
             },
             "title": "Nusantara sustainable development GOals (SDGs) voluntary local review baseline",
             "type": "report"
+        },
+        {
+            "DOI": "10.1016/j.rse.2012.10.015",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0034425712003975",
+            "author": [
+                {
+                    "family": "Chaussard",
+                    "given": "Estelle"
+                },
+                {
+                    "family": "Amelung",
+                    "given": "Falk"
+                },
+                {
+                    "family": "Abidin",
+                    "given": "Hasanudin"
+                },
+                {
+                    "family": "Hong",
+                    "given": "Sang-Hoon"
+                }
+            ],
+            "container-title": "Remote Sensing of Environment",
+            "id": "chaussard2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "150-161",
+            "title": "Sinking cities in Indonesia: ALOS PALSAR detects rapid subsidence due to groundwater and gas extraction",
+            "title-short": "Sinking cities in Indonesia",
+            "type": "article-journal",
+            "volume": "128"
+        },
+        {
+            "author": [
+                {
+                    "family": "/Bappenas",
+                    "given": "Kementrian PPN"
+                }
+            ],
+            "id": "/bappenas2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        7
+                    ]
+                ]
+            },
+            "title": "Buku saku pemindahan ibu kota negara",
+            "type": "report"
+        },
+        {
+            "author": [
+                {
+                    "family": "Bappenas",
+                    "given": "Kementrian PPN"
+                }
+            ],
+            "id": "bappenas2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        7
+                    ]
+                ]
+            },
+            "title": "Buku saku pemindahan ibu kota negara",
+            "type": "report"
+        },
+        {
+            "DOI": "10.1038/s41467-024-54891-x",
+            "URL": "https://www.nature.com/articles/s41467-024-54891-x",
+            "author": [
+                {
+                    "family": "Surendra",
+                    "given": "Henry"
+                },
+                {
+                    "family": "Djaafara",
+                    "given": "Bimandra A."
+                },
+                {
+                    "family": "Prameswari",
+                    "given": "Helen D."
+                },
+                {
+                    "family": "Supriyanto",
+                    "given": "Dedy"
+                },
+                {
+                    "family": "Waluyo",
+                    "given": "Ponco"
+                },
+                {
+                    "family": "Basuki",
+                    "given": "Setyo B."
+                },
+                {
+                    "family": "Herdiana",
+                    "given": "Herdiana"
+                },
+                {
+                    "family": "Ndoen",
+                    "given": "Ermi"
+                },
+                {
+                    "family": "Siswanto",
+                    "given": "Siswanto"
+                },
+                {
+                    "family": "Lubis",
+                    "given": "Inke Nd"
+                },
+                {
+                    "family": "Liu",
+                    "given": "Xiaoyue"
+                },
+                {
+                    "family": "Mishra",
+                    "given": "Swapnil"
+                },
+                {
+                    "family": "Fornace",
+                    "given": "Kimberly M."
+                },
+                {
+                    "family": "Elyazar",
+                    "given": "Iqbal Rf"
+                }
+            ],
+            "container-title": "Nature Communications",
+            "id": "surendra2024",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        12,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "10575",
+            "title": "Mitigating risks of malaria and other vector-borne diseases in the new capital city of Indonesia",
+            "type": "article-journal",
+            "volume": "15"
+        },
+        {
+            "DOI": "10.1016/j.pt.2021.03.003",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8122067/",
+            "author": [
+                {
+                    "family": "Wimberly",
+                    "given": "Michael C."
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Beurs",
+                    "given": "Kirsten M."
+                },
+                {
+                    "family": "Loboda",
+                    "given": "Tatiana V."
+                },
+                {
+                    "family": "Pan",
+                    "given": "William K."
+                }
+            ],
+            "container-title": "Trends in parasitology",
+            "id": "wimberly2021",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        6
+                    ]
+                ]
+            },
+            "note": "PMID: 33775559 PMCID: PMC8122067",
+            "page": "525-537",
+            "title": "Satellite observations and malaria: New opportunities for research and applications",
+            "title-short": "Satellite observations and malaria",
+            "type": "article-journal",
+            "volume": "37"
         }
     ],
     "project_biblios": [

@@ -4,7 +4,6 @@ format:
   html:
     toc: true    # Enable Table of Contents
     toc-depth: 2 # Show up to level 2 headings
-bibliography: references.bib
 ---
 
 We know how remote sensing could benefit us in terms of scaling-analysis, temporal analysis, and its rich information derived within a single imagery. However, today’s class is exploring the gap between the potential of remote sensing to its utilization in policy formation.
@@ -13,19 +12,35 @@ Project Case : A New Relocated Capital City of Indonesia : Nusantara
 
 ## Summary
 
-Recently Indonesia moved its capital city from Jakarta (in Java islands) into Penajam Paser City (Borneo Islands), as
+Recently Indonesia planned to move its capital city from Jakarta (in Java islands) into Penajam Paser Utara City (Borneo Islands), as the current capital city, Jakarta, faced an issue of land subsidence at rates up to 22 cm/year @chaussard2013, overcrowding and prone to disaster risk (both natural and human-driven ) [@bappenas2021]. The term Nusantara is used to name this new capital city, symbolizing the varied geographic settings and cultural diversities.
+
+As for the time this published, the Jakarta will remain the capital of the country until the Presidential Decree (Keppres) on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of Nusantara, including the preparation of all supporting systems such as fiscal, human resources, and monetary systems.
 
 ![](images/clipboard-3462147358.png)
 
-source: [@capitalauthority2024]
+Figure 1: The Relocation Settings and Vision. source: [@capitalauthority2024]
 
-Governments project to underlined:
+The analysis is done on initial process, so the detailed planning documents haven’t been launched. Thus, I cited several Governments Published Documents, all of them are publicly available, such as:
 
-Baseline Documents:
+1.  Nusantara Capital City Handbook \[2021\]
+2.  Nusantara Sustainable Development Goals (SDGs) Voluntary Local Review Baseline \[2024\]
+3.  [Nusantara Biodiversity Management Master Plan](https://ikn.go.id/storage/pedoman-nusantara/1/nusantara-biodiversity-management-master-plan-2024.pdf) \[2024\]
 
-SDGs target:
+The new capital city, Nusantara, is designed as a **forest city**, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development as Borneo Islands, is one of the richest biodiversity hotspots in the world.
+
+However, relocating to Nusantara, which is situated near the Borneo rainforest and designed to be a forest city, presents significant challenges. One of the major concerns is mitigating the risks of malaria and other vector-borne diseases, which are prevalent in tropical regions @surendra2024. The proximity to dense forests and its design to forest city could increase the likelihood of mosquito-borne diseases spreading in the new capital. Thus, addressing these health risks will require comprehensive strategies, including disease prevention measures.
+
+\[ADD the SDGs Goal\]
 
 ## Application
+
+Remote sensing is one of the instruments that can support these efforts. It allows for the monitoring of environmental factors such as temperature, rainfall, and vegetation, which are critical for understanding the habitats of disease vectors like mosquitoes. Besides the ability to conduct long-term observations could help to investigate the relationship between climate and malaria [@wimberly2021].
+
+![](images/clipboard-687725868.png)
+
+Figure 2: Framework in which Remote Sensing used in Malaria studies. source : @wimberly2021.
+
+\[ Elaborate the critical aspects of Wimberlyy Paper and Explain Case in Peru\]
 
 ## Reflections
 
@@ -38,3 +53,5 @@ My reflections would be:
 2.  I used to naively think that all published papers *in a renowned journals site* near perfect that It would be hard to find its weakness points. Surprisingly after this week’s lecture I found a lot of journals’s weakness point “If I could called it that way” pertaining to application of x y z methods applied to support urban planning does not explicitly link to specific policy. In my opinion, this is one of the reasons why academics and policy-making feel disconnected and fail to effectively influence each other
 
 3.  What have I learnt about policy, city, and the RS data? In my opinion, using Remote Sensing Data on policy-making in city will generate more-informed policy that contained points it often misses such as where is exactly the place “The location” of the targeted policy. Everything happened somewhere. Additionally, it can serve as an alternative when dealing with the unavailability of baseline data.
+
+## References
