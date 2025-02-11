@@ -8,7 +8,7 @@ format:
 
 ## Summary
 
-## Application 
+## Application
 
 ## Reflections
 

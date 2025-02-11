@@ -1,7 +1,5 @@
 ---
 title: "Xaringan and Quarto Book"
-author: "Nooriza Maharani"
-date: "January 21, 2025"
 format:
   html:
     toc: true    # Enable Table of Contents
@@ -12,7 +10,9 @@ Lecture this week reminded me of one of powerful figure in Uchiha Clan, the one 
 
 ## Summary
 
-xaringanExtra::[embed_xaringan](https://rdrr.io/pkg/xaringanExtra/man/embed_xaringan.html)(url = "URL of your presentation", ratio = "16:9")
+```{r}
+xaringanExtra::embed_xaringan(url = "https://nooriza16.github.io/Xaringan/Xaringan.html", ratio = "16:9")
+```
 
 ## Reflections
 

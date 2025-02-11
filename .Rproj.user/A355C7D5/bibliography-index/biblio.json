@@ -1,4 +1,164 @@
 {
-    "sources": [],
-    "project_biblios": []
+    "sources": [
+        {
+            "DOI": "10.1093/comjnl/27.2.97",
+            "ISSN": "0010-4620",
+            "URL": "https://doi.org/10.1093/comjnl/27.2.97",
+            "author": [
+                {
+                    "family": "Knuth",
+                    "given": "Donald E."
+                }
+            ],
+            "container-title": "Comput. J.",
+            "id": "knuth84",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        1984,
+                        5
+                    ]
+                ]
+            },
+            "page": "97-111",
+            "publisher": "Oxford University Press, Inc.",
+            "publisher-place": "USA",
+            "title": "Literate programming",
+            "type": "article-journal",
+            "volume": "27"
+        },
+        {
+            "DOI": "10.1016/j.ufug.2024.128582",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1618866724003807",
+            "author": [
+                {
+                    "family": "Han",
+                    "given": "Yuan"
+                },
+                {
+                    "family": "He",
+                    "given": "Jianhua"
+                },
+                {
+                    "family": "Du",
+                    "given": "Xiaoping"
+                },
+                {
+                    "family": "Han",
+                    "given": "Xiao"
+                },
+                {
+                    "family": "Liu",
+                    "given": "Yaolin"
+                }
+            ],
+            "container-title": "Urban Forestry & Urban Greening",
+            "id": "han2025",
+            "issued": {
+                "date-parts": [
+                    [
+                        2025,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "128582",
+            "title": "Reconstructing urban vegetation evolution in China using multimodal deep learning and 30-years Landsat archive",
+            "type": "article-journal",
+            "volume": "103"
+        },
+        {
+            "DOI": "10.1016/j.marpolbul.2024.117106",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0025326X2401083X",
+            "author": [
+                {
+                    "family": "Nivedita",
+                    "given": "V."
+                },
+                {
+                    "family": "Begum",
+                    "given": "S. Sabarunisha"
+                },
+                {
+                    "family": "Aldehim",
+                    "given": "Ghadah"
+                },
+                {
+                    "family": "Alashjaee",
+                    "given": "Abdullah M."
+                },
+                {
+                    "family": "Arasi",
+                    "given": "Munya A."
+                },
+                {
+                    "family": "Sikkandar",
+                    "given": "Mohamed Yacin"
+                },
+                {
+                    "family": "Jayasankar",
+                    "given": "T."
+                },
+                {
+                    "family": "Vivek",
+                    "given": "S."
+                }
+            ],
+            "container-title": "Marine Pollution Bulletin",
+            "id": "nivedita2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "117106",
+            "title": "Plastic debris detection along coastal waters using Sentinel-2 satellite data and machine learning techniques",
+            "type": "article-journal",
+            "volume": "209"
+        },
+        {
+            "author": [
+                {
+                    "given": "Nusantara Capital Authority"
+                }
+            ],
+            "id": "nusantar2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Nusantara sustainable development GOals (SDGs) voluntary local review baseline",
+            "type": "report"
+        },
+        {
+            "author": [
+                {
+                    "family": "Capital Authority",
+                    "given": "Nusantara"
+                }
+            ],
+            "id": "capitalauthority2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024
+                    ]
+                ]
+            },
+            "title": "Nusantara sustainable development GOals (SDGs) voluntary local review baseline",
+            "type": "report"
+        }
+    ],
+    "project_biblios": [
+        "references.bib"
+    ]
 }
