@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "1 RS Learning Diary\nThis is a Quarto book to document my learning journey in Remote Sensing Cities and Environments course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page [here].\n*For those of you who also want to learn Geographic Information Scicene beyond ‘typical GIS’ Software, as in use R-Studio, you could also visit his other github page [here]."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Introduction",
+    "section": "1.1 Introduction",
+    "text": "1.1 Introduction\nHi, I’m Nooriza, a student currently pursuing a Master’s degree in Urban Spatial Science at UCL. I have an academic background in Geography with a specialization in Regional Development Studies and have several substantial work experience in government consultancies in Indonesia."
+  },
+  {
+    "objectID": "index.html#why-do-i-choose-this-module",
+    "href": "index.html#why-do-i-choose-this-module",
+    "title": "Introduction",
+    "section": "1.2 Why do I choose this module?",
+    "text": "1.2 Why do I choose this module?\nThe reason I take Remote Sensing course is my desire to know how it feels to be a bird, seeing things from above, and to see the unseen. Don’t we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive?\n\n\n\n\n\nsource : Biomimicry and Birds\n\n\n\n\n\nsource : NASA/JPL\nFor example the ASTER images of San Fransisco Bay above, it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).\nMeanwhile, practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world’s largest archipelago country like Indonesia.\nFeel free to explore my site to learn more about my learning experience. Hope it helps!"
+  },
+  {
+    "objectID": "week1.html#summary",
+    "href": "week1.html#summary",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary\n\nMeanwhile, this week practical is introducing 2 sources of imagery :\n\na. Landsat-8\nThe Landsat 8 satellite has a 16-day revisit cycle, meaning it can capture imagery of the same location every 16 day. This period would be advantageous to monitor changes at moderate pace, as its revisit time is every 16 days.\n\n\n\n\n\n\nCopyright © NASA\n\n\n\nb. Sentinel 2A\nSentinel 2 revisits the earth every 5 days (using both satellite A and B), meaning that it provides frequent observations and make it suitable to monitor rapid changes.\n\n\n\n\n\n\n\nCopyright © ESA and AIRBUS Defence & Space.\n\n\n\nEach has their own characteristics, while Sentinel-2A has 10m spatial resolution Landsat-8 has 30m resolution. If we want to compare its spectral resolution we have to either upgrade or downgrade, usually downgrading the higher spatial resolution of Sentinel-2 (10m) to match Landsat’s (30m) is the preferred approach."
+  },
+  {
+    "objectID": "week1.html#application",
+    "href": "week1.html#application",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.2 Application",
+    "text": "2.2 Application\nIn what ways can we use Sentinel and Landsat data?\n\nSentinel-2 (operated by ESA) has 13 spectral bands across a wide range of wavelengths, which are especially useful for vegetation monitoring, land cover classification, and agricultural applications.\nLandsat 8 (operated by NASA and USGS) has 11 spectral bands, which cover a similar range of wavelengths to Sentinel-2 but with fewer bands. Landsat 8 provides excellent coverage for land monitoring and vegetation studies as well.\n\nThey both could be used to vegetation monitoring, well……..are they really that difference?\n\nSentinel-2 has more bands overall, with additional Red Edge bands, a higher spatial resolution (10m for key bands), and a Water Vapor band. This makes it more suited for detailed vegetation analysis, agricultural monitoring, and atmospheric studies. In the paper…..\nLandsat 8, while having fewer bands, provides excellent coverage with a broader range of SWIR bands, and the addition of two thermal infrared bands makes it strong for land surface temperature and other thermal analyses.\n\nReal world application of Sentinel and Landsat 8\n\nLandsat-8 application on detecting of vegetation evolution across China\nThis paper explores 30 years of landsat archive data (spaning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution. Han et al. (2025) use reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. I genuinely believe this finding has the potential to serve as a framework for evaluating the implementation of the government’s long-term plan or the integration of policies across different administrations, which is often difficult to assess due to the extended time frame and transitions between ruling administrations.\n\nFigure 1: A sample result shows urban vegetation degradation in Hangzhou and an increase in vegetation in Zhengzhou. source : (Han et al. 2025).\nSentinel-2 application on plastic debris detecting on coastal area, Brazil\nIn this study, Nivedita et al. (2024) use 4 sensors of Sentinel Data to detect floating debris. After floating debris is detected they analyze spectral signature to differentiate trash by measuring the mean values of spectral signature of plastic and other materials (such as foam or seaweeds. This research, as part of monitoring marine pollution, could identify critical areas for conservation supports.\n\n\n\nsource :\n\n\nFigure 2: Plastic Debris Detection. Source : (Nivedita et al. 2024)"
+  },
+  {
+    "objectID": "week1.html#reflection",
+    "href": "week1.html#reflection",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.3 Reflection",
+    "text": "2.3 Reflection\nAfter exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions.\nThis insight made me reflect on a similar challenge in my country, Indonesia, the world’s largest archipelago. The country needs to identify which small islands are inhabited in order to provide essential services to all of them. To address this, I’m considering using night imagery data as a tool to distinguish inhabited islands from uninhabited ones. The night time would indicate anthropogenic activities that are associated with light at night"
+  },
+  {
+    "objectID": "week1.html#references",
+    "href": "week1.html#references",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.4 References",
+    "text": "2.4 References\n\n\n\n\nHan, Yuan, Jianhua He, Xiaoping Du, Xiao Han, and Yaolin Liu. 2025. “Reconstructing Urban Vegetation Evolution in China Using Multimodal Deep Learning and 30-Years Landsat Archive.” Urban Forestry & Urban Greening 103 (January): 128582. https://doi.org/10.1016/j.ufug.2024.128582.\n\n\nNivedita, V., S. Sabarunisha Begum, Ghadah Aldehim, Abdullah M. Alashjaee, Munya A. Arasi, Mohamed Yacin Sikkandar, T. Jayasankar, and S. Vivek. 2024. “Plastic Debris Detection Along Coastal Waters Using Sentinel-2 Satellite Data and Machine Learning Techniques.” Marine Pollution Bulletin 209 (December): 117106. https://doi.org/10.1016/j.marpolbul.2024.117106."
+  },
+  {
     "objectID": "week2.html#summary",
     "href": "week2.html#summary",
     "title": "3  Xaringan and Quarto Book",
@@ -14,31 +63,24 @@
     "text": "3.2 Reflections\nFor someone who is not familiar with html, learning Xaringan is definitely challenging compared to powerpoint, as we just usually click tabs on power point. Honestly, I still consider power point provides more themes and more visualization effects that is easily to access compared to Xaringan. However, as I delved further I realize that using Xaringan is providing us with flexibility even such as positioned our picture.\nSo far, I feel like Xaringan is best at incorporating snippet code on presentation or interactive features that usually too heavy to load in power point. Besides, it helps me to give a sense of what html look like."
   },
   {
-    "objectID": "week4.html#summary",
-    "href": "week4.html#summary",
-    "title": "5  Policy",
-    "section": "5.1 Summary",
-    "text": "5.1 Summary\nRecently Indonesia planned to move its capital city from Jakarta (in Java islands) into Penajam Paser Utara City (Borneo Islands), as the current capital city, Jakarta, faced an issue of land subsidence at rates up to 22 cm/year Chaussard et al. (2013), overcrowding and prone to disaster risk (both natural and human-driven ) (Bappenas 2021). The term Nusantara is used to name this new capital city, symbolizing the varied geographic settings and cultural diversities.\nAs for the time this published, the Jakarta will remain the capital of the country until the Presidential Decree (Keppres) on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of Nusantara, including the preparation of all supporting systems such as fiscal, human resources, and monetary systems.\n\nFigure 1: The Relocation Settings and Vision. source: (Capital Authority 2024)\nThe analysis is done on initial process, so the detailed planning documents haven’t been launched. Thus, I cited several Governments Published Documents, all of them are publicly available, such as:\n\nNusantara Capital City Handbook [2021]\nNusantara Sustainable Development Goals (SDGs) Voluntary Local Review Baseline [2024]\nNusantara Biodiversity Management Master Plan [2024]\n\nThe new capital city, Nusantara, is designed as a forest city, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development as Borneo Islands, is one of the richest biodiversity hotspots in the world.\nHowever, relocating to Nusantara, which is situated near the Borneo rainforest and designed to be a forest city, presents significant challenges. One of the major concerns is mitigating the risks of malaria and other vector-borne diseases, which are prevalent in tropical regions Surendra et al. (2024). The proximity to dense forests and its design to forest city could increase the likelihood of mosquito-borne diseases spreading in the new capital. Thus, addressing these health risks will require comprehensive strategies, including disease prevention measures.\nRemote sensing is one of the instruments that can support these efforts. It allows for the monitoring of environmental factors such as temperature, rainfall, and vegetation, which are critical for understanding the habitats of disease vectors like mosquitoes.\n[ADD the SDGs Goal]"
+    "objectID": "week3.html#summary",
+    "href": "week3.html#summary",
+    "title": "4  Image Correction",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary"
   },
   {
-    "objectID": "week4.html#application",
-    "href": "week4.html#application",
-    "title": "5  Policy",
-    "section": "5.2 Application",
-    "text": "5.2 Application"
+    "objectID": "week3.html#application",
+    "href": "week3.html#application",
+    "title": "4  Image Correction",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
   },
   {
-    "objectID": "week4.html#reflections",
-    "href": "week4.html#reflections",
-    "title": "5  Policy",
-    "section": "5.3 Reflections",
-    "text": "5.3 Reflections\nDuring this week, I got a lot of reflections on my mind because finally I found lecture that explicitly bridging the gap of ‘academics’ to real-world policy. One the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for”.\nMy reflections would be:\n\nI resonate a lot with the lecture’s key takeaway as I genuinely think academics and urban governance still have a distance between them. In terms of human resources, that make the adoption of academics finding hard to implement in governments. Besides, government project is based on annual budget which is make it a fast-paced environment that need an immediate output which make them reluctant to go through experimental phase often found in academics processes.\nI used to naively think that all published papers in a renowned journals site near perfect that It would be hard to find its weakness points. Surprisingly after this week’s lecture I found a lot of journals’s weakness point “If I could called it that way” pertaining to application of x y z methods applied to support urban planning does not explicitly link to specific policy. In my opinion, this is one of the reasons why academics and policy-making feel disconnected and fail to effectively influence each other\nWhat have I learnt about policy, city, and the RS data? In my opinion, using Remote Sensing Data on policy-making in city will generate more-informed policy that contained points it often misses such as where is exactly the place “The location” of the targeted policy. Everything happened somewhere. Additionally, it can serve as an alternative when dealing with the unavailability of baseline data."
-  },
-  {
-    "objectID": "week4.html#references",
-    "href": "week4.html#references",
-    "title": "5  Policy",
-    "section": "5.4 References",
-    "text": "5.4 References\n\n\n\n\nBappenas, Kementrian PPN. 2021. “Buku Saku Pemindahan Ibu Kota Negara.”\n\n\nCapital Authority, Nusantara. 2024. “Nusantara Sustainable Development GOals (SDGs) Voluntary Local Review Baseline.”\n\n\nChaussard, Estelle, Falk Amelung, Hasanudin Abidin, and Sang-Hoon Hong. 2013. “Sinking Cities in Indonesia: ALOS PALSAR Detects Rapid Subsidence Due to Groundwater and Gas Extraction.” Remote Sensing of Environment 128 (January): 150–61. https://doi.org/10.1016/j.rse.2012.10.015.\n\n\nSurendra, Henry, Bimandra A. Djaafara, Helen D. Prameswari, Dedy Supriyanto, Ponco Waluyo, Setyo B. Basuki, Herdiana Herdiana, et al. 2024. “Mitigating Risks of Malaria and Other Vector-Borne Diseases in the New Capital City of Indonesia.” Nature Communications 15 (1): 10575. https://doi.org/10.1038/s41467-024-54891-x."
+    "objectID": "week3.html#reflections",
+    "href": "week3.html#reflections",
+    "title": "4  Image Correction",
+    "section": "4.3 Reflections",
+    "text": "4.3 Reflections\nI think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. Besides, after this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but behind the imagery each pixel is composed by digital number collection and it could be linked with regression too !"
   }
 ]
