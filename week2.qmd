@@ -4,6 +4,7 @@ format:
   html:
     toc: true    # Enable Table of Contents
     toc-depth: 2 # Show up to level 2 headings
+prefer-html : true
 ---
 
 Lecture this week reminded me of one of powerful figure in Uchiha Clan, the one who can manipulate reality once he activates this-so-called Xaringan. Well, but this Xaringan is not related to figures in Konoha's world but related to a certain library in R Studio that enable us to create neat HTML slides in R.
