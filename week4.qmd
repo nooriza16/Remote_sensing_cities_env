@@ -30,7 +30,9 @@ The new capital city, Nusantara, is designed as a **forest city**, with 75% of i
 
 However, relocating to Nusantara, which is situated near the Borneo rainforest and designed to be a forest city, presents significant challenges. One of the major concerns is mitigating the risks of malaria and other vector-borne diseases, which are prevalent in tropical regions @surendra2024. The proximity to dense forests and its design to forest city could increase the likelihood of mosquito-borne diseases spreading in the new capital. Thus, addressing these health risks will require comprehensive strategies, including disease prevention measures.
 
-\[ADD the SDGs Goal\]
+As one of Nusantara aims is to achieve sustainable forest city, linking to Sustainable Development Goals is necessary.
+
+![](images/clipboard-3146823061.png)
 
 ## Application
 
