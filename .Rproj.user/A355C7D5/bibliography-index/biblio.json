@@ -351,6 +351,68 @@
             "title-short": "Satellite observations and malaria",
             "type": "article-journal",
             "volume": "37"
+        },
+        {
+            "URL": "https://malaria.kemkes.go.id/sites/default/files/2024-08/National%20Strategic%20Plan%20Revision_Malaria_29%20Mei%202023.pdf",
+            "author": [
+                {
+                    "family": "Ministry of Health",
+                    "given": "Directorate General of Disease Prevention"
+                },
+                {
+                    "family": "Control"
+                }
+            ],
+            "id": "ministryofhealth2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023
+                    ]
+                ]
+            },
+            "title": "National action plan for acceleration of malaria elimination 2020-2026 (revision)",
+            "type": "report"
+        },
+        {
+            "DOI": "10.1016/j.pt.2021.03.003",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8122067/",
+            "author": [
+                {
+                    "family": "Wimberly",
+                    "given": "Michael C."
+                },
+                {
+                    "dropping-particle": "de",
+                    "family": "Beurs",
+                    "given": "Kirsten M."
+                },
+                {
+                    "family": "Loboda",
+                    "given": "Tatiana V."
+                },
+                {
+                    "family": "Pan",
+                    "given": "William K."
+                }
+            ],
+            "container-title": "Trends in parasitology",
+            "id": "wimberly2021a",
+            "issue": "6",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        6
+                    ]
+                ]
+            },
+            "note": "PMID: 33775559 PMCID: PMC8122067",
+            "page": "525-537",
+            "title": "Satellite observations and malaria: New opportunities for research and applications",
+            "title-short": "Satellite observations and malaria",
+            "type": "article-journal",
+            "volume": "37"
         }
     ],
     "project_biblios": [

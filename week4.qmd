@@ -16,30 +16,58 @@ Source : [www.nytimes.com](https://www.nytimes.com/interactive/2023/05/16/headwa
 
 Recently Indonesia planned to move its capital city from Jakarta (in Java islands) into Penajam Paser Utara City (Borneo Islands), as the current capital city, Jakarta, faced an issue of sinking, land subsidence, overcrowding, low air and water quality [@bappenas2021]. The term Nusantara is used to name this new capital city, symbolizing the varied geographic settings and cultural diversities of Indonesia.
 
-As for the time this published, Nusantara Development is on the phase 2 (2025-2029) that involved strengthening core area (housing, office, commercial zone). In the time being, Jakarta will remain the capital of the country until the Presidential Decree on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of the new capital city, including the preparation of all supporting systems such as fiscal, human resources, and monetary systems.
+As for the time this published, Nusantara Development is on the phase 2 (2025-2029) that involved strengthening core area (housing, office, commercial zone). Thus, in the time being, Jakarta will still remain the capital of Indonesia until the Presidential Decree on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of the new capital city, including the preparation of all supporting systems such as infrastructure, human resources, and governance systems.
 
 ![](images/clipboard-3462147358.png)
 
 Figure 1: The Relocation Settings and Vision. source: [@capitalauthority2024]
 
-The analysis is done on initial process, so the detailed planning documents haven’t been launched. Thus, I use several Governments Published Documents, all of them are publicly available, such as:
+As the development is still in the initial stage, the detailed planning documents haven’t been launched yet. Thus, I use available published documents regarding the detail of Nusantara's Development which all of them are publicly available, such as:
 
 1.  [Nusantara Sustainable Development Goals (SDGs) Voluntary Local Review Baseline \[2024\]](https://www.ikn.go.id/storage/pedoman-nusantara/2/nusantara-vlr-baseline-en.pdf)
 2.  [Nusantara Biodiversity Management Master Plan](https://ikn.go.id/storage/pedoman-nusantara/1/nusantara-biodiversity-management-master-plan-2024.pdf) \[2024\]
 
-The new capital city, Nusantara, is designed as a **forest city**, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and one of the richest biodiversity hotspots in the world (Borneo Island, where Nusantara is located, is famous for its tropical rainforests).
+> **Policy**
 
-However, relocating to Nusantara and designing to be a forest city, presents significant **challenges**. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as **malaria**) spreading in the new capital, which are prevalent in tropical regions. @surendra2024.
+The new capital city, Nusantara, is designed as a **forest city**, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant **challenges**. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as **malaria**) spreading in the new capital, which are prevalent in tropical regions @surendra2024.
 
-Addressing this risk is essential, as Nusantara aims to become a sustainable city that aligns with Sustainable Development Goals. However, there hasn't been any mitigating malaria risk framework yet from the government as the focus is still on infrastructure development.
+Addressing this risk is essential, as Nusantara aims to become a sustainable city aligned with the Sustainable Development Goals (SDGs). However, there is currently no official framework from the government for mitigating malaria risk in Nusantara, as the primary focus remains on infrastructure development. Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara's sustainability, such as:
+
+**A. Global Goals :** Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases
+
+The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia's estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023.
 
 ![](images/clipboard-3146823061.png)
 
 Figure 2 : SDGs Goal related to Malaria. source : globalsgoal.org
 
+To achieve the Global Goals, WHO launched global technical strategy for malaria 2016-2030 with frameworks such as:
+
+-   Pillar 1 : Ensure access to malaria prevention, diagnosis and treatment as part of universal health coverage.
+
+    Keywords I underlined in this pillar is : Countries should collect **data** across all settings, including those areas that are malaria-free but at risk of re-establishment of malaria .
+
+-   Pillar 3. Transform malaria surveillance into a key intervention.
+
+    Keywords I underlined in this pillar is : surveillance in areas of high & low transmission and in areas targeted for elimination
+
+**B. Local Goals :** Eliminate malaria case by 2030 and maintain malaria free status
+
+Translating the global goals on malaria elimination, Indonesia's Ministry of Health [@ministryofhealth2023] had proposed recommendations, including the new capital city such as:
+
+-   Malaria elimination policies and implementation need basic research, operational support, and efficient technology development.
+
+-   Provide input to the IKN special authority regarding malaria risk to ensure the design of the IKN area drainage system is free from malaria mosquito larvae habitat
+
+-   Mapping legal and illegal forest encroachers to develop an activity plan and budget
+
 ## Application
 
-By remote sensing the government could create framework that allows monitoring of environmental factors such as temperature, rainfall, and vegetation, which are critical for understanding the habitats of mosquitoes.
+> Remote Sensing as Baseline for detecting malaria hotspot
+
+In malaria elimination, remote sensing could be beneficial as a baseline data for mapping malaria hotspot by incorporating climatic factors and landuse factors to detect mosquito habitat as what [@wimberly2021] aggregated in framework on Figure 1. Dataset for the Nusantara analysis could use imagery product which is able to highlight water bodies and wetland (proxy for breeding sites), vegetation and land cover (proxy for mosquito habitat), surface temperature (proxy for mosquito activity), and topography (potential inundation area). We could use rainfall season for in our dataset, however If we have yearly rainfall data perhaps we could identify the pattern of rainfall session to get more informed when picking the time series.
+
+Earth observation data commonly used in malaria research included Sentinel-2 and Landsat 8, although Sentinel-2 is preferred because its finer resolution and its frequent visit. However, [@wimberly2021] mentioned that those resolution is still too coarse to detect individual larva habitat and breeding thus suggest Very High Resolution imagery (such as Pleaides, WorldView) or SAR imagery (such as C-band SAR Sentinel-1 data) that able to penetrate cloud cover during the wet season.
 
 ![](images/clipboard-687725868.png)
 
@@ -51,12 +79,16 @@ During this week, I got a lot of reflections on my mind because I finally found 
 
 My reflections would be:
 
-1.  What have I learnt about policy, city, and the RS data?
+> 1.  Remote Sensing is good, but combining with GIS is better
 
-    Using Remote Sensing Data on malaria-related policy-making will generate more informed execution
+From the result in step 1, we could then investigate the result using the malaria incident data to validate our classification result, what percentage of areas classified as high risk have recorded incidents, and which areas have not? As I delved further into the framework in eliminating Malaria both Global and Local framework, they have mentioned to aggregate data about the incidents, high risk, low risk but not explicitly mentioned using map. With map, we could easily overlay this hotspot with malaria incidents, landuse, and potentially social-economic data as
 
-2.  Additionally, it can serve as an alternative when dealing with the unavailability of baseline data.
+> 2.  Remote Sensing and GIS is good, but interpreting the data with affected communities is better
 
-3.  Aside from remote sensing data, I would like to combine the analysis by incorporating local wisdom in responding to Malaria. This approach would enhance the understanding of how to mitigate this issues, as these communities have lived for a long time near the rainforest and are directly affected.
+Aside from remote sensing data, I would like to combine the analysis by incorporating local wisdom in responding to Malaria. This approach would enhance the understanding of how to mitigate this issues, as these communities have lived for a long time near the rainforest and are directly affected.
+
+> 3.  Challenges of implementation, collaboration is a key
+
+I resonate a lot with the lecture’s key takeaway as I genuinely think academics and urban governance still have a distance between them. In terms of human resources, that make the adoption of academics finding hard to implement in governments. Besides, government project is based on annual budget which is make it a fast-paced environment that need an immediate output which make them reluctant to go through experimental phase often found in academics processes. Thus collaboration is a key between
 
 ## References
