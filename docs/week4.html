@@ -201,7 +201,7 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p><strong>Policy</strong></p>
 </blockquote>
-<p>The new capital city, Nusantara, is designed as a <strong>forest city</strong>, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, relocating to Nusantara and designing to be a forest city, presents significant <strong>challenges</strong>. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as <strong>malaria</strong>) spreading in the new capital, which are prevalent in tropical regions <span class="citation" data-cites="surendra2024">Surendra et al. (<a href="#ref-surendra2024" role="doc-biblioref">2024</a>)</span>.</p>
+<p>The new capital city, Nusantara, is designed as a <strong>forest city</strong>, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant <strong>challenges</strong>. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as <strong>malaria</strong>) spreading in the new capital, which are prevalent in tropical regions <span class="citation" data-cites="surendra2024">Surendra et al. (<a href="#ref-surendra2024" role="doc-biblioref">2024</a>)</span>.</p>
 <p>Addressing this risk is essential, as Nusantara aims to become a sustainable city aligned with the Sustainable Development Goals (SDGs). However, there is currently no official framework from the government for mitigating malaria risk in Nusantara, as the primary focus remains on infrastructure development. Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara’s sustainability, such as:</p>
 <p><strong>A. Global Goals :</strong> Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases</p>
 <p>The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia’s estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023.</p>
@@ -219,12 +219,16 @@ div.csl-indent {
 <ul>
 <li><p>Malaria elimination policies and implementation need basic research, operational support, and efficient technology development.</p></li>
 <li><p>Provide input to the IKN special authority regarding malaria risk to ensure the design of the IKN area drainage system is free from malaria mosquito larvae habitat</p></li>
-<li><p>Counting and mapping legal and illegal forest encroachers (MMP) to develop an activity plan and budget</p></li>
+<li><p>Mapping legal and illegal forest encroachers to develop an activity plan and budget</p></li>
 </ul>
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
-<p>In malaria elimination, remote sensing could be beneficial as a baseline data for mapping malaria hotspot by incorporating climatic factors and landuse factors to detect mosquito habitat. Dataset for the Nusantara analysis could use imagery which able to highlight water bodies and wetland (breeding sites), vegetation and land cover (mosquito habitat), and surface temperature (mosquito activity)</p>
+<blockquote class="blockquote">
+<p>Remote Sensing as Baseline for detecting malaria hotspot</p>
+</blockquote>
+<p>In malaria elimination, remote sensing could be beneficial as a baseline data for mapping malaria hotspot by incorporating climatic factors and landuse factors to detect mosquito habitat as what <span class="citation" data-cites="wimberly2021">(<a href="#ref-wimberly2021" role="doc-biblioref">Wimberly et al. 2021</a>)</span> aggregated in framework on Figure 1. Dataset for the Nusantara analysis could use imagery product which is able to highlight water bodies and wetland (proxy for breeding sites), vegetation and land cover (proxy for mosquito habitat), surface temperature (proxy for mosquito activity), and topography (potential inundation area). We could use rainfall season for in our dataset, however If we have yearly rainfall data perhaps we could identify the pattern of rainfall session to get more informed when picking the time series.</p>
+<p>Earth observation data commonly used in malaria research included Sentinel-2 and Landsat 8, although Sentinel-2 is preferred because its finer resolution and its frequent visit. However, <span class="citation" data-cites="wimberly2021">(<a href="#ref-wimberly2021" role="doc-biblioref">Wimberly et al. 2021</a>)</span> mentioned that those resolution is still too coarse to detect individual larva habitat and breeding thus suggest Very High Resolution imagery (such as Pleaides, WorldView) or SAR imagery (such as C-band SAR Sentinel-1 data) that able to penetrate cloud cover during the wet season.</p>
 <p><img src="images/clipboard-687725868.png" class="img-fluid"></p>
 <p>Figure 2: Framework in which Remote Sensing used in Malaria studies. source : <span class="citation" data-cites="wimberly2021">Wimberly et al. (<a href="#ref-wimberly2021" role="doc-biblioref">2021</a>)</span>.</p>
 </section>
@@ -232,12 +236,24 @@ div.csl-indent {
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">5.3</span> Reflections</h2>
 <p>During this week, I got a lot of reflections on my mind because I finally found lecture that explicitly bridging the gap of ‘academics’ to real-world policy. One the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for”.</p>
 <p>My reflections would be:</p>
+<blockquote class="blockquote">
 <ol type="1">
-<li><p>What have I learnt about policy, city, and the RS data?</p>
-<p>Using Remote Sensing Data on malaria-related policy-making will generate more informed execution</p></li>
-<li><p>Additionally, it can serve as an alternative when dealing with the unavailability of baseline data.</p></li>
-<li><p>Aside from remote sensing data, I would like to combine the analysis by incorporating local wisdom in responding to Malaria. This approach would enhance the understanding of how to mitigate this issues, as these communities have lived for a long time near the rainforest and are directly affected.</p></li>
+<li>Remote Sensing is good, but combining with GIS is better</li>
 </ol>
+</blockquote>
+<p>From the result in step 1, we could then investigate the result using the malaria incident data to validate our classification result, what percentage of areas classified as high risk have recorded incidents, and which areas have not? As I delved further into the framework in eliminating Malaria both Global and Local framework, they have mentioned to aggregate data about the incidents, high risk, low risk but not explicitly mentioned using map. With map, we could easily overlay this hotspot with malaria incidents, landuse, and potentially social-economic data as</p>
+<blockquote class="blockquote">
+<ol start="2" type="1">
+<li>Remote Sensing and GIS is good, but interpreting the data with affected communities is better</li>
+</ol>
+</blockquote>
+<p>Aside from remote sensing data, I would like to combine the analysis by incorporating local wisdom in responding to Malaria. This approach would enhance the understanding of how to mitigate this issues, as these communities have lived for a long time near the rainforest and are directly affected.</p>
+<blockquote class="blockquote">
+<ol start="3" type="1">
+<li>Challenges of implementation, collaboration is a key</li>
+</ol>
+</blockquote>
+<p>I resonate a lot with the lecture’s key takeaway as I genuinely think academics and urban governance still have a distance between them. In terms of human resources, that make the adoption of academics finding hard to implement in governments. Besides, government project is based on annual budget which is make it a fast-paced environment that need an immediate output which make them reluctant to go through experimental phase often found in academics processes. Thus collaboration is a key between</p>
 </section>
 <section id="references" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
