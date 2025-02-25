@@ -8,7 +8,7 @@ format:
 
 **Project Case : A New Relocated Capital City of Indonesia ; From Jakarta to Nusantara**
 
-![](images/clipboard-546673402.png)
+![](images/clipboard-546673402.png){width="943"}
 
 Source : [www.nytimes.com](https://www.nytimes.com/interactive/2023/05/16/headway/indonesia-nusantara-jakarta.html)
 
@@ -18,7 +18,7 @@ Recently Indonesia planned to move its capital city from Jakarta (in Java island
 
 As for the time this published, Nusantara Development is on the phase 2 (2025-2029) that involved strengthening core area (housing, office, commercial zone). Thus, in the time being, Jakarta will still remain the capital of Indonesia until the Presidential Decree on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of the new capital city, including the preparation of all supporting systems such as infrastructure, human resources, and governance systems.
 
-![](images/clipboard-3462147358.png)
+![](images/clipboard-3462147358.png){width="583"}
 
 Figure 1: The Relocation Settings and Vision. source: [@capitalauthority2024]
 
@@ -35,23 +35,13 @@ Addressing this risk is essential, as Nusantara aims to become a sustainable cit
 
 **A. Global Goals :** Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases
 
-The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia's estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023.
+The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia's estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023. To achieve target of Global Goals, [@who2021] have launched global technical strategy for malaria with framework such as:
 
-![](images/clipboard-3146823061.png)
+![](images/clipboard-2410472720.png){width="745"}
 
-Figure 2 : SDGs Goal related to Malaria. source : globalsgoal.org
+Figure 2 : SDGs Goal and WHO Technical Strategy
 
-To achieve the Global Goals, WHO launched global technical strategy for malaria 2016-2030 with frameworks such as:
-
--   Pillar 1 : Ensure access to malaria prevention, diagnosis and treatment as part of universal health coverage.
-
-    Keywords I underlined in this pillar is : Countries should collect **data** across all settings, including those areas that are malaria-free but at risk of re-establishment of malaria .
-
--   Pillar 3. Transform malaria surveillance into a key intervention.
-
-    Keywords I underlined in this pillar is : surveillance in areas of high & low transmission and in areas targeted for elimination
-
-**B. Local Goals :** Eliminate malaria case by 2030 and maintain malaria free status
+**B. Local Goals (National Level):** Eliminate malaria case by 2030 and maintain malaria free status
 
 Translating the global goals on malaria elimination, Indonesia's Ministry of Health [@ministryofhealth2023] had proposed recommendations, including the new capital city such as:
 
@@ -69,26 +59,24 @@ In malaria elimination, remote sensing could be beneficial as a baseline data fo
 
 Earth observation data commonly used in malaria research included Sentinel-2 and Landsat 8, although Sentinel-2 is preferred because its finer resolution and its frequent visit. However, [@wimberly2021] mentioned that those resolution is still too coarse to detect individual larva habitat and breeding thus suggest Very High Resolution imagery (such as Pleaides, WorldView) or SAR imagery (such as C-band SAR Sentinel-1 data) that able to penetrate cloud cover during the wet season.
 
-![](images/clipboard-687725868.png)
+![](images/clipboard-687725868.png){width="672"}
 
 Figure 2: Framework in which Remote Sensing used in Malaria studies. source : @wimberly2021.
 
 ## Reflections
 
-During this week, I got a lot of reflections on my mind because I finally found lecture that explicitly bridging the gap of ‘academics’ to real-world policy. One the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for”.
+During this week, I got a lot of reflections as I finally found lecture that explicitly bridging the gap of ‘academics’ to real-world policy. My reflections would be:
 
-My reflections would be:
+> 1.  Combining remote sensing with GIS
 
-> 1.  Remote Sensing is good, but combining with GIS is better
+Since Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with malaria incident data, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As \[\@naserrudin2023\] notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.
 
-From the result in step 1, we could then investigate the result using the malaria incident data to validate our classification result, what percentage of areas classified as high risk have recorded incidents, and which areas have not? As I delved further into the framework in eliminating Malaria both Global and Local framework, they have mentioned to aggregate data about the incidents, high risk, low risk but not explicitly mentioned using map. With map, we could easily overlay this hotspot with malaria incidents, landuse, and potentially social-economic data as
+> 2.  Remote Sensing and GIS is good, but enriching the analysis with affected communities make it better
 
-> 2.  Remote Sensing and GIS is good, but interpreting the data with affected communities is better
+Beyond remote sensing data, incorporating local knowledge can improve the analysis. Understanding how communities respond to malaria provides insight into the effectiveness of mitigation efforts. These communities have lived near rainforests for generations and are directly affected, making their experiences valuable for practical prevention strategies..
 
-Aside from remote sensing data, I would like to combine the analysis by incorporating local wisdom in responding to Malaria. This approach would enhance the understanding of how to mitigate this issues, as these communities have lived for a long time near the rainforest and are directly affected.
+> 3.  Implementation challenges, the need for collaboration
 
-> 3.  Challenges of implementation, collaboration is a key
-
-I resonate a lot with the lecture’s key takeaway as I genuinely think academics and urban governance still have a distance between them. In terms of human resources, that make the adoption of academics finding hard to implement in governments. Besides, government project is based on annual budget which is make it a fast-paced environment that need an immediate output which make them reluctant to go through experimental phase often found in academics processes. Thus collaboration is a key between
+One the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for." This condition lead to a gap between academics and urban governance. However, in my observation during my work with the government the potential cause is human resources (make the adoption of academics finding hard to implement), annual budget cycles (governments prioritize immediate results and may be reluctant to invest in the long-term experimental processes typical of academia). Bridging the gap on malaria prevention requires collaboration and commitment not only between epidemiologists, healthcare, and geospatial analysts but with the governments to ensure research translates into actionable policies.
 
 ## References

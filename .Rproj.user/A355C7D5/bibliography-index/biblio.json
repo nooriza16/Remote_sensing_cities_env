@@ -413,6 +413,87 @@
             "title-short": "Satellite observations and malaria",
             "type": "article-journal",
             "volume": "37"
+        },
+        {
+            "DOI": "10.1186/s12936-023-04603-5",
+            "URL": "https://doi.org/10.1186/s12936-023-04603-5",
+            "author": [
+                {
+                    "family": "Naserrudin",
+                    "given": "Nurul Athirah"
+                },
+                {
+                    "family": "Yong",
+                    "given": "Pauline Pau Lin"
+                },
+                {
+                    "family": "Monroe",
+                    "given": "April"
+                },
+                {
+                    "family": "Culleton",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Baumann",
+                    "given": "Sara Elizabeth"
+                },
+                {
+                    "family": "Sato",
+                    "given": "Shigeharu"
+                },
+                {
+                    "family": "Hod",
+                    "given": "Rozita"
+                },
+                {
+                    "family": "Jeffree",
+                    "given": "Mohammad Saffree"
+                },
+                {
+                    "family": "Ahmed",
+                    "given": "Kamruddin"
+                },
+                {
+                    "family": "Hassan",
+                    "given": "Mohd Rohaizat"
+                }
+            ],
+            "container-title": "Malaria Journal",
+            "id": "naserrudin2023",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        5,
+                        26
+                    ]
+                ]
+            },
+            "page": "166",
+            "title": "Seeing malaria through the eyes of affected communities: Using photovoice to document local knowledge on zoonotic malaria causation and prevention practices among rural communities exposed to plasmodium knowlesi malaria in northern borneo island",
+            "title-short": "Seeing malaria through the eyes of affected communities",
+            "type": "article-journal",
+            "volume": "22"
+        },
+        {
+            "author": [
+                {
+                    "family": "WHO",
+                    "given": "World Health Organization"
+                }
+            ],
+            "id": "who2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Global technical strategy for malaria 20162030, 2021 update",
+            "type": "report"
         }
     ],
     "project_biblios": [
