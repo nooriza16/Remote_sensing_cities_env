@@ -31,6 +31,6 @@ To address this issue, Li et al. (2023) utilized Sentinel-1, which operates with
 
 ## Reflection
 
-After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find datasets for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery.
+After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find dataset for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery.
 
 ## References
