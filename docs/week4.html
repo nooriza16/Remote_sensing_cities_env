@@ -120,7 +120,7 @@ div.csl-indent {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Sneak Peak</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -202,7 +202,7 @@ div.csl-indent {
 <p><strong>Policy</strong></p>
 </blockquote>
 <p>The new capital city, Nusantara, is designed as a <strong>forest city</strong>, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant <strong>challenges</strong>. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as <strong>malaria</strong>) spreading in the new capital, which are prevalent in tropical regions <span class="citation" data-cites="surendra2024">Surendra et al. (<a href="#ref-surendra2024" role="doc-biblioref">2024</a>)</span>.</p>
-<p>Addressing this risk is essential, as Nusantara aims to become a sustainable city aligned with the Sustainable Development Goals (SDGs). However, there is currently no official framework from the government for mitigating malaria risk in Nusantara, as the primary focus remains on infrastructure development. Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara’s sustainability, such as:</p>
+<p>Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara’s sustainability, such as:</p>
 <p><strong>A. Global Goals :</strong> Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases</p>
 <p>The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia’s estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023. To achieve target of Global Goals, <span class="citation" data-cites="who2021">(<a href="#ref-who2021" role="doc-biblioref">WHO 2021</a>)</span> have launched global technical strategy for malaria with framework such as:</p>
 <p><img src="images/clipboard-2410472720.png" class="img-fluid" width="745"></p>
@@ -220,10 +220,33 @@ div.csl-indent {
 <blockquote class="blockquote">
 <p>Remote Sensing as Baseline for detecting malaria hotspot</p>
 </blockquote>
-<p>In malaria elimination, remote sensing could be beneficial as a baseline data for mapping malaria hotspot by incorporating climatic factors and landuse factors to detect mosquito habitat as what <span class="citation" data-cites="wimberly2021">(<a href="#ref-wimberly2021" role="doc-biblioref">Wimberly et al. 2021</a>)</span> aggregated in framework on Figure 1. Dataset for the Nusantara analysis could use imagery product which is able to highlight water bodies and wetland (proxy for breeding sites), vegetation and land cover (proxy for mosquito habitat), surface temperature (proxy for mosquito activity), and topography (potential inundation area). We could use rainfall season for in our dataset, however If we have yearly rainfall data perhaps we could identify the pattern of rainfall session to get more informed when picking the time series.</p>
-<p>Earth observation data commonly used in malaria research included Sentinel-2 and Landsat 8, although Sentinel-2 is preferred because its finer resolution and its frequent visit. However, <span class="citation" data-cites="wimberly2021">(<a href="#ref-wimberly2021" role="doc-biblioref">Wimberly et al. 2021</a>)</span> mentioned that those resolution is still too coarse to detect individual larva habitat and breeding thus suggest Very High Resolution imagery (such as Pleaides, WorldView) or SAR imagery (such as C-band SAR Sentinel-1 data) that able to penetrate cloud cover during the wet season.</p>
+<p>In malaria elimination projects, remote sensing can serve as a crucial baseline data source for mapping malaria hotspots by integrating climatic and land-use factors. @wimberly2021 proposed a framework that leverages Earth observation products to identify mosquito habitats based on climate conditions, human activities, and specific land-use patterns.</p>
 <p><img src="images/clipboard-687725868.png" class="img-fluid" width="672"></p>
 <p>Figure 2: Framework in which Remote Sensing used in Malaria studies. source : <span class="citation" data-cites="wimberly2021">Wimberly et al. (<a href="#ref-wimberly2021" role="doc-biblioref">2021</a>)</span>.</p>
+<p>To address policy mentioned in section 2, I underlined some dataset that could be used to the analysis:</p>
+<ul>
+<li><p><strong>Sentinel-2 (rainy season)</strong></p>
+<ul>
+<li><p><em>Highlight water bodies and wetlands</em> – These serve as proxies for mosquito breeding sites.</p></li>
+<li><p><em>Vegetation and land cover</em> – Provides insight into potential mosquito habitats.</p></li>
+<li><p><em>Surface temperature</em> – Acts as a proxy for mosquito activity.</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Digital Elevation Model (DEM) Data/Topography</strong></p>
+<ul>
+<li>Helps identify potential inundation areas, which could influence mosquito breeding patterns.</li>
+</ul></li>
+<li><p><strong>Microsoft Open Buildings</strong></p>
+<ul>
+<li>Useful as a proxy for human settlements and potential exposure risk.</li>
+</ul></li>
+<li><p><strong>Rainfall Data</strong></p>
+<ul>
+<li>The rainfall season can be considered as a timeframe for analysis. However, if locally recorded rainfall data from the Indonesian Climatic Institution is available, it could help refine the identification of rainfall patterns, allowing for a more informed selection of the time series.</li>
+</ul></li>
+</ul>
 </section>
 <section id="reflections" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">5.3</span> Reflections</h2>
@@ -233,13 +256,13 @@ div.csl-indent {
 <li>Combining remote sensing with GIS</li>
 </ol>
 </blockquote>
-<p>Since Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with malaria incident data, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As [@naserrudin2023] notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.</p>
+<p>Since Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with <strong>malaria incident data</strong>, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As <span class="citation" data-cites="naserrudin2023">(<a href="#ref-naserrudin2023" role="doc-biblioref">Naserrudin, Yong, et al. 2023</a>)</span> notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.</p>
 <blockquote class="blockquote">
 <ol start="2" type="1">
-<li>Remote Sensing and GIS is good, but enriching the analysis with affected communities make it better</li>
+<li>Remote Sensing and GIS is good, but enriching the analysis with <strong>affected communities</strong> make it better</li>
 </ol>
 </blockquote>
-<p>Beyond remote sensing data, incorporating local knowledge can improve the analysis. Understanding how communities respond to malaria provides insight into the effectiveness of mitigation efforts. These communities have lived near rainforests for generations and are directly affected, making their experiences valuable for practical prevention strategies..</p>
+<p>Beyond remote sensing data, incorporating local knowledge can improve the analysis. Understanding how affected communities respond to malaria provides insight into the effectiveness of mitigation efforts <span class="citation" data-cites="naserrudin2023a">(<a href="#ref-naserrudin2023a" role="doc-biblioref">Naserrudin, Lin, et al. 2023</a>)</span>. These communities have lived near rainforests for generations and are directly affected, making their experiences valuable for practical prevention strategies..</p>
 <blockquote class="blockquote">
 <ol start="3" type="1">
 <li>Implementation challenges, the need for collaboration</li>
@@ -260,6 +283,12 @@ Capital Authority, Nusantara. 2024. <span>“Nusantara Sustainable Development G
 </div>
 <div id="ref-ministryofhealth2023" class="csl-entry" role="listitem">
 Ministry of Health, Directorate General of Disease Prevention, and Control. 2023. <span>“National Action Plan for Acceleration of Malaria Elimination 2020-2026 (Revision).”</span> <a href="https://malaria.kemkes.go.id/sites/default/files/2024-08/National%20Strategic%20Plan%20Revision_Malaria_29%20Mei%202023.pdf">https://malaria.kemkes.go.id/sites/default/files/2024-08/National%20Strategic%20Plan%20Revision_Malaria_29%20Mei%202023.pdf</a>.
+</div>
+<div id="ref-naserrudin2023a" class="csl-entry" role="listitem">
+Naserrudin, Nurul Athirah, Pauline Yong Pau Lin, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Bipin Adhikari, et al. 2023. <span>“Exploring Barriers to and Facilitators of Malaria Prevention Practices: A Photovoice Study with Rural Communities at Risk to Plasmodium Knowlesi Malaria in Sabah, Malaysia.”</span> <em>BMC Public Health</em> 23 (1): 1316. <a href="https://doi.org/10.1186/s12889-023-16173-x">https://doi.org/10.1186/s12889-023-16173-x</a>.
+</div>
+<div id="ref-naserrudin2023" class="csl-entry" role="listitem">
+Naserrudin, Nurul Athirah, Pauline Pau Lin Yong, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Rozita Hod, Mohammad Saffree Jeffree, Kamruddin Ahmed, and Mohd Rohaizat Hassan. 2023. <span>“Seeing Malaria Through the Eyes of Affected Communities: Using Photovoice to Document Local Knowledge on Zoonotic Malaria Causation and Prevention Practices Among Rural Communities Exposed to Plasmodium Knowlesi Malaria in Northern Borneo Island.”</span> <em>Malaria Journal</em> 22 (1): 166. <a href="https://doi.org/10.1186/s12936-023-04603-5">https://doi.org/10.1186/s12936-023-04603-5</a>.
 </div>
 <div id="ref-surendra2024" class="csl-entry" role="listitem">
 Surendra, Henry, Bimandra A. Djaafara, Helen D. Prameswari, Dedy Supriyanto, Ponco Waluyo, Setyo B. Basuki, Herdiana Herdiana, et al. 2024. <span>“Mitigating Risks of Malaria and Other Vector-Borne Diseases in the New Capital City of Indonesia.”</span> <em>Nature Communications</em> 15 (1): 10575. <a href="https://doi.org/10.1038/s41467-024-54891-x">https://doi.org/10.1038/s41467-024-54891-x</a>.
