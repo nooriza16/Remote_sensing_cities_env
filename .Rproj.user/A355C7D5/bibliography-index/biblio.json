@@ -494,6 +494,196 @@
             },
             "title": "Global technical strategy for malaria 20162030, 2021 update",
             "type": "report"
+        },
+        {
+            "DOI": "10.1186/s12889-023-16173-x",
+            "URL": "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-16173-x",
+            "author": [
+                {
+                    "family": "Naserrudin",
+                    "given": "Nurul Athirah"
+                },
+                {
+                    "family": "Lin",
+                    "given": "Pauline Yong Pau"
+                },
+                {
+                    "family": "Monroe",
+                    "given": "April"
+                },
+                {
+                    "family": "Culleton",
+                    "given": "Richard"
+                },
+                {
+                    "family": "Baumann",
+                    "given": "Sara Elizabeth"
+                },
+                {
+                    "family": "Sato",
+                    "given": "Shigeharu"
+                },
+                {
+                    "family": "Adhikari",
+                    "given": "Bipin"
+                },
+                {
+                    "family": "Fornace",
+                    "given": "Kimberly M."
+                },
+                {
+                    "family": "Hod",
+                    "given": "Rozita"
+                },
+                {
+                    "family": "Jeffree",
+                    "given": "Mohammad Saffree"
+                },
+                {
+                    "family": "Ahmed",
+                    "given": "Kamruddin"
+                },
+                {
+                    "family": "Hassan",
+                    "given": "Mohd Rohaizat"
+                }
+            ],
+            "container-title": "BMC Public Health",
+            "id": "naserrudin2023a",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        7,
+                        10
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1316",
+            "title": "Exploring barriers to and facilitators of malaria prevention practices: a photovoice study with rural communities at risk to Plasmodium knowlesi malaria in Sabah, Malaysia",
+            "title-short": "Exploring barriers to and facilitators of malaria prevention practices",
+            "type": "article-journal",
+            "volume": "23"
+        },
+        {
+            "DOI": "10.1016/j.ecolind.2024.112027",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1470160X24004849",
+            "author": [
+                {
+                    "family": "Sun",
+                    "given": "Yifei"
+                },
+                {
+                    "family": "Hao",
+                    "given": "Zhenbang"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Hongcai"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Jialin"
+                },
+                {
+                    "family": "Ding",
+                    "given": "Guiling"
+                },
+                {
+                    "family": "Guo",
+                    "given": "Zhanbao"
+                },
+                {
+                    "family": "He",
+                    "given": "Xi"
+                },
+                {
+                    "family": "Huang",
+                    "given": "Jiaxing"
+                }
+            ],
+            "container-title": "Ecological Indicators",
+            "id": "sun2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "112027",
+            "title": "Accurate mapping of rapeseed fields in the initial flowering stage using Sentinel-2 satellite images and convolutional neural networks",
+            "type": "article-journal",
+            "volume": "162"
+        },
+        {
+            "DOI": "10.1016/j.jag.2023.103384",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S156984322300208X",
+            "author": [
+                {
+                    "family": "Li",
+                    "given": "Saibo"
+                },
+                {
+                    "family": "He",
+                    "given": "Shaoyang"
+                },
+                {
+                    "family": "Yue",
+                    "given": "Tianxiang"
+                },
+                {
+                    "family": "Du",
+                    "given": "Zhengping"
+                },
+                {
+                    "family": "Zhao",
+                    "given": "Na"
+                },
+                {
+                    "family": "Zhao",
+                    "given": "Yapeng"
+                },
+                {
+                    "family": "Jiao",
+                    "given": "Yimeng"
+                },
+                {
+                    "family": "Fan",
+                    "given": "Bin"
+                },
+                {
+                    "family": "Liu",
+                    "given": "Yi"
+                },
+                {
+                    "family": "Xu",
+                    "given": "Zhe"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Yang"
+                }
+            ],
+            "container-title": "International Journal of Applied Earth Observation and Geoinformation",
+            "id": "li2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        7
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "103384",
+            "title": "Mapping bamboo forest and expansion intensity in China by coupling vegetation phenology and C-band SAR with Sentinel-1 and Sentinel-2 images",
+            "type": "article-journal",
+            "volume": "121"
         }
     ],
     "project_biblios": [

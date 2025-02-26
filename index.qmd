@@ -1,7 +1,7 @@
 # RS Learning Diary
 
 ---
-title: "Introduction"
+title: "Sneak Peak"
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
@@ -22,18 +22,16 @@ Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spati
 
 ## Why do I choose this module?
 
-The reason I take Remote Sensing course is my desire to know *how it feels to be a bird, seeing things from above, and to see the unseen.* Don't we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive?
+The reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven't delved further into it and haven't got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data when deal with unavailability of vector data.
 
-![](images/clipboard-2217286199.png){fig-align="left" width="487"}
+Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen of the naked eye.*
 
-source : [Biomimicry and Birds](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
+[![](images/PIA02605_modest.jpg){fig-align="left" width="363"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
-[![](images/PIA02605_modest.jpg){fig-align="left"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
+Figure 1 : ASTER images of San Fransisco. source : [NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA02605)
 
-source : [NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA02605)
+For example, see the ASTER images of San Fransisco Bay above it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
 
-For example the ASTER images of San Fransisco Bay above, it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
-
-Meanwhile, practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
+Practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
 
 Feel free to explore my site to learn more about my learning experience. Hope it helps!
