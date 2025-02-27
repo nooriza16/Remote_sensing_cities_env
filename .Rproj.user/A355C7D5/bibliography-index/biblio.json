@@ -684,6 +684,48 @@
             "title": "Mapping bamboo forest and expansion intensity in China by coupling vegetation phenology and C-band SAR with Sentinel-1 and Sentinel-2 images",
             "type": "article-journal",
             "volume": "121"
+        },
+        {
+            "DOI": "10.1016/j.ject.2023.11.001",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2949948823000100",
+            "author": [
+                {
+                    "family": "Arshad",
+                    "given": "Arslan"
+                },
+                {
+                    "family": "Zulfiqar",
+                    "given": "Junaid"
+                },
+                {
+                    "family": "Zaib",
+                    "given": "Muhammad Hassan"
+                },
+                {
+                    "family": "Khan",
+                    "given": "Ahsan"
+                },
+                {
+                    "family": "Khan",
+                    "given": "Muhammad Jahanzeb"
+                }
+            ],
+            "container-title": "Journal of Economy and Technology",
+            "id": "arshad2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        11
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "144-163",
+            "title": "Mapping socioeconomic conditions using satellite imagery: A computer vision approach for developing countries",
+            "title-short": "Mapping socioeconomic conditions using satellite imagery",
+            "type": "article-journal",
+            "volume": "1"
         }
     ],
     "project_biblios": [
