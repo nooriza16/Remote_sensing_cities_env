@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sneak Peak",
+    "section": "",
+    "text": "1 RS Learning Diary\nThis is a Quarto book to document my learning journey in Remote Sensing Cities and Environments course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page [here].\n*For those of you who also want to learn Geographic Information Scicene beyond ‘typical GIS’ Software, as in use R-Studio, you could also visit his other github page [here]."
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Sneak Peak",
+    "section": "1.1 Introduction",
+    "text": "1.1 Introduction\nHi, I’m Nooriza, a student currently pursuing a Master’s degree in Urban Spatial Science at UCL. I have an academic background in Geography with a specialization in Regional Development Studies and have several substantial work experience in government consultancies in Indonesia."
+  },
+  {
+    "objectID": "index.html#why-do-i-choose-this-module",
+    "href": "index.html#why-do-i-choose-this-module",
+    "title": "Sneak Peak",
+    "section": "1.2 Why do I choose this module?",
+    "text": "1.2 Why do I choose this module?\nThe reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven’t delved further into it and haven’t got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data when deal with unavailability of vector data.\nDon’t you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : allowing to see things from above and to see the unseen of the naked eye.\n\n\n\n\n\nFigure 1 : ASTER images of San Fransisco. source : NASA/JPL\nFor example, see the ASTER images of San Fransisco Bay above it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).\nPractically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world’s largest archipelago country like Indonesia.\nFeel free to explore my site to learn more about my learning experience. Hope it helps!"
+  },
+  {
+    "objectID": "week1.html#summary",
+    "href": "week1.html#summary",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.1 Summary",
+    "text": "2.1 Summary\nThis week the lecture covers an introduction of remote sensing is, such as its vast application, instruments, collection method, and things we have to consider when we deal with remote sensing data. I tried to make the summary using visualization below to make it easier to understand.\n\nDuring the practical, we explore several tools to deal with remote sensing data such as SNAP (Sentinel Application Platform) and R-studio to plot spectral signature. We are also introduced with 2 imagery : Sentinel-2A and Landsat-8. It is interesting how this two imagery has a global coverage and for FREE. Both of them has spectral bands that could be useful for vegetation monitoring, land cover classification, and agricultural applications. We could benefit from Sentinel-2 frequent observations to monitor rapid changes. Meanwhile, Landsat data allows us to do large areas and long-term vegetation monitoring as it has extensive historical archive and consistent global coverage. Below I discussed the application of both Landsat and Sentinel in a vegetation analysis."
+  },
+  {
+    "objectID": "week1.html#application",
+    "href": "week1.html#application",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.2 Application",
+    "text": "2.2 Application\n\nLandsat for monitoring accross vast region : Detecting of vegetation evolution across China Urban Development\n\n\nHan et al. (2025) explores 30 years of landsat archive data (spanning of landsat 5 to 8) on 2.125 city to monitor the vegetation evolution, using reflective bands such as Blue, green, red, NIR and SWIR (1 and 2) and highlighting vegetation characteristics using NDVI, EVI, and OSAVI. The NDVI and RGB bands were further processed to derive texture variables, including variance, contrast, entropy, angular second moment, and correlation. These texture metrics capture spatial patterns and fine-scale structural details of urban vegetation that may not be visible through spectral bands alone. The findings will classify vegetation in urban area, whether it is decreasing or increasing over time. I genuinely believe this finding has the potential to serve as a framework for evaluating the effectiveness of the government’s long-term plan on urban greening. For instance in my country, Indonesia we have long-term regional planning that spanning for 20 years (reviewed every 5 years), the analyisis will help the policy maker to formulate more measured-target.\n\nFigure 1: A sample result shows urban vegetation degradation in Hangzhou and an increase in vegetation in Zhengzhou. source : (Han et al. 2025).\n\nHowever, Landsat is an optical imaging system that is often susceptible to cloud cover and has limitations in distinguishing different vegetation types based solely on spectral characteristics. Imagine studying a mountainous region where cloud cover is persistent—using optical images like Landsat for vegetation monitoring and identification would be challenging.\nTo address this issue, Li et al. (2023) utilized Sentinel-1, which operates with C-band Synthetic Aperture Radar (SAR), enabling vegetation mapping under all weather conditions. The SAR data from Sentinel-1, when combined with the optical imagery of Sentinel-2, allows for the production of high-resolution maps that effectively differentiate bamboo forests from other vegetation types. This integration helps overcome the limitations of optical data in vegetation monitoring, where mixed spectral characteristics often lead to uncertainty in distinguishing bamboo from other forest types."
+  },
+  {
+    "objectID": "week1.html#reflection",
+    "href": "week1.html#reflection",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.3 Reflection",
+    "text": "2.3 Reflection\nAfter exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find datasets for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery."
+  },
+  {
+    "objectID": "week1.html#references",
+    "href": "week1.html#references",
+    "title": "2  Getting to Know Remote Sensing",
+    "section": "2.4 References",
+    "text": "2.4 References\n\n\n\n\nHan, Yuan, Jianhua He, Xiaoping Du, Xiao Han, and Yaolin Liu. 2025. “Reconstructing Urban Vegetation Evolution in China Using Multimodal Deep Learning and 30-Years Landsat Archive.” Urban Forestry & Urban Greening 103 (January): 128582. https://doi.org/10.1016/j.ufug.2024.128582."
+  },
+  {
+    "objectID": "week2.html#summary",
+    "href": "week2.html#summary",
+    "title": "3  Xaringan and Quarto Book",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\n\nxaringanExtra::embed_xaringan(url = \"https://nooriza16.github.io/Xaringan/Xaringan.html\", ratio = \"16:9\")"
+  },
+  {
+    "objectID": "week2.html#reflections",
+    "href": "week2.html#reflections",
+    "title": "3  Xaringan and Quarto Book",
+    "section": "3.2 Reflections",
+    "text": "3.2 Reflections\nFor someone who is not familiar with html, learning Xaringan is definitely challenging compared to powerpoint, as we just usually click tabs on power point. Honestly, I still consider power point provides more themes and more visualization effects that is easily to access compared to Xaringan. However, as I delved further I realize that using Xaringan is providing us with flexibility even such as positioned our picture.\nSo far, I feel like Xaringan is best at incorporating snippet code on presentation or interactive features that usually too heavy to load in power point. Besides, it helps me to give a sense of what html look like."
+  },
+  {
+    "objectID": "week3.html#summary",
+    "href": "week3.html#summary",
+    "title": "4  Image Correction",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary"
+  },
+  {
+    "objectID": "week3.html#application",
+    "href": "week3.html#application",
+    "title": "4  Image Correction",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
+  },
+  {
+    "objectID": "week3.html#reflections",
+    "href": "week3.html#reflections",
+    "title": "4  Image Correction",
+    "section": "4.3 Reflections",
+    "text": "4.3 Reflections\nI think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. Besides, after this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but behind the imagery each pixel is composed by digital number collection and it could be linked with regression too !"
+  },
+  {
+    "objectID": "week4.html#summary",
+    "href": "week4.html#summary",
+    "title": "5  Policy",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\nRecently Indonesia planned to move its capital city from Jakarta (in Java islands) into Penajam Paser Utara City (Borneo Islands), as the current capital city, Jakarta, faced an issue of sinking, land subsidence, overcrowding, low air and water quality (Bappenas 2021). The term Nusantara is used to name this new capital city, symbolizing the varied geographic settings and cultural diversities of Indonesia.\nAs for the time this published, Nusantara Development is on the phase 2 (2025-2029) that involved strengthening core area (housing, office, commercial zone). Thus, in the time being, Jakarta will still remain the capital of Indonesia until the Presidential Decree on the transfer of the capital to Nusantara is issued. The issuance of this decree will depend on the readiness of the new capital city, including the preparation of all supporting systems such as infrastructure, human resources, and governance systems.\n\nFigure 1: The Relocation Settings and Vision. source: (Capital Authority 2024)\nAs the development is still in the initial stage, the detailed planning documents haven’t been launched yet. Thus, I use available published documents regarding the detail of Nusantara’s Development which all of them are publicly available, such as:\n\nNusantara Sustainable Development Goals (SDGs) Voluntary Local Review Baseline [2024]\nNusantara Biodiversity Management Master Plan [2024]\n\n\nPolicy\n\nThe new capital city, Nusantara, is designed as a forest city, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant challenges. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as malaria) spreading in the new capital, which are prevalent in tropical regions Surendra et al. (2024).\nSince malaria is both a global and local challenge, certain goals should be considered to support Nusantara’s sustainability, such as:\nA. Global Goals : Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases\nThe SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia’s estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023. To achieve target of Global Goals, (WHO 2021) have launched global technical strategy for malaria with framework such as:\n\nFigure 2 : SDGs Goal and WHO Technical Strategy\nB. Local Goals (National Level): Eliminate malaria case by 2030 and maintain malaria free status\nTranslating the global goals on malaria elimination, Indonesia’s Ministry of Health (Ministry of Health and Control 2023) had proposed recommendations, including the new capital city such as:\n\nMalaria elimination policies and implementation need basic research, operational support, and efficient technology development.\nProvide input to the IKN special authority regarding malaria risk to ensure the design of the IKN area drainage system is free from malaria mosquito larvae habitat\nMapping legal and illegal forest encroachers to develop an activity plan and budget"
+  },
+  {
+    "objectID": "week4.html#application",
+    "href": "week4.html#application",
+    "title": "5  Policy",
+    "section": "5.2 Application",
+    "text": "5.2 Application\n\nRemote Sensing as Baseline for detecting malaria hotspot\n\nIn malaria elimination projects, remote sensing can serve as a crucial baseline data source for mapping malaria hotspots by integrating climatic and land-use factors. @wimberly2021 proposed a framework that leverages Earth observation products to identify mosquito habitats based on climate conditions, human activities, and specific land-use patterns.\n\nFigure 2: Framework in which Remote Sensing used in Malaria studies. source : Wimberly et al. (2021).\nTo address policy mentioned in section 2, I underlined some dataset that could be used to the analysis:\n\nSentinel-2 (rainy season)\n\nHighlight water bodies and wetlands – These serve as proxies for mosquito breeding sites.\nVegetation and land cover – Provides insight into potential mosquito habitats.\nSurface temperature – Acts as a proxy for mosquito activity.\n\n\n\n\nDigital Elevation Model (DEM) Data/Topography\n\nHelps identify potential inundation areas, which could influence mosquito breeding patterns.\n\nMicrosoft Open Buildings\n\nUseful as a proxy for human settlements and potential exposure risk.\n\nRainfall Data\n\nThe rainfall season can be considered as a timeframe for analysis. However, if locally recorded rainfall data from the Indonesian Climatic Institution is available, it could help refine the identification of rainfall patterns, allowing for a more informed selection of the time series."
+  },
+  {
+    "objectID": "week4.html#reflections",
+    "href": "week4.html#reflections",
+    "title": "5  Policy",
+    "section": "5.3 Reflections",
+    "text": "5.3 Reflections\nDuring this week, I got a lot of reflections as I finally found lecture that explicitly bridging the gap of ‘academics’ to real-world policy. My reflections would be:\n\n\nCombining remote sensing with GIS\n\n\nSince Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with malaria incident data, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As (Naserrudin, Yong, et al. 2023) notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.\n\n\nRemote Sensing and GIS is good, but enriching the analysis with affected communities make it better\n\n\nBeyond remote sensing data, incorporating local knowledge can improve the analysis. Understanding how affected communities respond to malaria provides insight into the effectiveness of mitigation efforts (Naserrudin, Lin, et al. 2023). These communities have lived near rainforests for generations and are directly affected, making their experiences valuable for practical prevention strategies..\n\n\nImplementation challenges, the need for collaboration\n\n\nOne the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for.” This condition lead to a gap between academics and urban governance. However, in my observation during my work with the government the potential cause is human resources (make the adoption of academics finding hard to implement), annual budget cycles (governments prioritize immediate results and may be reluctant to invest in the long-term experimental processes typical of academia). Bridging the gap on malaria prevention requires collaboration and commitment not only between epidemiologists, healthcare, and geospatial analysts but with the governments to ensure research translates into actionable policies."
+  },
+  {
+    "objectID": "week4.html#references",
+    "href": "week4.html#references",
+    "title": "5  Policy",
+    "section": "5.4 References",
+    "text": "5.4 References\n\n\n\n\nBappenas, Kementrian PPN. 2021. “Buku Saku Pemindahan Ibu Kota Negara.”\n\n\nCapital Authority, Nusantara. 2024. “Nusantara Sustainable Development GOals (SDGs) Voluntary Local Review Baseline.”\n\n\nMinistry of Health, Directorate General of Disease Prevention, and Control. 2023. “National Action Plan for Acceleration of Malaria Elimination 2020-2026 (Revision).” https://malaria.kemkes.go.id/sites/default/files/2024-08/National%20Strategic%20Plan%20Revision_Malaria_29%20Mei%202023.pdf.\n\n\nNaserrudin, Nurul Athirah, Pauline Yong Pau Lin, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Bipin Adhikari, et al. 2023. “Exploring Barriers to and Facilitators of Malaria Prevention Practices: A Photovoice Study with Rural Communities at Risk to Plasmodium Knowlesi Malaria in Sabah, Malaysia.” BMC Public Health 23 (1): 1316. https://doi.org/10.1186/s12889-023-16173-x.\n\n\nNaserrudin, Nurul Athirah, Pauline Pau Lin Yong, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Rozita Hod, Mohammad Saffree Jeffree, Kamruddin Ahmed, and Mohd Rohaizat Hassan. 2023. “Seeing Malaria Through the Eyes of Affected Communities: Using Photovoice to Document Local Knowledge on Zoonotic Malaria Causation and Prevention Practices Among Rural Communities Exposed to Plasmodium Knowlesi Malaria in Northern Borneo Island.” Malaria Journal 22 (1): 166. https://doi.org/10.1186/s12936-023-04603-5.\n\n\nSurendra, Henry, Bimandra A. Djaafara, Helen D. Prameswari, Dedy Supriyanto, Ponco Waluyo, Setyo B. Basuki, Herdiana Herdiana, et al. 2024. “Mitigating Risks of Malaria and Other Vector-Borne Diseases in the New Capital City of Indonesia.” Nature Communications 15 (1): 10575. https://doi.org/10.1038/s41467-024-54891-x.\n\n\nWHO, World Health Organization. 2021. “Global Technical Strategy for Malaria 20162030, 2021 Update.”\n\n\nWimberly, Michael C., Kirsten M. de Beurs, Tatiana V. Loboda, and William K. Pan. 2021. “Satellite Observations and Malaria: New Opportunities for Research and Applications.” Trends in Parasitology 37 (6): 525–37. https://doi.org/10.1016/j.pt.2021.03.003."
+  }
+]
