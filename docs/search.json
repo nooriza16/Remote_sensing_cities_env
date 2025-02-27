@@ -39,7 +39,7 @@
     "href": "week1.html#reflection",
     "title": "2  Getting to Know Remote Sensing",
     "section": "2.3 Reflection",
-    "text": "2.3 Reflection\nAfter exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find datasets for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery."
+    "text": "2.3 Reflection\nAfter exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find dataset for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery."
   },
   {
     "objectID": "week1.html#references",
@@ -67,7 +67,7 @@
     "href": "week3.html#summary",
     "title": "4  Image Correction",
     "section": "4.1 Summary",
-    "text": "4.1 Summary"
+    "text": "4.1 Summary\nHere is my note based on this week’s lecture that talks about several steps that people usually do in image correction. Although sometimes we get a “ready-to-use data” without the need to going through all of these process, having the basic understandings of these steps would help us understand the quality our data.\n\nI also add several new terminologies, based on my own note during the lecture, related to image processing during this week’s summary\n\n\n\nReflectance and radiance\nReflectance is basically the amount of light when a surface reflect the light, while radiance is the amount of light captured by sensor after interacting with Earth’s surface\n\n\nDigital Number\nA raw value for a given pixel that represents the intensity of radiation received in a specific spectral band.\nDigital number is important because it serves as a basis for image classification, for example digital number close to 0 represents object that absorbs much incoming light (low reflectance) such as water bodies or shadows.\n\n\nDigital Object Substraction (DOS)\nDOS is an atmospheric correction method that subtracts pixel values based on the amount of difference between digital values of dark objects (usually water bodies) with their corresponding reflectance\n\n\nCollection, level, and tier\nI will use the Landsat case to explain this terminology. In Landsat the collection would be named as Collection 1 and 2, it represents the sequence of launching time and their mission : Landsat 2 is the latest. Level 1 is a scaled digital number, while level 2 further processed data while tier 1 is the highest quality and suitable for time series analysis.\nsource: https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data"
   },
   {
     "objectID": "week3.html#application",
@@ -81,7 +81,7 @@
     "href": "week3.html#reflections",
     "title": "4  Image Correction",
     "section": "4.3 Reflections",
-    "text": "4.3 Reflections\nI think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. Besides, after this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but behind the imagery each pixel is composed by digital number collection and it could be linked with regression too !"
+    "text": "4.3 Reflections\nI think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked with regression too !"
   },
   {
     "objectID": "week4.html#summary",

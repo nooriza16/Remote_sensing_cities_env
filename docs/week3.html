@@ -167,13 +167,38 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<p>Here is my note based on this week’s lecture that talks about several steps that people usually do in image correction. Although sometimes we get a “ready-to-use data” without the need to going through all of these process, having the basic understandings of these steps would help us understand the quality our data.</p>
+<p><img src="images/clipboard-3039716080.png" class="img-fluid"></p>
+<p>I also add several new terminologies, based on my own note during the lecture, related to image processing during this week’s summary</p>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td>Reflectance and radiance</td>
+<td>Reflectance is basically the amount of light when a surface reflect the light, while radiance is the amount of light captured by sensor after interacting with Earth’s surface</td>
+</tr>
+<tr class="even">
+<td>Digital Number</td>
+<td><p>A raw value for a given pixel that represents the intensity of radiation received in a specific spectral band.</p>
+<p>Digital number is important because it serves as a basis for image classification, for example digital number close to 0 represents object that absorbs much incoming light (low reflectance) such as water bodies or shadows.</p></td>
+</tr>
+<tr class="odd">
+<td>Digital Object Substraction (DOS)</td>
+<td>DOS is an atmospheric correction method that subtracts pixel values based on the amount of difference between digital values of dark objects (usually water bodies) with their corresponding reflectance</td>
+</tr>
+<tr class="even">
+<td>Collection, level, and tier</td>
+<td><p>I will use the Landsat case to explain this terminology. In Landsat the collection would be named as Collection 1 and 2, it represents the sequence of launching time and their mission : Landsat 2 is the latest. Level 1 is a scaled digital number, while level 2 further processed data while tier 1 is the highest quality and suitable for time series analysis.</p>
+<p>source: <a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data" class="uri">https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data</a></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="application" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
 </section>
 <section id="reflections" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflections"><span class="header-section-number">4.3</span> Reflections</h2>
-<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. Besides, after this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but behind the imagery each pixel is composed by digital number collection and it could be linked with regression too !</p>
+<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked with regression too !</p>
 
 
 </section>
