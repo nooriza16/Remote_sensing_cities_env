@@ -192,20 +192,20 @@ div.csl-indent {
 <table class="table">
 <tbody>
 <tr class="odd">
-<td>Reflectance and radiance</td>
+<td><strong>Reflectance and radiance</strong></td>
 <td>Reflectance is basically the amount of light when a surface reflect the light, while radiance is the amount of light captured by sensor after interacting with Earth’s surface</td>
 </tr>
 <tr class="even">
-<td>Digital Number</td>
+<td><strong>Digital Number</strong></td>
 <td><p>A raw value for a given pixel that represents the intensity of radiation received in a specific spectral band.</p>
 <p>Digital number is important because it serves as a basis for image classification, for example digital number close to 0 represents object that absorbs much incoming light (low reflectance) such as water bodies or shadows.</p></td>
 </tr>
 <tr class="odd">
-<td>Digital Object Substraction (DOS)</td>
+<td><strong>Digital Object Substraction (DOS)</strong></td>
 <td>DOS is an atmospheric correction method that subtracts pixel values based on the amount of difference between digital values of dark objects (usually water bodies) with their corresponding reflectance</td>
 </tr>
 <tr class="even">
-<td>Collection, level, and tier</td>
+<td><strong>Collection, level, and tier</strong></td>
 <td><p>I will use the Landsat case to explain this terminology. In Landsat the collection would be named as Collection 1 and 2, it represents the sequence of launching time and their mission : Landsat 2 is the latest. Level 1 is a scaled digital number, while level 2 is further processed data. Meanwhile, tier 1 is the highest quality data from landsat and suitable for time series analysis.</p>
 <p>source: <a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data" class="uri">https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data</a></p></td>
 </tr>
@@ -214,19 +214,28 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
-<p>In this week application, I would like to explore the application of remote sensing on my favorite topic : data unavailability. In developing countries like Indonesia, maintaining updated and comprehensive data is challenging due to time and cost constraints. A study in Pakistan also mentioned the same challenges, especially data related to socioeconomic condition that often limited and sporadic <span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span>. Honestly, I came across the same topic on twitter piquing my interest because usually socioeconomic data is aggregated using human-based data collection such as census not a remotely sensing method.</p>
-<p><img src="images/clipboard-3275173560.png" class="img-fluid" width="389"></p>
+<p>In this week application, I would like to explore the application of remote sensing on my favorite topic : data unavailability. In developing countries like Indonesia, maintaining updated and comprehensive data is challenging due to time and cost constraints. A study in Pakistan also mentioned similar challenges, particularly data related to socioeconomic condition that often limited and sporadic <span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span>. Honestly, this topic piques my interest because Bill Gates came across an article in The Washington Post and seems fascinated with the idea of using remote sensing to identify wealth, as he shared on X</p>
+<p><img src="images/clipboard-3275173560.png" class="img-fluid" width="256"></p>
 <p>Figure 1 : Tweet about satellite imagery on detecting poor region. Source : <a href="https://x.com/yohaniddawela/status/1857398431146299437" class="uri">https://x.com/yohaniddawela/status/1857398431146299437</a></p>
-<p><span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span> used imagery that automatically could derive insights about poverty using publicly accessible high-resolution satellite imagery (Google Maps API) and they use Landsat 7 (low resolution data ) to reduce cost, as to predicting nighlight bin that give insight of the availability of lights in area during the night time.</p>
+<p><span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span> addressed this issue using imagery that automatically could derive insights about poverty. They use publicly accessible high-resolution satellite imagery (Google Maps API with 16 zoom) and Landsat 7 (low resolution data). Google Maps API provides high-resolution imagery to identify man-made features like buildings and highway which are indicators of development levels meanwhile Landsat 7 is used to train Convolutional Neural Networks (a method of feature extraction from imagery in Machine Learning) in identifying nightlight bin (low to high). Areas with higher levels of economic activity and development tend to have more lights at night. This method will produce a map that indicates a poverty and development level compared to poverty line. The results are then validated using actual socioeconomic data from surveys. Below is a map where each point represents a poverty clusters (10x10 km area), comparing predicted and actual data. Green points indicate clusters above the poverty line, while red points indicates the opposite.</p>
+<p><img src="images/clipboard-4160873008.png" class="img-fluid" width="600"></p>
+<p>Figure 2 : Socioeconomic conditions compared to poverty line in Pakistan. Source : <span class="citation" data-cites="arshad2023">(<a href="#ref-arshad2023" role="doc-biblioref">Arshad et al. 2023</a>)</span>.</p>
+<p>When reflecting on the map above, I would prefer to visualize the classification results as polygon rather than points, as they were more intuitive. Additionally, it would be nice to map the difference across the years, <span class="citation" data-cites="benabbes2024">Ben Abbes et al. (<a href="#ref-benabbes2024" role="doc-biblioref">2024</a>)</span> just do this ! They use multispectral images (Landsat 5, 7,8) and Nightlight images (from Defense Meteorological Satellite Program (DMSP) and the Visible Infrared Imaging Radiometer Suite (VIIRS)) in Southeast Brazil. The classification result is represented using estimated wealth index and they could even map the socioeconomic transformation across 10 years in a single map!</p>
+<p><img src="images/clipboard-422155352.png" class="img-fluid" width="579"></p>
+<p>Figure 3 : Spatio-temporal mapping of wealth index estimations in Southeast Brazil. Source : <span class="citation" data-cites="benabbes2024">Ben Abbes et al. (<a href="#ref-benabbes2024" role="doc-biblioref">2024</a>)</span>.</p>
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked with regression too !</p>
+<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked and better interpreted using regression too.</p>
+<p>Understanding the image classification using machine learning is also quite challenging for me, as they use new terminologies that I haven’t heard before such as convolutional neural network, epoch, data training.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-arshad2023" class="csl-entry" role="listitem">
 Arshad, Arslan, Junaid Zulfiqar, Muhammad Hassan Zaib, Ahsan Khan, and Muhammad Jahanzeb Khan. 2023. <span>“Mapping Socioeconomic Conditions Using Satellite Imagery: A Computer Vision Approach for Developing Countries.”</span> <em>Journal of Economy and Technology</em> 1 (November): 144–63. <a href="https://doi.org/10.1016/j.ject.2023.11.001">https://doi.org/10.1016/j.ject.2023.11.001</a>.
+</div>
+<div id="ref-benabbes2024" class="csl-entry" role="listitem">
+Ben Abbes, Ali, Jeaneth Machicao, Pedro L. P. Corrêa, Alison Specht, Rodolphe Devillers, Jean P. Ometto, Yasuhisa Kondo, and David Mouillot. 2024. <span>“DeepWealth: A Generalizable Open-Source Deep Learning Framework Using Satellite Images for Well-Being Estimation.”</span> <em>SoftwareX</em> 27 (September): 101785. <a href="https://doi.org/10.1016/j.softx.2024.101785">https://doi.org/10.1016/j.softx.2024.101785</a>.
 </div>
 </div>
 </section>
