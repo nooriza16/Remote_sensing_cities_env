@@ -726,6 +726,60 @@
             "title-short": "Mapping socioeconomic conditions using satellite imagery",
             "type": "article-journal",
             "volume": "1"
+        },
+        {
+            "DOI": "10.1016/j.softx.2024.101785",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2352711024001560",
+            "author": [
+                {
+                    "family": "Ben Abbes",
+                    "given": "Ali"
+                },
+                {
+                    "family": "Machicao",
+                    "given": "Jeaneth"
+                },
+                {
+                    "family": "Corrêa",
+                    "given": "Pedro L. P."
+                },
+                {
+                    "family": "Specht",
+                    "given": "Alison"
+                },
+                {
+                    "family": "Devillers",
+                    "given": "Rodolphe"
+                },
+                {
+                    "family": "Ometto",
+                    "given": "Jean P."
+                },
+                {
+                    "family": "Kondo",
+                    "given": "Yasuhisa"
+                },
+                {
+                    "family": "Mouillot",
+                    "given": "David"
+                }
+            ],
+            "container-title": "SoftwareX",
+            "id": "benabbes2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        9
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "101785",
+            "title": "DeepWealth: A generalizable open-source deep learning framework using satellite images for well-being estimation",
+            "title-short": "DeepWealth",
+            "type": "article-journal",
+            "volume": "27"
         }
     ],
     "project_biblios": [

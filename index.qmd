@@ -22,9 +22,9 @@ Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spati
 
 ## Why do I choose this module?
 
-The reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven't delved further into it and haven't got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data when deal with unavailability of vector data.
+The reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven't delved further into it and haven't got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data using remote sensing plus analyse various topic across different scale using GEE.
 
-Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen of the naked eye.*
+Remote sensing is also an interesting field as it could produce wealth of information without direct contact. Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen of the naked eye.*
 
 [![](images/PIA02605_modest.jpg){fig-align="left" width="363"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
