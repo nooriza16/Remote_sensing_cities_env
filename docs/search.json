@@ -110,5 +110,26 @@
     "title": "5  Policy",
     "section": "5.4 References",
     "text": "5.4 References\n\n\n\n\nBappenas, Kementrian PPN. 2021. “Buku Saku Pemindahan Ibu Kota Negara.”\n\n\nCapital Authority, Nusantara. 2024. “Nusantara Sustainable Development GOals (SDGs) Voluntary Local Review Baseline.”\n\n\nMinistry of Health, Directorate General of Disease Prevention, and Control. 2023. “National Action Plan for Acceleration of Malaria Elimination 2020-2026 (Revision).” https://malaria.kemkes.go.id/sites/default/files/2024-08/National%20Strategic%20Plan%20Revision_Malaria_29%20Mei%202023.pdf.\n\n\nNaserrudin, Nurul Athirah, Pauline Yong Pau Lin, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Bipin Adhikari, et al. 2023. “Exploring Barriers to and Facilitators of Malaria Prevention Practices: A Photovoice Study with Rural Communities at Risk to Plasmodium Knowlesi Malaria in Sabah, Malaysia.” BMC Public Health 23 (1): 1316. https://doi.org/10.1186/s12889-023-16173-x.\n\n\nNaserrudin, Nurul Athirah, Pauline Pau Lin Yong, April Monroe, Richard Culleton, Sara Elizabeth Baumann, Shigeharu Sato, Rozita Hod, Mohammad Saffree Jeffree, Kamruddin Ahmed, and Mohd Rohaizat Hassan. 2023. “Seeing Malaria Through the Eyes of Affected Communities: Using Photovoice to Document Local Knowledge on Zoonotic Malaria Causation and Prevention Practices Among Rural Communities Exposed to Plasmodium Knowlesi Malaria in Northern Borneo Island.” Malaria Journal 22 (1): 166. https://doi.org/10.1186/s12936-023-04603-5.\n\n\nSurendra, Henry, Bimandra A. Djaafara, Helen D. Prameswari, Dedy Supriyanto, Ponco Waluyo, Setyo B. Basuki, Herdiana Herdiana, et al. 2024. “Mitigating Risks of Malaria and Other Vector-Borne Diseases in the New Capital City of Indonesia.” Nature Communications 15 (1): 10575. https://doi.org/10.1038/s41467-024-54891-x.\n\n\nWHO, World Health Organization. 2021. “Global Technical Strategy for Malaria 20162030, 2021 Update.”\n\n\nWimberly, Michael C., Kirsten M. de Beurs, Tatiana V. Loboda, and William K. Pan. 2021. “Satellite Observations and Malaria: New Opportunities for Research and Applications.” Trends in Parasitology 37 (6): 525–37. https://doi.org/10.1016/j.pt.2021.03.003."
+  },
+  {
+    "objectID": "week5.html#summary",
+    "href": "week5.html#summary",
+    "title": "6  Introduction to GEE",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary\nThis week’s material is all about GEE (Google Earth Engine). In a simple definition, GEE is a cloud platform that allows us to access satellite imagery for the whole world and spatial-computation on Google for free. GEE hosts massive amounts of satellite imagery and we as a user request their imagery data and analyse it on the cloud-platform without have to worry about the capability of our local machine.\nBasically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming lanaguange. As someone enthusiastic with GEE, the need to learn ‘a new’ programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.\nHowever, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as ‘var’ to denote variable. Below are some basic pieces of information about the GEE language that we need to know from my lecture. Check out this introduction from Google if you’re still unconvinced [here].\n\nFigure 1 : Basic javascript in GEE. source : https://andrewmaclachlan.github.io/CASA0023/5_GEE_I.html\nWhen I was first introduced to the idea that GEE is efficient in managing raster data, I was curious about how this efficiency works. For example, if I want to use Landsat 8 (30 m resolution) to analyze the whole UK, it would require processing every 30 m pixel across the whole region, which I assumed would take longer time. However, what makes GEE faster dealing with those data actually because there is a pyramid of reduced resolution in GEE, which able to optimizes performance using lower-resolution versions of the data when full detail is not necessary and also resampling method to adapt the analysis requirement. Thus when performing analysis, GEE does not just take the original image resolution, but GEE adjusts image resolution based on our output needs. In summary, when you are zooming out and zooming in, GEE retrieves different resolution of imagery. Below is the picture of GEE interface, comprising the code editor where we write our code.\n\nFigure 2 : GEE Interface. source : GEE Beginer cookbook"
+  },
+  {
+    "objectID": "week5.html#application",
+    "href": "week5.html#application",
+    "title": "6  Introduction to GEE",
+    "section": "6.2 Application",
+    "text": "6.2 Application"
+  },
+  {
+    "objectID": "week5.html#references",
+    "href": "week5.html#references",
+    "title": "6  Introduction to GEE",
+    "section": "6.3 References",
+    "text": "6.3 References"
   }
 ]
