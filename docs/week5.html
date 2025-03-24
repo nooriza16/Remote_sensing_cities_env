@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,6 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./week6.html" rel="next">
 <link href="./week4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -134,6 +154,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GEE</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -146,7 +184,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.3</span> References</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -173,21 +212,39 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
 <p>This week’s material is all about GEE (Google Earth Engine). In a simple definition, GEE is a cloud platform that allows us to access satellite imagery for the whole world and spatial-computation on Google for free. GEE hosts massive amounts of satellite imagery and we as a user request their imagery data and analyse it on the cloud-platform without have to worry about the capability of our local machine.</p>
-<p>Basically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming lanaguange. As someone enthusiastic with GEE, the need to learn ‘a new’ programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.</p>
-<p>However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as ‘var’ to denote variable. Below are some basic pieces of information about the GEE language that we need to know from my lecture. Check out this introduction from Google if you’re still unconvinced [<a href="https://developers.google.com/earth-engine/tutorials/tutorial_js_01">here</a>].</p>
-<p><img src="images/clipboard-203956171.png" class="img-fluid" width="366"></p>
-<p>Figure 1 : Basic javascript in GEE. source : <a href="https://andrewmaclachlan.github.io/CASA0023/5_GEE_I.html" class="uri">https://andrewmaclachlan.github.io/CASA0023/5_GEE_I.html</a></p>
-<p>When I was first introduced to the idea that GEE is efficient in managing raster data, I was curious about how this efficiency works. For example, if I want to use Landsat 8 (30 m resolution) to analyze the whole UK, it would require processing every 30 m pixel across the whole region, which I assumed would take longer time. However, what makes GEE faster dealing with those data actually because there is a pyramid of reduced resolution in GEE, which able to optimizes performance using lower-resolution versions of the data when full detail is not necessary and also resampling method to adapt the analysis requirement. Thus when performing analysis, GEE does not just take the original image resolution, but GEE adjusts image resolution based on our output needs. In summary, when you are zooming out and zooming in, GEE retrieves different resolution of imagery. Below is the picture of GEE interface, comprising the code editor where we write our code.</p>
+<p>Basically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming language. As someone enthusiastic with GEE, the need to learn ‘a new’ programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.</p>
+<p>However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as ‘var’ to denote variable. Below are some basic pieces of information about the GEE language that we need to know from Andy’s lecture. Check out this introduction from Google if you’re still unconvinced [<a href="https://developers.google.com/earth-engine/tutorials/tutorial_js_01">here</a>].</p>
+<p><img src="images/clipboard-203956171.png" class="img-fluid" width="508"></p>
+<p>Figure 1 : Basic javascript in GEE. source : <a href="https://andrewmaclachlan.github.io/CASA0023/5_GEE_I.html">Andrew Maclachan Github</a></p>
+<p>When I was first introduced to the idea that GEE is efficient in managing raster data, I was curious about how this efficiency works. For example, if I want to use Landsat 8 (30 m resolution) to analyze the whole UK, it would require processing every 30 m pixel across the whole region, which I assumed would take longer time. However, what makes GEE faster dealing with those data actually because there is a pyramid of reduced resolution in GEE, which able to optimizes performance using lower-resolution versions of the data when full detail is not necessary and also resampling method to adapt the analysis requirement. Thus when performing analysis, GEE does not just take the original image resolution, but GEE adjusts image resolution based on our output needs. In summary, when you are zooming out and zooming in, GEE retrieves different resolution of imagery. Below is the picture of GEE interface, one thing that I notice the most is code editor : a space to write our code.</p>
 <p><img src="images/ee-editor_1920.png" class="img-fluid" width="689"></p>
 <p>Figure 2 : GEE Interface. source : <a href="https://developers.google.com/earth-engine/tutorials/community/beginners-cookbook">GEE Beginer cookbook</a></p>
 </section>
 <section id="application" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<p>In this section, I would like to explore the GEE strength on providing vast archive of imagery to investigate unplanned settlements during urban transformation projects. The vast historical of imagery enables researcher to look back at various critical date for development plans.@yilmaz2024 used collection of Landsat data (Landsat 5, 6,7 ) from March 1983 to February 2007. The study selected 13 urban renewal project areas in Istanbul and examined existing project data and archival satellite images. Supervised classification was performed on 10 urban renewal project areas using the GEE platform to investigate urbanization status before development plans.</p>
+<p>With analysis of temporal imagery, the result show a contrasting initial condition of urban renewal’s targetted area and its projection. For instance, in Gaziosmanpasa district it is projected to be a forested area in the future, however after looking back up to one year before the approval of the development plans turns out it is highly urbanized area. The contrasting initial condition and urban renewal project in this area will present challenge to the success of the plan, as the development of greening area will fiercely compete with massively built up area. This finding also underlined the issues that projected plan is not carefully consider the dominant land use of the area, which will most likely shape the future land use.</p>
+<p><img src="images/clipboard-3598015637.png" class="img-fluid" width="728"></p>
+<p>Figure 3 : Comparisan of existing land use and its projection. Source : <span class="citation" data-cites="yilmaz2024">(<a href="#ref-yilmaz2024" role="doc-biblioref">Yılmaz and Alkan 2024</a>)</span></p>
+<p>[add urban expansion in china <span class="citation" data-cites="urbanre">(<a href="#ref-urbanre" role="doc-biblioref"><span>“Urban Renewal Mapping: A Case Study in Beijing from 2000 to 2020,”</span> n.d.</a>)</span></p>
 </section>
-<section id="references" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="references"><span class="header-section-number">6.3</span> References</h2>
+<section id="reflection" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<p>The most exciting part of using Google Earth Engine (GEE) for me is the ability to share analysis results through web map applications. Clients are usually more engaged when they can interact with a visual platform that helps them understand the project better. Remote sensing analysis is often more complex than regular vector processing, so I imagine the difficulty on to deliver the results with its key preprocessing step. What makes it even harder is, we often need to switch between remote sensing desktop apps and present the results.</p>
+<p>By using a web map, we make it easier for clients, even those without a technical background, to explore and understand the analysis. The interactive map will provide a clearer view of the project, allowing clients to see the bigger picture and stay engaged throughout the process. However, I must admit GEE is only a tool to make best use of it we need a prior fundamental concept of remote sensing, such as spectral band, enhancement, fusion, PCA, and other remote sensing pre-processing steps. Because in every script we write there should be a thinking process on why we do reduction, why we do enhancement, basically need our judgement to navigate each steps.</p>
+</section>
+<section id="references" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-urbanre" class="csl-entry" role="listitem">
+<span>“Urban Renewal Mapping: A Case Study in Beijing from 2000 to 2020.”</span> n.d. <a href="https://spj.science.org/doi/10.34133/remotesensing.0072">https://spj.science.org/doi/10.34133/remotesensing.0072</a>.
+</div>
+<div id="ref-yilmaz2024" class="csl-entry" role="listitem">
+Yılmaz, Okan, and Mehmet Alkan. 2024. <span>“Assessing the Impact of Unplanned Settlements on Urban Renewal Projects with GEE.”</span> <em>Habitat International</em> 149 (July): 103095. <a href="https://doi.org/10.1016/j.habitatint.2024.103095">https://doi.org/10.1016/j.habitatint.2024.103095</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -431,6 +488,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./week6.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

@@ -6,66 +6,33 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-## Summary
+## Today’s lecture is exploring the sensor imagery called synthetic aperture radar. The way it functions is like a bat, where it emits sound and then the sound will be reflected by things surrounding the bat.
 
-Today’s lecture is exploring remote sensing classification. Several dataset and applications mentioned are:
+Its application:
 
--   Urban expansion/sprawl with landsat data
+a.      In for flooding
 
--   Surface temperature (land and sea) with sentinel 3
+Its black and white, because it goes from low (0 values) and high values, smaller portion of signals returning back to satellite the lower the value it is.
 
--   Major air pollutants with sentinel 5
+Ø What does the flooded area appear dark in the previous image?
 
--   Urban green spaces (high medium res, Lidar)
+Ø Calm water (and smooth surfaces) reflects the radar pulses away from the sensor
 
--   Monitoring and illegal practices landsat data
+Ø Rough surfaces reflect in all directions - more is sent back to the sensor
 
--   Forest fires using landsat TM image
+There are 2 scattering method:
 
-There are several steps to extract land cover (do classification) from earth observation data. We usually combined remote sensing with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. It composes with 2 things :
+a.    Rough scattering \> scattering the signals in many scattering way
 
-a\. Classification trees (yes no/ discrete values)
+b.    Volume scattering \>
 
-In this method, we will have predictors and target. The decision is mapped with conditions that led to yes or no decision
+c.    Double bounce scattering \>
 
-b.Regression trees ( predict continuous dependant variable)
+SAR Polarization
 
-Meanwhile, in linear regression we try to fit into the regression line, however if we have data that isn’t fitted into the data we subset this data into smaller chunks. When creating a decision tree, we would be mix all the leafes of several categories, quantified using gini impurity. And we aim to find the lowest gini impurity. We decide the breaks by creating imaginary vertical line among the data and identify the lowest sum of square residuals.
+1.   V-v
 
-Things to be paid attention at = OVERFITTING, dealing with this could be
-
-a\. Set the min number of pixels/ observations, Only split observations with **min number of 20**.
-
-b\. Pruning
-
-c\. Removes leave, increase alfa, and find the lowest tree score. The idea is could we keep the accuracy, when we do generalizations
-
-d\. Dividing data : training (creating trees) and testing data (applied the trees with testing data) find the lowest sum residuals.
-
-See the picture :
-
-We could pick some pixels as training data and validation,the machine learning will predict the value among this train and validation pixels.
-
-Random forest
-
-As decision tree is not good with new data, thus we could use another method is random forest. I like to use the chatgpt analogy on this:
-
-💡 A Decision Tree is like asking one expert for advice.\
-🌲 A Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.
-
-Applying into imagery:
-
-a\. Supervised ( giving them a train data)
-
-Support vector machine, the idea is like a logistic regression.  It finds the **best boundary (decision boundary)** that separates different classes in the data.The benefit of this method is it allows some misclassification
-
-b\. Unsupervised (I have train data, and I want 10 classification method) \> see recording (43’)
-
-a\. Usually refers to clustering/ k-means.
-
-b\. Isodata (same with kmeans but add several inputs such as ( cluster, iterations)
-
-Repeat until all pixels were classified
+2.   V-h
 
 ## Application
 

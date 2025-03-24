@@ -154,6 +154,24 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction to GEE</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -212,7 +230,7 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td><strong>Collection, level, and tier</strong></td>
-<td><p>I will use the Landsat case to explain this terminology. In Landsat the collection would be named as Collection 1 and 2, it represents the sequence of launching time and their mission : Landsat 2 is the latest. Level 1 is a scaled digital number, while level 2 is further processed data. Meanwhile, tier 1 is the highest quality data from landsat and suitable for time series analysis.</p>
+<td><p>I will use the Landsat case to explain this terminology. In Landsat the collection would be named as Collection 1 and 2, it represents the sequence of launching time and their mission : Landsat 2 is the latest. Level 1 is a scaled digital number, while level 2 is further processed data. Meanwhile, tier 1 is the highest quality data from Landsat and suitable for time series analysis.</p>
 <p>source: <a href="https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data" class="uri">https://www.usgs.gov/landsat-missions/landsat-collection-2-level-1-data</a></p></td>
 </tr>
 </tbody>
@@ -220,7 +238,7 @@ div.csl-indent {
 </section>
 <section id="application" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="application"><span class="header-section-number">4.2</span> Application</h2>
-<p>In this week application, I would like to explore the application of remote sensing on my favorite topic : data unavailability. In developing countries like Indonesia, maintaining updated and comprehensive data is challenging due to time and cost constraints. A study in Pakistan also mentioned similar challenges, particularly data related to socioeconomic condition that often limited and sporadic <span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span>. Honestly, this topic piques my interest because Bill Gates came across an article in The Washington Post and seems fascinated with the idea of using remote sensing to identify wealth, as he shared on X</p>
+<p>In this week application, I would like to explore the application of remote sensing on my favorite topic : data unavailability. In developing countries like Indonesia, maintaining updated and comprehensive data is challenging due to time and cost constraints. A study in Pakistan also mentioned similar challenges, particularly data related to socioeconomic condition that often limited and sporadic <span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span>. Honestly, this topic piques my interest because Bill Gates came across an article in The Washington Post and seems fascinated with the idea of using remote sensing to identify wealth, as he shared on X.</p>
 <p><img src="images/clipboard-3275173560.png" class="img-fluid" width="256"></p>
 <p>Figure 1 : Tweet about satellite imagery on detecting poor region. Source : <a href="https://x.com/yohaniddawela/status/1857398431146299437" class="uri">https://x.com/yohaniddawela/status/1857398431146299437</a></p>
 <p><span class="citation" data-cites="arshad2023">Arshad et al. (<a href="#ref-arshad2023" role="doc-biblioref">2023</a>)</span> addressed this issue using imagery that automatically could derive insights about poverty. They use publicly accessible high-resolution satellite imagery (Google Maps API with 16 zoom) and Landsat 7 (low resolution data). Google Maps API provides high-resolution imagery to identify man-made features like buildings and highway which are indicators of development levels meanwhile Landsat 7 is used to train Convolutional Neural Networks (a method of feature extraction from imagery in Machine Learning) in identifying nightlight bin (low to high). Areas with higher levels of economic activity and development tend to have more lights at night. This method will produce a map that indicates a poverty and development level compared to poverty line. The results are then validated using actual socioeconomic data from surveys. Below is a map where each point represents a poverty clusters (10x10 km area), comparing predicted and actual data. Green points indicate clusters above the poverty line, while red points indicates the opposite.</p>
@@ -232,8 +250,10 @@ div.csl-indent {
 </section>
 <section id="reflection" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
-<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked and better interpreted using regression too.</p>
-<p>Understanding the image classification using machine learning is also quite challenging for me, as they use new terminologies that I haven’t heard before such as convolutional neural network, epoch, data training.</p>
+<p>I think performing Remote Sensing correction on R Studio is quite challenging, as I become more used to using ‘button’ in Remote Sensing application such as ENVI or SNAP. After this week’s lecture, I genuinely think that Remote Sensing is quite complex as it is not only an image but beyond the imagery each pixel is composed by digital number and it could be linked and better interpreted using regression too. Understanding the image classification using machine learning is also quite challenging for me, as they use new terminologies that I haven’t heard before such as convolutional neural network, epoch, and data training.</p>
+<p>Honestly, remote sensing combined with machine learning quite scare me off. However, I try to look beyond the methodology instead focusing on how explanatory remote sensing can be when combined with classification and prediction task, tasks machine learning good at. I think looking beyond the methodology and focusing on the exciting application has also helped me me thrive on managing challenge during this Master’s. After reading the paper, I tried to delve further into the combination of remote sensing and machine learning. If I could turn back the time, I would like to deploy this combination to make my works faster. I recalled during my works years ago, the project needed to identify thousand ports across hundred of islands in Indonesia, and we did that manually ! If I understand correctly, I could combine image classification techniques, such as convolutional neural networks, with high-resolution imagery to detect local ports used for docking ship (typically made of wood or cement) in the ocean.</p>
+<p><img src="images/clipboard-2420843413.png" class="img-fluid"></p>
+<p>Figure 3 : Google Earth Imagery portraying local ports in Anambas Islands. Source : Google Earth, 2024</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
