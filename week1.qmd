@@ -9,7 +9,7 @@ format:
 
 ## **Summary**
 
-This week the lecture covers an introduction of remote sensing is, such as its vast application, instruments, collection method, and things we have to consider when we deal with remote sensing data. I tried to make the summary using visualization below to make it easier to understand.
+This week, the lecture covers an introduction of remote sensing, such as its vast application, instruments, collection method, and things we have to consider when we deal with remote sensing data. I tried to make the summary using visualization below to make it easier to understand.
 
 ![](images/clipboard-1084697230.png)
 
@@ -29,8 +29,12 @@ However, Landsat is an optical imaging system that is often susceptible to cloud
 
 To address this issue, Li et al. (2023) utilized Sentinel-1, which operates with C-band Synthetic Aperture Radar (SAR), enabling vegetation mapping under all weather conditions. The SAR data from Sentinel-1, when combined with the optical imagery of Sentinel-2, allows for the production of high-resolution maps that effectively differentiate bamboo forests from other vegetation types. This integration helps overcome the limitations of optical data in vegetation monitoring, where mixed spectral characteristics often lead to uncertainty in distinguishing bamboo from other forest types.
 
-## Reflection
+## Reflection 
 
-After exploring the application of the two selected satellites, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find dataset for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery.
+> Remote sensing provides diversity in data source, but.... will the implementation be easy?
+
+After exploring the application of the two selected satellites during practical this week, I have concluded that remote sensing data is particularly effective for analyzing large-scale and long-term variations. It can also help mitigate the high costs of manual data collection across vast regions. This insight made me reflect on a similar challenge in my country, Indonesia. We often have challenges to find dataset for spatial analysis as we rely much on vector data, if any it would be outdated. Using remote sensing data not only allows us to have more updated data but also allows us to explore various potential variables derived from satellite imagery : diversity in data sources. In my country, the Geospatial Agency has already utilized remote sensing to address time and cost constraint during data collection. It is legally published as a baseline regulation to address the conventional method for the collection and processing of geospatial data on shallow marine habitat. They use remote sensing to create a work map for on-field mapping habitat, enabling to be time and cost efficient.
+
+However I must admit despite the potential of remote sensing, its adoption in the government sector—especially at the local level—remains limited. From my experience, this is largely due to a lack of human resources with the skills to process and analyze remote sensing data. For end users, the adoption of remote sensing is linked with the information they can bring on the table, and often might depend on the leadership, budgetary constraints, procedures and personal capacity\[\@nationalacademyofsciences.2003\].
 
 ## References

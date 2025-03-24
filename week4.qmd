@@ -36,15 +36,25 @@ The SDGs propose achievable global in combating malaria with target that in incl
 
 Figure 2 : SDGs Goal and WHO Technical Strategy
 
-**B. Local Goals (National Level):** Eliminate malaria case by 2030 and maintain malaria free status
+**B.National Level :** National Action Plan for Acceleration of Malaria Elimination 2020-2026
 
 Translating the global goals on malaria elimination, Indonesia's Ministry of Health [@ministryofhealth2023] had proposed recommendations, including the new capital city such as:
 
 -   Malaria elimination policies and implementation need basic research, operational support, and efficient technology development.
 
--   Provide input to the IKN special authority regarding malaria risk to ensure the design of the IKN area drainage system is free from malaria mosquito larvae habitat
+-   Malaria elimination policies and implementation need basic research, operational support, and efficient technology development
 
--   Mapping legal and illegal forest encroachers to develop an activity plan and budget
+-   Planning and implementing malaria elimination activities are based on district endemicity stratification.
+
+-   Allocating funds from the central government to improve case finding, surveillance and vector control around Nusantara area
+
+    **C.** **Provincial Level :** Governor Regulation 53/2023 Guidelines For Malaria Elimination Implementation Number 5 point 2
+
+-   Suppress the endemic incidents (high and medium risk)
+
+-   Eliminate the number of incidents
+
+-   Maintain free malaria status (low-none risk)
 
 ## Application
 

@@ -780,6 +780,64 @@
             "title-short": "DeepWealth",
             "type": "article-journal",
             "volume": "27"
+        },
+        {
+            "DOI": "10.1016/j.habitatint.2024.103095",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S019739752400095X",
+            "author": [
+                {
+                    "family": "Yılmaz",
+                    "given": "Okan"
+                },
+                {
+                    "family": "Alkan",
+                    "given": "Mehmet"
+                }
+            ],
+            "container-title": "Habitat International",
+            "id": "yilmaz2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        7
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "103095",
+            "title": "Assessing the impact of unplanned settlements on urban renewal projects with GEE",
+            "type": "article-journal",
+            "volume": "149"
+        },
+        {
+            "author": [
+                {
+                    "family": "National Academy of Sciences."
+                }
+            ],
+            "id": "nationalacademyofsciences.2003",
+            "issued": {
+                "date-parts": [
+                    [
+                        2003
+                    ]
+                ]
+            },
+            "publisher": "The National Academies Press",
+            "publisher-place": "Washington D.C",
+            "title": "Using remote sensing in state and local government: Information for management and decision making",
+            "title-short": "Using remote sensing in state and local government",
+            "type": "book"
+        },
+        {
+            "URL": "https://spj.science.org/doi/10.34133/remotesensing.0072",
+            "id": "urbanre",
+            "language": "en",
+            "note": "DOI: 10.34133/remotesensing.0072",
+            "title": "Urban Renewal Mapping: A Case Study in Beijing from 2000 to 2020",
+            "title-short": "Urban Renewal Mapping",
+            "type": ""
         }
     ],
     "project_biblios": [

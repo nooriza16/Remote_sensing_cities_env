@@ -12,13 +12,15 @@ format:
 
 This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page \[[here](https://andrewmaclachlan.github.io/CASA0023/.)\].
 
-\*For those of you who also want to learn Geographic Information Scicene beyond 'typical GIS' Software, as in use R-Studio, you could also visit his other github page \[[here](https://andrewmaclachlan.github.io/CASA0005repo/index.html)\].
+\*For those of you who also want to learn Geographic Information Science beyond 'typical GIS' Software, as in use R-Studio, you could also visit his other github page \[[here](https://andrewmaclachlan.github.io/CASA0005repo/index.html)\].
 
 ------------------------------------------------------------------------
 
 ## Introduction
 
-Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spatial Science at UCL. I have an academic background in Geography with a specialization in Regional Development Studies and have several substantial work experience in government consultancies in Indonesia.
+Hi, I’m Nooriza, a student currently pursuing a Master's degree in Urban Spatial Science at UCL. I graduated with a degree in Geography, specializing in Regional Development Studies. Over the past five years, I have worked as a technical consultant for various governments in Indonesia, ensuring that their decision-making is data-driven. Although the results often need to pass through political and budgeting reviews, that's essentially what I do.
+
+Honestly, I don't have a specific topic of interest to add here because I have many! That's why I chose an interdisciplinary course at CASA. One thing for sure is that I love doing analytics for social good. In the end, all the sophisticated methodologies and cutting-edge technical tools are meaningful when we use them to address challenges and solve problems, right?
 
 ## Why do I choose this module?
 
@@ -26,11 +28,13 @@ The reason I choose remote sensing is because I want to use its vast open resour
 
 Remote sensing is also an interesting field as it could produce wealth of information without direct contact. Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen of the naked eye.*
 
+![](images/clipboard-2217286199.png){width="361"}
+
+For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
+
 [![](images/PIA02605_modest.jpg){fig-align="left" width="363"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
 Figure 1 : ASTER images of San Fransisco. source : [NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA02605)
-
-For example, see the ASTER images of San Fransisco Bay above it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
 
 Practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
 
