@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a></li>
+  <li><a href="#todays-lecture-is-exploring-the-sensor-imagery-called-synthetic-aperture-radar.-the-way-it-functions-is-like-a-bat-where-it-emits-sound-and-then-the-sound-will-be-reflected-by-things-surrounding-the-bat." id="toc-todays-lecture-is-exploring-the-sensor-imagery-called-synthetic-aperture-radar.-the-way-it-functions-is-like-a-bat-where-it-emits-sound-and-then-the-sound-will-be-reflected-by-things-surrounding-the-bat." class="nav-link active" data-scroll-target="#todays-lecture-is-exploring-the-sensor-imagery-called-synthetic-aperture-radar.-the-way-it-functions-is-like-a-bat-where-it-emits-sound-and-then-the-sound-will-be-reflected-by-things-surrounding-the-bat."><span class="header-section-number">9.1</span> Today’s lecture is exploring the sensor imagery called synthetic aperture radar. The way it functions is like a bat, where it emits sound and then the sound will be reflected by things surrounding the bat.</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9.2</span> Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">9.4</span> References</a></li>
@@ -189,40 +189,21 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
-<p>Today’s lecture is exploring remote sensing classification. Several dataset and applications mentioned are:</p>
-<ul>
-<li><p>Urban expansion/sprawl with landsat data</p></li>
-<li><p>Surface temperature (land and sea) with sentinel 3</p></li>
-<li><p>Major air pollutants with sentinel 5</p></li>
-<li><p>Urban green spaces (high medium res, Lidar)</p></li>
-<li><p>Monitoring and illegal practices landsat data</p></li>
-<li><p>Forest fires using landsat TM image</p></li>
-</ul>
-<p>There are several steps to extract land cover (do classification) from earth observation data. We usually combined remote sensing with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. It composes with 2 things :</p>
-<p>a. Classification trees (yes no/ discrete values)</p>
-<p>In this method, we will have predictors and target. The decision is mapped with conditions that led to yes or no decision</p>
-<p>b.Regression trees ( predict continuous dependant variable)</p>
-<p>Meanwhile, in linear regression we try to fit into the regression line, however if we have data that isn’t fitted into the data we subset this data into smaller chunks. When creating a decision tree, we would be mix all the leafes of several categories, quantified using gini impurity. And we aim to find the lowest gini impurity. We decide the breaks by creating imaginary vertical line among the data and identify the lowest sum of square residuals.</p>
-<p>Things to be paid attention at = OVERFITTING, dealing with this could be</p>
-<p>a. Set the min number of pixels/ observations, Only split observations with&nbsp;<strong>min number of 20</strong>.</p>
-<p>b. Pruning</p>
-<p>c. Removes leave, increase alfa, and find the lowest tree score. The idea is could we keep the accuracy, when we do generalizations</p>
-<p>d. Dividing data : training (creating trees) and testing data (applied the trees with testing data) find the lowest sum residuals.</p>
-<p>See the picture :</p>
-<p>We could pick some pixels as training data and validation,the machine learning will predict the value among this train and validation pixels.</p>
-<p>Random forest</p>
-<p>As decision tree is not good with new data, thus we could use another method is random forest. I like to use the chatgpt analogy on this:</p>
-<p>💡 A Decision Tree is like asking one expert for advice.<br>
-🌲 A Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.</p>
-<p>Applying into imagery:</p>
-<p>a. Supervised ( giving them a train data)</p>
-<p>Support vector machine, the idea is like a logistic regression. &nbsp;It finds the <strong>best boundary (decision boundary)</strong> that separates different classes in the data.The benefit of this method is it allows some misclassification</p>
-<p>b. Unsupervised (I have train data, and I want 10 classification method) &gt; see recording (43’)</p>
-<p>a. Usually refers to clustering/ k-means.</p>
-<p>b. Isodata (same with kmeans but add several inputs such as ( cluster, iterations)</p>
-<p>Repeat until all pixels were classified</p>
+<section id="todays-lecture-is-exploring-the-sensor-imagery-called-synthetic-aperture-radar.-the-way-it-functions-is-like-a-bat-where-it-emits-sound-and-then-the-sound-will-be-reflected-by-things-surrounding-the-bat." class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="todays-lecture-is-exploring-the-sensor-imagery-called-synthetic-aperture-radar.-the-way-it-functions-is-like-a-bat-where-it-emits-sound-and-then-the-sound-will-be-reflected-by-things-surrounding-the-bat."><span class="header-section-number">9.1</span> Today’s lecture is exploring the sensor imagery called synthetic aperture radar. The way it functions is like a bat, where it emits sound and then the sound will be reflected by things surrounding the bat.</h2>
+<p>Its application:</p>
+<p>a.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In for flooding</p>
+<p>Its black and white, because it goes from low (0 values) and high values, smaller portion of signals returning back to satellite the lower the value it is.</p>
+<p>Ø What does the flooded area appear dark in the previous image?</p>
+<p>Ø Calm water (and smooth surfaces) reflects the radar pulses away from the sensor</p>
+<p>Ø Rough surfaces reflect in all directions - more is sent back to the sensor</p>
+<p>There are 2 scattering method:</p>
+<p>a.&nbsp;&nbsp;&nbsp; Rough scattering &gt; scattering the signals in many scattering way</p>
+<p>b.&nbsp;&nbsp;&nbsp; Volume scattering &gt;</p>
+<p>c.&nbsp;&nbsp;&nbsp; Double bounce scattering &gt;</p>
+<p>SAR Polarization</p>
+<p>1.&nbsp;&nbsp; V-v</p>
+<p>2.&nbsp;&nbsp; V-h</p>
 </section>
 <section id="application" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> Application</h2>

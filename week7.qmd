@@ -8,64 +8,41 @@ format:
 
 ## Summary
 
-Today’s lecture is exploring remote sensing classification. Several dataset and applications mentioned are:
+## Summary
 
--   Urban expansion/sprawl with landsat data
+1.      This week lecture continues last week course, about classification.
 
--   Surface temperature (land and sea) with sentinel 3
+a.      In preprocessing data we use surface reflectance for labelling but used TOA as SR is up to 2017
 
--   Major air pollutants with sentinel 5
+b.      Dynamic world what did it connect with classifications
 
--   Urban green spaces (high medium res, Lidar)
+c.      Accuracy is assessed using confusion matrix
 
--   Monitoring and illegal practices landsat data
+d.      Issue? The large mappinf unit 50x50
 
--   Forest fires using landsat TM image
+e.      CNN? Not giving much info about which method is good at
 
-There are several steps to extract land cover (do classification) from earth observation data. We usually combined remote sensing with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. It composes with 2 things :
+2.      Object based image analysis
 
-a\. Classification trees (yes no/ discrete values)
+a.      Superpixels
 
-In this method, we will have predictors and target. The decision is mapped with conditions that led to yes or no decision
+b.      SegOptim \> at the end finding the most pure end member
 
-b.Regression trees ( predict continuous dependant variable)
+Issue : only allowed to select 1 endmember for each landcover, how about mixture of landcover?
 
-Meanwhile, in linear regression we try to fit into the regression line, however if we have data that isn’t fitted into the data we subset this data into smaller chunks. When creating a decision tree, we would be mix all the leafes of several categories, quantified using gini impurity. And we aim to find the lowest gini impurity. We decide the breaks by creating imaginary vertical line among the data and identify the lowest sum of square residuals.
+c.      MESMA
 
-Things to be paid attention at = OVERFITTING, dealing with this could be
+Many endmember for many landcover class
 
-a\. Set the min number of pixels/ observations, Only split observations with **min number of 20**.
+3.      Confusion matrix
 
-b\. Pruning
+-          The confusion matrix consists of predictive accuracy and user accuracy and its overall accuracy. This is one of accuracy assessment about the classification of model (the training) and the validated pixels
 
-c\. Removes leave, increase alfa, and find the lowest tree score. The idea is could we keep the accuracy, when we do generalizations
+-          100-pa emission
 
-d\. Dividing data : training (creating trees) and testing data (applied the trees with testing data) find the lowest sum residuals.
+-          100-ua omission
 
-See the picture :
-
-We could pick some pixels as training data and validation,the machine learning will predict the value among this train and validation pixels.
-
-Random forest
-
-As decision tree is not good with new data, thus we could use another method is random forest. I like to use the chatgpt analogy on this:
-
-💡 A Decision Tree is like asking one expert for advice.\
-🌲 A Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.
-
-Applying into imagery:
-
-a\. Supervised ( giving them a train data)
-
-Support vector machine, the idea is like a logistic regression.  It finds the **best boundary (decision boundary)** that separates different classes in the data.The benefit of this method is it allows some misclassification
-
-b\. Unsupervised (I have train data, and I want 10 classification method) \> see recording (43’)
-
-a\. Usually refers to clustering/ k-means.
-
-b\. Isodata (same with kmeans but add several inputs such as ( cluster, iterations)
-
-Repeat until all pixels were classified
+-          Kappa coefficient \> same images different kappas value, no agreement on how much good kappa value
 
 ## Application
 
