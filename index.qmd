@@ -2,6 +2,7 @@
 
 ---
 title: "Sneak Peak"
+unnumbered: true
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
@@ -30,7 +31,7 @@ Remote sensing is also an interesting field as it could produce wealth of inform
 
 ![](images/clipboard-2217286199.png){width="361"}
 
-For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right).
+For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right). It's cool !
 
 [![](images/PIA02605_modest.jpg){fig-align="left" width="363"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 

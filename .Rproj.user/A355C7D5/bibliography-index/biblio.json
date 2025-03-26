@@ -838,6 +838,49 @@
             "title": "Urban Renewal Mapping: A Case Study in Beijing from 2000 to 2020",
             "title-short": "Urban Renewal Mapping",
             "type": ""
+        },
+        {
+            "DOI": "10.1073/pnas.2025400118",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8201876/",
+            "author": [
+                {
+                    "family": "Mueller",
+                    "given": "Hannes"
+                },
+                {
+                    "family": "Groeger",
+                    "given": "Andre"
+                },
+                {
+                    "family": "Hersh",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Matranga",
+                    "given": "Andrea"
+                },
+                {
+                    "family": "Serrat",
+                    "given": "Joan"
+                }
+            ],
+            "container-title": "Proceedings of the National Academy of Sciences of the United States of America",
+            "id": "mueller2021",
+            "issue": "23",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        6,
+                        8
+                    ]
+                ]
+            },
+            "note": "PMID: 34083439 PMCID: PMC8201876",
+            "page": "e2025400118",
+            "title": "Monitoring war destruction from space using machine learning",
+            "type": "article-journal",
+            "volume": "118"
         }
     ],
     "project_biblios": [

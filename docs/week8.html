@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -207,6 +226,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="application" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> Application</h2>
+<p>I would like to mention the application of <strong>optical remote sensing versus SAR Imagery</strong> in a research area that was initially unfamiliar to me but has become one of my interest in recent years. This week’s topic would be <strong>damage detection during conflict.</strong></p>
+<p>During conflict, the need to assess building damage is crucial for humanitarian relief efforts. However, in the past the detection depended on eyewitness reports and manual detection. We know that time is precious during conflict and humanitarian aids. This calls <span class="citation" data-cites="mueller2021">(<a href="#ref-mueller2021" role="doc-biblioref">Mueller et al. 2021</a>)</span> to generate damage monitoring using Very High Resolution satellite imagery, good for its ever-higher resolution and frequency, and using machine learning techniques. The intuition behind the method is using Convolutional Neural Networks (CNNs) to learns from example of destruction (e.g rubble and bomb raters) to make predictions about other images. Then to address the challenges of limited amount of labeled data (because sometimes the destruction is sparse or only limited buildings destroyed), they use label-augmentation technique which assumed destroyed at a certain time building will remain destroyed in subsequent time. This assumption helps to create additional labels for training dataset. Voila, the result….are shown below.</p>
+<p>The image below shows damage before and after a significant heavy weaponry attack in a neighborhood of Aleppo, with red indicates patch that is destroyed.</p>
+<p><img src="images/clipboard-207570688.png" class="img-fluid"></p>
+<p>Fig 1 : Damage destruction using optical satellite data. Source : <span class="citation" data-cites="mueller2021">Mueller et al. (<a href="#ref-mueller2021" role="doc-biblioref">2021</a>)</span>.</p>
 </section>
 <section id="reflection" class="level2" data-number="9.3">
 <h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
@@ -215,6 +239,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="9.4" class="anchored" data-anchor-id="references"><span class="header-section-number">9.4</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-mueller2021" class="csl-entry" role="listitem">
+Mueller, Hannes, Andre Groeger, Jonathan Hersh, Andrea Matranga, and Joan Serrat. 2021. <span>“Monitoring War Destruction from Space Using Machine Learning.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 118 (23): e2025400118. <a href="https://doi.org/10.1073/pnas.2025400118">https://doi.org/10.1073/pnas.2025400118</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

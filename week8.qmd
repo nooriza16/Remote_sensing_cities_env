@@ -36,6 +36,16 @@ SAR Polarization
 
 ## Application
 
+I would like to mention the application of **optical remote sensing versus SAR Imagery** in a research area that was initially unfamiliar to me but has become one of my interest in recent years. This week's topic would be **damage detection during conflict.**
+
+During conflict, the need to assess building damage is crucial for humanitarian relief efforts. However, in the past the detection depended on eyewitness reports and manual detection. We know that time is precious during conflict and humanitarian aids. This calls [@mueller2021] to generate damage monitoring using Very High Resolution satellite imagery, good for its ever-higher resolution and frequency, and using machine learning techniques. The intuition behind the method is using Convolutional Neural Networks (CNNs) to learns from example of destruction (e.g rubble and bomb raters) to make predictions about other images. Then to address the challenges of limited amount of labeled data (because sometimes the destruction is sparse or only limited buildings destroyed), they use label-augmentation technique which assumed destroyed at a certain time building will remain destroyed in subsequent time. This assumption helps to create additional labels for training dataset. Voila, the result....are shown below.
+
+The image below shows damage before and after a significant heavy weaponry attack in a neighborhood of Aleppo, with red indicates patch that is destroyed.
+
+![](images/clipboard-207570688.png)
+
+Fig 1 : Damage destruction using optical satellite data. Source : @mueller2021.
+
 ## Reflection
 
 ## References
