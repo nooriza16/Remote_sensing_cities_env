@@ -6,33 +6,29 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-Today’s lecture is exploring the sensor imagery called synthetic aperture radar. The way it functions is like a bat, where it emits sound and then the sound will be reflected by things surrounding the bat.
+## Summary
 
-Its application:
+Today’s lecture explores sensor imagery called Synthetic Aperture Radar (SAR). Well the name sounds complicated :) The only word that unfamiliar for me is 'aperture', after asking Chatgpt with prompt of 'concise and explain to 15 years old', I learned that aperture is like the opening of camera, the wider the aperture the less focus the image captured and the more light it lets in. Meanwhile, radar is an active sensor that emits energy for illumination. Due to its longer wavelength, it can penetrate clouds or dust and capture images at night.
 
-a.      In for flooding
+If optical images are like our eyes, **SAR is like a bat**, emitting chirps of sounds to locate a moth. It identifies objects by listening to the reflected signal. The signal that reflects back to the satellite is called backscatter. There will be low backscatter if the signal hits a flat surface and goes off into space. Meanwhile, it will produce high backscatter when it hits an object and reflects back to the satellite. SAR images are typically grayscale; the more signal returned to the satellite, the brighter (higher value) it appears. I remember that multispectral images have spectral bands, and this also applies to SAR. There are many bands, but the most commonly used is the C band, like the bands in Sentinel-1.
 
-Its black and white, because it goes from low (0 values) and high values, smaller portion of signals returning back to satellite the lower the value it is.
+![](images/clipboard-648766891.png){width="696"}
 
-Ø What does the flooded area appear dark in the previous image?
+Figure 1. SAR Bands with frequency and wavelength. Source : [NASA](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar)
 
-Ø Calm water (and smooth surfaces) reflects the radar pulses away from the sensor
+Radar can collect signals with different polarization. Polarization describes the direction in which the plane of a transmitted electromagnetic waves move back and forth. When signal emitted in vertical (V) and received horizontal it indicated V-H, meanwhile when the signal both emitted and received horizontal it indicated H-H. Different surface will respond differently to the polarizations, such as:
 
-Ø Rough surfaces reflect in all directions - more is sent back to the sensor
+| Type of Scattering       | Occurs when....                                                                                                                                            |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Rough surface scattering | signal interact with irregularities of surface and most sensitive to VV scattering (example : bare soil or water)                                          |
+| Volume scattering        | signal interacts with multiple scatterer such as leaves in forest, most sensitive to VH or HV                                                              |
+| Double bounce scattering | signal reflects off two surfaces before returning back to sensor. This creates strong backscatter and most sensitive to HH. (example : tree and building). |
 
-There are 2 scattering method:
+Here's the illustration to understand the type of scattering in radar.
 
-a.    Rough scattering \> scattering the signals in many scattering way
+![](images/clipboard-4253915995.png){width="423"}
 
-b.    Volume scattering \>
-
-c.    Double bounce scattering \>
-
-SAR Polarization
-
-1.   V-v
-
-2.   V-h
+Figure 3 : Type of scattering. Source : [NASA](https://www.earthdata.nasa.gov/learn/earth-observation-data-basics/sar)
 
 ## Application
 
@@ -44,13 +40,13 @@ During conflict, the need to assess building damage is crucial for humanitarian 
 
 Fig 1 : Damage destruction using optical satellite data. Source : @mueller2021.
 
-However, I pondered upon the use of VHR imagery in the analysis as it must be financially expensive, thus not everyone can get the access into it. It must be nice to have the open access data for this damage detection, right? and Ollie, our Remote Sensing lecturer, has found the solution ! He managed to find a new method for building damage detection using Pixel-Wise T-test (PWTT) and SAR in Sentinel 1. Yes, you read that right– it's sentinel 1—which means it is open access ! Using this algorithm, he could achieve building-level accuracy higher than deep learning + VHR method[@ballinger]. He uses SAR imagery because it emits a pulse towards the earth and then measure its return signal, enabling the analysis of how different textural surface respond differently.
+However, I pondered upon the use of VHR imagery in the analysis as it must be financially expensive, thus not everyone can get the access into it. It must be nice to have the open access data for this damage detection, right? and Ollie, our Remote Sensing lecturer, has found the solution ! He managed to find a new method for building damage detection using Pixel-Wise T-test (PWTT) and SAR in Sentinel 1. Yes, you read that right– it's sentinel 1—which means it is open access ! Using this algorithm, he could achieve building-level accuracy higher than deep learning + VHR method [@ballinger2024]. He uses SAR imagery because it emits a pulse towards the earth and then measure its return signal, enabling the analysis of how different textural surface respond differently.
 
 The intuition behind the methodology is that he investigates how much of the radar signal is reflected back to the satellite, which called backscatter amplitude. Basically, building and rubble will reflected the radar signal differently. The algorithm then compares the backscatter amplitude of each pixel during period before the conflict and after the conflict. To determine, the change in backscatter is significant enough to be classified as damage, he uses T-test to know how much the variation over time and take the largest value detected as a potential damage in that pixel. See the figure 2 below, the green shows condition before invasion while the red is after invasion. Meanwhile, the dashed line showed the average backscatter amplitude with ±1 standard deviation before and after the building's destruction.
 
 ![](images/clipboard-2990756776.png){width="538"}
 
-Fig 2 : The intuition behind damage detection using SAR. Source : @ballinger.
+Fig 2 : The intuition behind damage detection using SAR. Source : @ballinger2024
 
 ## Reflection
 

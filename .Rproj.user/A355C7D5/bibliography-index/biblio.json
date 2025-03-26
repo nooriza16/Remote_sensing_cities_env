@@ -893,6 +893,27 @@
             "id": "ballinger",
             "title": "Open access battle damage detection via pixel-wise t-test on sentinel-1 imagery",
             "type": "article-journal"
+        },
+        {
+            "DOI": "10.48550/ARXIV.2405.06323",
+            "author": [
+                {
+                    "family": "Ballinger",
+                    "given": "Ollie"
+                }
+            ],
+            "id": "ballinger2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        5,
+                        13
+                    ]
+                ]
+            },
+            "title": "Open access battle damage detection via pixel-wise t-test on sentinel-1 imagery",
+            "type": "article-journal"
         }
     ],
     "project_biblios": [
