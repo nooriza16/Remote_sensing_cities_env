@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 book:
-  title: "CASA 0023"
+  title: "CASA 0023 Learning Diary"
   author: "Nooriza Maharani"
   date: "1/27/2025"
   chapters:
@@ -19,7 +19,6 @@ book:
 unnumbered-chapters: [index.qmd]
 number-sections: true 
 bibliography: references.bib
-
 format:
   html:
     theme: cosmo

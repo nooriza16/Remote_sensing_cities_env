@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA 0023 - 9&nbsp; Synthetic Aperture Radar</title>
+<title>CASA 0023 Learning Diary - 9&nbsp; Synthetic Aperture Radar</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,7 +107,7 @@ div.csl-indent {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">CASA 0023</a> 
+      <a href="./">CASA 0023 Learning Diary</a> 
     </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -224,9 +224,13 @@ div.csl-indent {
 <section id="application" class="level2" data-number="9.1">
 <h2 data-number="9.1" class="anchored" data-anchor-id="application"><span class="header-section-number">9.1</span> Application</h2>
 <p>I would like to mention the application of <strong>optical remote sensing versus SAR Imagery</strong> in a research area that was initially unfamiliar to me but has become one of my interest in recent years. This week’s topic would be <strong>damage detection during conflict.</strong></p>
-<p>During conflict, the need to assess building damage is crucial for humanitarian relief efforts. However, in the past the detection depended on eyewitness reports and manual detection. We know that time is precious during conflict and humanitarian aids. This calls <span class="citation" data-cites="mueller2021">(<a href="#ref-mueller2021" role="doc-biblioref">Mueller et al. 2021</a>)</span> to generate damage monitoring using Very High Resolution satellite imagery, good for its ever-higher resolution and frequency, and using machine learning techniques. The intuition behind the method is using Convolutional Neural Networks (CNNs) to learns from example of destruction (e.g rubble and bomb raters) to make predictions about other images. Then to address the challenges of limited amount of labeled data (because sometimes the destruction is sparse or only limited buildings destroyed), they use label-augmentation technique which assumed destroyed at a certain time building will remain destroyed in subsequent time. This assumption helps to create additional labels for training dataset. The result is shown below, showing damage before and after a significant heavy weaponry attack in a neighborhood of Aleppo, with red indicates patch that is destroyed.</p>
-<p><img src="images/clipboard-207570688.png" class="img-fluid"></p>
+<p>During conflict, the need to assess building damage is crucial for humanitarian relief efforts. However, in the past the detection depended on eyewitness reports and manual detection. We know that time is precious during conflict and humanitarian aids. This calls <span class="citation" data-cites="mueller2021">Mueller et al. (<a href="#ref-mueller2021" role="doc-biblioref">2021</a>)</span> to generate damage monitoring using Very High Resolution (VHR) satellite imagery, good for its ever-higher resolution and frequency, and using machine learning techniques. The intuition behind the method is using Convolutional Neural Networks (CNNs) to learns from example of destruction (e.g rubble and bomb raters) to make predictions about other images. Then to address the challenges of limited amount of labeled data (because sometimes the destruction is sparse or only limited buildings destroyed), they use label-augmentation technique which assumed destroyed at a certain time building will remain destroyed in subsequent time. This assumption helps to create additional labels for training dataset. The result is shown below, showing damage before and after a significant heavy weaponry attack in a neighborhood of Aleppo, with red indicates patch that is highly predicted as destroyed while green is low prediction score.</p>
+<p><img src="images/j.jpeg" class="img-fluid" width="560"></p>
 <p>Fig 1 : Damage destruction using optical satellite data. Source : <span class="citation" data-cites="mueller2021">Mueller et al. (<a href="#ref-mueller2021" role="doc-biblioref">2021</a>)</span>.</p>
+<p>However, I pondered upon the use of VHR imagery in the analysis as it must be financially expensive, thus not everyone can get the access into it. It must be nice to have the open access data for this damage detection, right? and Ollie, our Remote Sensing lecturer, has found the solution ! He managed to find a new method for building damage detection using Pixel-Wise T-test (PWTT) and SAR in Sentinel 1. Yes, you read that right– it’s sentinel 1—which means it is open access ! Using this algorithm, he could achieve building-level accuracy higher than deep learning + VHR method<span class="citation" data-cites="ballinger">(<a href="#ref-ballinger" role="doc-biblioref">Ballinger, n.d.</a>)</span>. He uses SAR imagery because it emits a pulse towards the earth and then measure its return signal, enabling the analysis of how different textural surface respond differently.</p>
+<p>The intuition behind the methodology is that he investigates how much of the radar signal is reflected back to the satellite, which called backscatter amplitude. Basically, building and rubble will reflected the radar signal differently. The algorithm then compares the backscatter amplitude of each pixel during period before the conflict and after the conflict. To determine, the change in backscatter is significant enough to be classified as damage, he uses T-test to know how much the variation over time and take the largest value detected as a potential damage in that pixel. See the figure 2 below, the green shows condition before invasion while the red is after invasion. Meanwhile, the dashed line showed the average backscatter amplitude with ±1 standard deviation before and after the building’s destruction.</p>
+<p><img src="images/clipboard-2990756776.png" class="img-fluid" width="538"></p>
+<p>Fig 2 : The intuition behind damage detection using SAR. Source : <span class="citation" data-cites="ballinger">Ballinger (<a href="#ref-ballinger" role="doc-biblioref">n.d.</a>)</span>.</p>
 </section>
 <section id="reflection" class="level2" data-number="9.2">
 <h2 data-number="9.2" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.2</span> Reflection</h2>
@@ -236,6 +240,9 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-ballinger" class="csl-entry" role="listitem">
+Ballinger, Ollie. n.d. <span>“Open Access Battle Damage Detection via Pixel-Wise t-Test on Sentinel-1 Imagery.”</span> <a href="https://doi.org/10.48550/ARXIV.2405.06323">https://doi.org/10.48550/ARXIV.2405.06323</a>.
+</div>
 <div id="ref-mueller2021" class="csl-entry" role="listitem">
 Mueller, Hannes, Andre Groeger, Jonathan Hersh, Andrea Matranga, and Joan Serrat. 2021. <span>“Monitoring War Destruction from Space Using Machine Learning.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 118 (23): e2025400118. <a href="https://doi.org/10.1073/pnas.2025400118">https://doi.org/10.1073/pnas.2025400118</a>.
 </div>

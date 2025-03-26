@@ -12,7 +12,7 @@ This week's material is all about GEE (Google Earth Engine). In a simple definit
 
 Basically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming language. As someone enthusiastic with GEE, the need to learn 'a new' programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.
 
-However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as 'var' to denote variable. Below are some basic pieces of information about the GEE language that we need to know from Andy's lecture. Check out this introduction from Google if you're still unconvinced \[[here](https://developers.google.com/earth-engine/tutorials/tutorial_js_01)\].
+However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as 'var' to denote variable. Below are some basic pieces of information from Andy's lecture about the GEE language that GEE starters need to know. Check out this introduction from Google if you're still unconvinced
 
 ![](images/clipboard-203956171.png){width="508"}
 
@@ -28,7 +28,7 @@ Figure 2 : GEE Interface. source : [GEE Beginer cookbook](https://developers.goo
 
 ## Application
 
-\>\> \>*We might not be able to turn back ime, but we can look back using Landsat*
+\>\> \>"*We might not be able to turn back time, but well..... we sure can look back using Landsat"*\<\<
 
 In this section, I would like to explore the GEE strength on providing vast archive of imagery to investigate unplanned settlements during urban transformation projects. The vast historical of imagery enables researcher to look back at various critical date for development plans.\@yilmaz2024 used collection of Landsat data (Landsat 5, 6,7 ) from March 1983 to February 2007. The study selected 13 urban renewal project areas in Istanbul and examined existing project data and archival satellite images. Supervised classification was performed on 10 urban renewal project areas using the GEE platform to investigate urbanization status before development plans.
 
@@ -43,10 +43,10 @@ Figure 3 : Comparisan of existing land use and its projection. Source : [@yilmaz
 The case of comparing urban renewal project with old urban areas is interesting in urban management. However, [@urbanre] underlined the challenges to get enough information during the process because the lack of detection methods framework in urban renewal mapping. As we can see from the previous paper, they use random forest algorithm to identify urban and non-urban and validate using Kappa coefficients. In this paper, they propose a complete mapping framework including segmentation in detecting temporal information of urban renewal. Some key take away from their proposed framework are:
 
 1.  Data Preparation : define the urban scope and limit its boundary combined with image collections to get time series image stacks
-2.  Identification of old/renewed urban areas : LandTrendr fitting (algorithm to detect interannual land cover change) + segmentation of loss/grain (quantifying the dissimilarity) and random forest classification
+2.  Identification of old/renewed urban areas : LandTrendr fitting (algorithm to detect inter-annual land cover change) + segmentation of loss/grain (quantifying the dissimilarity) and random forest classification
 3.  Temporal detection : compare extraction strategy with different loss/grain and combination of NDVI/NDBI/NDMI + validation samples
 
-Oh wait.. for someone not really interested in remote sensing application in urban mapping this will be challenging, but maybe the snapshot of the result below can help you grasp the intuition of how those steps yield the result.
+Oh wait....for someone who is not really interested in remote sensing's application in urban mapping this will be challenging, but maybe the snapshot of the result below can help you grasp the intuition of how those steps yield the result. We can see from the left picture that we could have NDVI index graph to explain the built-up area
 
 ## ![](images/clipboard-2246403998.png){width="752"}
 
@@ -58,6 +58,10 @@ The most exciting part of using Google Earth Engine (GEE) for me is the ability 
 
 By using a web map, we make it easier for clients, even those without a technical background, to explore and understand the intuition of the analysis : what layers we have, what imagery we use, what imageries we combined. The interactive map will provide a clearer view of the project, allowing clients to see the bigger picture and stay engaged throughout the process. However, I must admit GEE is only a tool to make best use of it we need a prior fundamental concept of remote sensing, such as spectral band, enhancement, fusion, PCA, and other remote sensing pre-processing steps. Because in every script we write there should be a thinking process on why we do reduction, why we do enhancement, basically need our judgement to navigate each steps.
 
-I would also like to highlight the importance of domain knowledge when using the remote sensing sources, as I mentioned before GEE is just a tool the way it will yield a remarkable insight depends on the one who utilize it. For example, The Economist use satellite data to track conflict in real time. FYI, I come across this in CASA Seminar in 2023 during the time I prepared my graduate's school application. Pediatrics could use remote sensing to understand the association of air pollution with asthma prevalence. Archaeologist can utilize remote sensing alongside other methods to understand landscape of historical sites. There are *tons* of use cases, right?! If you are having curious mind like me, check Dr Ollie Ballinger's github page [here](https://oballinger.github.io/#) to see how powerful remote sensing could be if combined with domain knowledge.
+I would also like to highlight the importance of domain knowledge when using remote sensing sources. As I mentioned before GEE is just a tool–its ability to provide remarkable insights truly depend on the person utilizing it. We might use the same satellite imagery, but with domain knowledge the analysis will yield different results.
+
+For example, *The Economist* uses satellite data to track conflict in real time (FYI, I come across this in CASA Seminar in 2023 during the time I prepared my graduate's school application), *Pediatrics* use remote sensing to understand the association of air pollution with asthma prevalence. *Archaeologists* can utilize remote sensing alongside other methods to understand landscape of historical sites. There are *tons* of use cases, right?!
+
+If you are having curious mind like me, check Dr Ollie Ballinger's github page [here](https://oballinger.github.io/#) to see how powerful remote sensing can be when combined with domain knowledge. Ah yes, he is also a lecturer in Remote Sensing class.
 
 ## References

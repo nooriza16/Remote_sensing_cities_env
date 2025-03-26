@@ -881,6 +881,18 @@
             "title": "Monitoring war destruction from space using machine learning",
             "type": "article-journal",
             "volume": "118"
+        },
+        {
+            "DOI": "10.48550/ARXIV.2405.06323",
+            "author": [
+                {
+                    "family": "Ballinger",
+                    "given": "Ollie"
+                }
+            ],
+            "id": "ballinger",
+            "title": "Open access battle damage detection via pixel-wise t-test on sentinel-1 imagery",
+            "type": "article-journal"
         }
     ],
     "project_biblios": [
