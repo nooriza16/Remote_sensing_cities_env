@@ -16,6 +16,7 @@ book:
     - week6.qmd
     - week7.qmd
     - week8.qmd
+unnumbered-chapters: [index.qmd]
 number-sections: true 
 bibliography: references.bib
 
