@@ -2,6 +2,7 @@
 
 ---
 title: "Sneak Peak"
+numbered: false
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
@@ -9,8 +10,6 @@ format:
     toc: true    # Enable Table of Contents
     toc-depth: 2 # Show up to level 2 headings
 ---
-
-# Preface {.unnumbered}
 
 This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page \[[here](https://andrewmaclachlan.github.io/CASA0023/.)\]. The lecturers are Dr. Andrew Maclachlan—referred to as Andy—and Dr. Ollie Ballinger—referred to as Ollie.
 
@@ -34,12 +33,12 @@ Remote sensing is also an interesting field as it could produce wealth of inform
 
 Figure 1: Seeing things from above. source : [Chirps Nature Centre](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
 
-For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right). It's cool !
+For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right). All from one image...that's cool !
 
 [![](images/PIA02605_modest.jpg){fig-align="left" width="363"}](https://photojournal.jpl.nasa.gov/jpegMod/PIA02605_modest.jpg)
 
 Figure 1 : ASTER images of San Fransisco. source : [NASA/JPL](https://photojournal.jpl.nasa.gov/catalog/PIA02605)
 
-Practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain real-time data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
+Practically, learning this course will, hopefully, help me address the challenges I faced during my previous work in Indonesia. For example, while working on a project focused on healthcare accessibility across hundreds of small islands, we struggled to obtain latest data to identify which islands were inhabited and which were not. Additionally, we faced challenges in determining which islands had ports suitable for docking ships. I believe that applying remote sensing data is both cost- and time-efficient in helping the government maintain more precise and up-to-date data, which is particularly important in world's largest archipelago country like Indonesia.
 
 Feel free to explore my site to learn more about my learning experience. Hope it helps!

@@ -48,7 +48,7 @@ The case of comparing urban renewal project with old urban areas is interesting 
 
 Oh wait....for someone who is not really interested in remote sensing's application in urban mapping this will be challenging, but maybe the snapshot of the result below can help you grasp the intuition of how those steps yield the result. We can see from the left picture that we could have NDVI index graph to explain the built-up area
 
-## ![](images/clipboard-2246403998.png){width="752"}
+![](images/clipboard-2246403998.png){width="752"}
 
 Figure 4 : Left : index of NDVI in time series with curve from LandTrendr ; right : urban renewal and urban old area. Source : [@urbanre]
 
