@@ -19,7 +19,7 @@ Figure 1. SAR Bands with frequency and wavelength. Source : [NASA](https://www.e
 Radar can collect signals with different polarization. Polarization describes the direction in which the plane of a transmitted electromagnetic waves move back and forth. When signal emitted in vertical (V) and received horizontal it indicated V-H, meanwhile when the signal both emitted and received horizontal it indicated H-H. Different surface will respond differently to the polarizations, such as:
 
 | Type of Scattering       | Occurs when....                                                                                                                                            |
-|-------------------|-----------------------------------------------------|
+|--------------------|----------------------------------------------------|
 | Rough surface scattering | signal interact with irregularities of surface and most sensitive to VV scattering (example : bare soil or water)                                          |
 | Volume scattering        | signal interacts with multiple scatterer such as leaves in forest, most sensitive to VH or HV                                                              |
 | Double bounce scattering | signal reflects off two surfaces before returning back to sensor. This creates strong backscatter and most sensitive to HH. (example : tree and building). |
@@ -34,7 +34,7 @@ SAR can be useful in our analysis by comparing change between two images. By com
 
 ## Application
 
-I would like to mention the application of **optical remote sensing versus SAR Imagery** in damage detection during conflict. Emmm.... this topic is slightly unfamiliar to me but but it has become one of my growing interests in recent years. *It’s particularly fascinating because, on that day, I decided to sit in on the practical session of Building Applications with Big Data.*
+I would like to mention the application of **optical remote sensing versus SAR Imagery** in damage detection during conflict. Emmm.... this topic is slightly unfamiliar to me but but it has become one of my growing interests in recent years. *On that day, as I am curious about this topic I decided to sit in on the practical session of Building Applications with Big Data.*
 
 During conflict, the need to assess building damage is crucial for humanitarian relief efforts. However, in the past the detection depended on **eyewitness reports and manual detection**. We know that time is precious during conflict and humanitarian aids. This calls @mueller2021 to generate damage monitoring using Very High Resolution (VHR) satellite imagery, good for its resolution and frequency, and using machine learning techniques for automation.
 
