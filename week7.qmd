@@ -8,43 +8,13 @@ format:
 
 ## Summary
 
-## Summary
+This week continues last week's topic on classification in remote sensing. Here they are.....
 
-1.      This week lecture continues last week course, about classification.
+![](images/clipboard-2264033458.png)
 
-a.      In preprocessing data we use surface reflectance for labelling but used TOA as SR is up to 2017
+Note : Confusion Matrix's source : <https://google-earth-engine.com/>
 
-b.      Dynamic world what did it connect with classifications
-
-c.      Accuracy is assessed using confusion matrix
-
-d.      Issue? The large mappinf unit 50x50
-
-e.      CNN? Not giving much info about which method is good at
-
-2.      Object based image analysis
-
-a.      Superpixels
-
-b.      SegOptim \> at the end finding the most pure end member
-
-Issue : only allowed to select 1 endmember for each landcover, how about mixture of landcover?
-
-c.      MESMA
-
-Many endmember for many landcover class
-
-3.      Confusion matrix
-
--          The confusion matrix consists of predictive accuracy and user accuracy and its overall accuracy. This is one of accuracy assessment about the classification of model (the training) and the validated pixels
-
--          100-pa emission
-
--          100-ua omission
-
--          Kappa coefficient \> same images different kappas value, no agreement on how much good kappa value
-
-## Application
+## Applications
 
 ## Reflection
 

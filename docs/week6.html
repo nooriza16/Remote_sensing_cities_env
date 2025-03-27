@@ -192,38 +192,49 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
-<p>Today’s lecture is exploring remote sensing classification. Several dataset and applications mentioned are:</p>
-<ul>
-<li><p>Urban expansion/sprawl with landsat data</p></li>
-<li><p>Surface temperature (land and sea) with sentinel 3</p></li>
-<li><p>Major air pollutants with sentinel 5</p></li>
-<li><p>Urban green spaces (high medium res, Lidar)</p></li>
-<li><p>Monitoring and illegal practices landsat data</p></li>
-<li><p>Forest fires using landsat TM image</p></li>
-</ul>
-<p>There are several steps to extract land cover (do classification) from earth observation data. We usually combined remote sensing with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. It composes with 2 things :</p>
-<p>a. Classification trees (yes no/ discrete values)</p>
-<p>In this method, we will have predictors and target. The decision is mapped with conditions that led to yes or no decision</p>
-<p>b.Regression trees ( predict continuous dependant variable)</p>
-<p>Meanwhile, in linear regression we try to fit into the regression line, however if we have data that isn’t fitted into the data we subset this data into smaller chunks. When creating a decision tree, we would be mix all the leafes of several categories, quantified using gini impurity. And we aim to find the lowest gini impurity. We decide the breaks by creating imaginary vertical line among the data and identify the lowest sum of square residuals.</p>
-<p>Things to be paid attention at = OVERFITTING, dealing with this could be</p>
-<p>a. Set the min number of pixels/ observations, Only split observations with&nbsp;<strong>min number of 20</strong>.</p>
-<p>b. Pruning</p>
-<p>c. Removes leave, increase alfa, and find the lowest tree score. The idea is could we keep the accuracy, when we do generalizations</p>
-<p>d. Dividing data : training (creating trees) and testing data (applied the trees with testing data) find the lowest sum residuals.</p>
-<p>See the picture :</p>
-<p>We could pick some pixels as training data and validation,the machine learning will predict the value among this train and validation pixels.</p>
-<p>Random forest</p>
-<p>As decision tree is not good with new data, thus we could use another method is random forest. I like to use the chatgpt analogy on this:</p>
-<p>💡 A Decision Tree is like asking one expert for advice.<br>
-🌲 A Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.</p>
-<p>Applying into imagery:</p>
-<p>a. Supervised ( giving them a train data)</p>
-<p>Support vector machine, the idea is like a logistic regression. &nbsp;It finds the <strong>best boundary (decision boundary)</strong> that separates different classes in the data.The benefit of this method is it allows some misclassification</p>
-<p>b. Unsupervised (I have train data, and I want 10 classification method) &gt; see recording (43’)</p>
-<p>a. Usually refers to clustering/ k-means.</p>
-<p>b. Isodata (same with kmeans but add several inputs such as ( cluster, iterations)</p>
-<p>Repeat until all pixels were classified</p>
+<p>Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture is divided into 2 main points: <strong>how classification is used</strong> and <strong>how to do the classifications</strong>. Classification process in remote sensing often applied in several topics, such as:</p>
+<table class="table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topics</th>
+<th>Sensor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Urban expansion/sprawl</td>
+<td>Landsat</td>
+</tr>
+<tr class="even">
+<td>Land Use Changes on driving air pollution</td>
+<td>Sensor : Sentinel 3 Sea &amp; Land Surface Temperature ; Sentinel-5 precursors major air pollution</td>
+</tr>
+<tr class="odd">
+<td>Urban green spaces</td>
+<td><em>Several options such as high, medium resolution imagery ; Lidar-hyperspectral</em></td>
+</tr>
+<tr class="even">
+<td>Monitoring forest and illegal practices</td>
+<td>Landsat</td>
+</tr>
+<tr class="odd">
+<td>Forest fires</td>
+<td>landsat</td>
+</tr>
+</tbody>
+</table>
+<p>In practice, classification in remote sensing is combined remote with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. As a visual learner, I understand the complex materials better, hope it helps you too.</p>
+<p><img src="images/clipboard-2998853873.png" class="img-fluid"></p>
+<p>The challenge in using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. To stop our data to be overfitting, there are many ways to deal with this, such as : (a) Limit how the tree grows (b) Pruning – Remove unnecessary branches after the tree is built to simplify (c) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance. (d) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks</p>
+<blockquote class="blockquote">
+<p>How does it apply to imagery?</p>
+</blockquote>
+<p>The idea is to turn each pixel in an image into a specific category, you’d use image segmentation, which labels each pixel based on predefined categories. This applies to both of supervised or unsupervised learning.</p>
+<p><img src="images/clipboard-3670863260.png" class="img-fluid" width="647"></p>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>

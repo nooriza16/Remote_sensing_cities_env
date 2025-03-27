@@ -8,7 +8,7 @@ format:
 
 ## Summary
 
-Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture divide into 2 main points: **how classification is used** and **how to do the classifications**. Classification process in remote sensing often applied in several topics, such as:
+Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture is divided into 2 main points: **how classification is used** and **how to do the classifications**. Classification process in remote sensing often applied in several topics, such as:
 
 | Topics                                    | Sensor                                                                                         |
 |-------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -18,35 +18,17 @@ Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture d
 | Monitoring forest and illegal practices   | Landsat                                                                                        |
 | Forest fires                              | landsat                                                                                        |
 
-In practice, classification in remote sensing is combined remote with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. As a visual learner, hope this diagram will help to understand it better.
+In practice, classification in remote sensing is combined remote with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. As a visual learner, I understand the complex materials better, hope it helps you too.
 
 ![](images/clipboard-2998853873.png)
 
-The challenge in using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. To stop our data to be overfitting, there are ways to deal with this:
-
-\(a\) Limit how the tree grows – Set the minimum number of samples per split (e.g., at least 20 observations per node)
-
-\(b\) Pruning – Remove unnecessary branches after the tree is built to simplify
-
-\(c\) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance.
-
-\(d\) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks
+The challenge in using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. To stop our data to be overfitting, there are many ways to deal with this, such as : (a) Limit how the tree grows (b) Pruning – Remove unnecessary branches after the tree is built to simplify (c) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance. (d) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks
 
 > How does it apply to imagery?
 
-Applying into imagery:
+The idea is to turn each pixel in an image into a specific category, you'd use image segmentation, which labels each pixel based on predefined categories. This applies to both of supervised or unsupervised learning.
 
-a\. Supervised ( giving them a train data)
-
-Support vector machine, the idea is like a logistic regression.  It finds the **best boundary (decision boundary)** that separates different classes in the data.The benefit of this method is it allows some misclassification
-
-b\. Unsupervised (I have train data, and I want 10 classification method) \> see recording (43’)
-
-a\. Usually refers to clustering/ k-means.
-
-b\. Isodata (same with kmeans but add several inputs such as ( cluster, iterations)
-
-Repeat until all pixels were classified
+![](images/clipboard-3670863260.png){width="647"}
 
 ## Application
 
