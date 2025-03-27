@@ -10,7 +10,7 @@ format:
 
 Today’s lecture explores sensor imagery called Synthetic Aperture Radar (SAR). Well the name sounds complicated :) The only word that unfamiliar for me is 'aperture', after asking Chatgpt with prompt of 'concise and explain to 15 years old', I learned that aperture is like the opening of camera, the wider the aperture the less focus the image captured and the more light it lets in. Meanwhile, radar is an active sensor that emits energy for illumination. Due to its longer wavelength, it can penetrate clouds or dust and capture images at night.
 
-If optical images are like our eyes, **SAR is like a bat**, emitting chirps of sounds to locate a moth. It identifies objects by listening to the reflected signal. The signal that reflects back to the satellite is called backscatter. There will be low backscatter if the signal hits a flat surface and goes off into space. Meanwhile, it will produce high backscatter when it hits an object and reflects back to the satellite. SAR images are typically grayscale; the more signal returned to the satellite, the brighter (higher value) it appears. I remember that multispectral images have spectral bands, and this also applies to SAR. There are many bands, but the most commonly used is the C band, like the bands in Sentinel-1.
+If optical images are like our eyes, **SAR is like a bat**, emitting chirps of sounds to locate his prey and other objects. It identifies objects by listening to the reflected signal. The signal that reflects back to the satellite is called backscatter. There will be a low backscatter if the signal hits a flat surface and goes off into space. Meanwhile, it will produce high backscatter when it hits an object and reflects back to the satellite. SAR images are typically grayscale; the more signal returned to the satellite, the brighter (higher value) it appears. I remember that multispectral images have spectral bands, and this also applies to SAR. There are many bands, but the most commonly used is the C band, like the bands in Sentinel-1.
 
 ![](images/clipboard-648766891.png){width="696"}
 
@@ -19,7 +19,7 @@ Figure 1. SAR Bands with frequency and wavelength. Source : [NASA](https://www.e
 Radar can collect signals with different polarization. Polarization describes the direction in which the plane of a transmitted electromagnetic waves move back and forth. When signal emitted in vertical (V) and received horizontal it indicated V-H, meanwhile when the signal both emitted and received horizontal it indicated H-H. Different surface will respond differently to the polarizations, such as:
 
 | Type of Scattering       | Occurs when....                                                                                                                                            |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------------|---------------------------------------------------------|
 | Rough surface scattering | signal interact with irregularities of surface and most sensitive to VV scattering (example : bare soil or water)                                          |
 | Volume scattering        | signal interacts with multiple scatterer such as leaves in forest, most sensitive to VH or HV                                                              |
 | Double bounce scattering | signal reflects off two surfaces before returning back to sensor. This creates strong backscatter and most sensitive to HH. (example : tree and building). |
@@ -48,6 +48,10 @@ The intuition behind the methodology is that he investigates how much of the rad
 
 Fig 2 : The intuition behind damage detection using SAR. Source : @ballinger2024
 
+For me the performance of open source data to outperform VHR satellite presents opportunities for many people. It will encourage knowledge development faster as different people with different background be able to explore and find the 'rabbit hole'.
+
 ## Reflection
+
+I was thinking, if SAR is this good able penetrate objects and imaging at night what kind of weakness does it have. When backscattering emit signal that bounced by so many things it must be challenging to do the analysis more over the imagery appear black.
 
 ## References
