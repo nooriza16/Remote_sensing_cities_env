@@ -8,50 +8,31 @@ format:
 
 ## Summary
 
-Today’s lecture is exploring remote sensing classification. Several dataset and applications mentioned are:
+Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture divide into 2 main points: **how classification is used** and **how to do the classifications**. Classification process in remote sensing often applied in several topics, such as:
 
--   Urban expansion/sprawl with landsat data
+| Topics                                    | Sensor                                                                                         |
+|-------------------------------------------|------------------------------------------------------------------------------------------------|
+| Urban expansion/sprawl                    | Landsat                                                                                        |
+| Land Use Changes on driving air pollution | Sensor : Sentinel 3 Sea & Land Surface Temperature ; Sentinel-5 precursors major air pollution |
+| Urban green spaces                        | *Several options such as high, medium resolution imagery ; Lidar-hyperspectral*                |
+| Monitoring forest and illegal practices   | Landsat                                                                                        |
+| Forest fires                              | landsat                                                                                        |
 
--   Surface temperature (land and sea) with sentinel 3
+In practice, classification in remote sensing is combined remote with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. As a visual learner, hope this diagram will help to understand it better.
 
--   Major air pollutants with sentinel 5
+![](images/clipboard-2998853873.png)
 
--   Urban green spaces (high medium res, Lidar)
+The challenge in using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. To stop our data to be overfitting, there are ways to deal with this:
 
--   Monitoring and illegal practices landsat data
+\(a\) Limit how the tree grows – Set the minimum number of samples per split (e.g., at least 20 observations per node)
 
--   Forest fires using landsat TM image
+\(b\) Pruning – Remove unnecessary branches after the tree is built to simplify
 
-There are several steps to extract land cover (do classification) from earth observation data. We usually combined remote sensing with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. It composes with 2 things :
+\(c\) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance.
 
-a\. Classification trees (yes no/ discrete values)
+\(d\) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks
 
-In this method, we will have predictors and target. The decision is mapped with conditions that led to yes or no decision
-
-b.Regression trees ( predict continuous dependant variable)
-
-Meanwhile, in linear regression we try to fit into the regression line, however if we have data that isn’t fitted into the data we subset this data into smaller chunks. When creating a decision tree, we would be mix all the leafes of several categories, quantified using gini impurity. And we aim to find the lowest gini impurity. We decide the breaks by creating imaginary vertical line among the data and identify the lowest sum of square residuals.
-
-Things to be paid attention at = OVERFITTING, dealing with this could be
-
-a\. Set the min number of pixels/ observations, Only split observations with **min number of 20**.
-
-b\. Pruning
-
-c\. Removes leave, increase alfa, and find the lowest tree score. The idea is could we keep the accuracy, when we do generalizations
-
-d\. Dividing data : training (creating trees) and testing data (applied the trees with testing data) find the lowest sum residuals.
-
-See the picture :
-
-We could pick some pixels as training data and validation,the machine learning will predict the value among this train and validation pixels.
-
-Random forest
-
-As decision tree is not good with new data, thus we could use another method is random forest. I like to use the chatgpt analogy on this:
-
-💡 A Decision Tree is like asking one expert for advice.\
-🌲 A Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.
+> How does it apply to imagery?
 
 Applying into imagery:
 

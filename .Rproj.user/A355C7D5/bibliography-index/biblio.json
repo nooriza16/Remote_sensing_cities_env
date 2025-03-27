@@ -914,6 +914,22 @@
             },
             "title": "Open access battle damage detection via pixel-wise t-test on sentinel-1 imagery",
             "type": "article-journal"
+        },
+        {
+            "DOI": "10.48550/ARXIV.1802.10036",
+            "author": [
+                {
+                    "family": "Wang",
+                    "given": "Puyang"
+                },
+                {
+                    "family": "Patel",
+                    "given": "Vishal M."
+                }
+            ],
+            "id": "wang",
+            "title": "Generating high quality visible images from SAR images using CNNs",
+            "type": "article-journal"
         }
     ],
     "project_biblios": [

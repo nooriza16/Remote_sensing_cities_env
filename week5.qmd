@@ -30,7 +30,7 @@ Figure 2 : GEE Interface. source : [GEE Beginer cookbook](https://developers.goo
 
 \>\> \>"*We might not be able to turn back time, but well..... we sure can look back using Landsat"*\<\<
 
-In this section, I would like to explore the GEE strength on providing vast archive of imagery to investigate unplanned settlements during urban transformation projects. The vast historical of imagery enables researcher to look back at various critical date for development plans.\@yilmaz2024 used collection of Landsat data (Landsat 5, 6,7 ) from March 1983 to February 2007. The study selected 13 urban renewal project areas in Istanbul and examined existing project data and archival satellite images. Supervised classification was performed on 10 urban renewal project areas using the GEE platform to investigate urbanization status before development plans.
+In this section, I would like to explore the **GEE strength on providing vast archive** of imagery to investigate unplanned settlements during urban transformation projects. The vast historical of imagery enables researcher to look back at various critical date for development plans. \@yilmaz2024 used collection of Landsat data (Landsat 5, 6,7 ) from March 1983 to February 2007 to compare land use before and after urban renewal project happen. When I pondered upon this it is like investigating planning product in a sense of is it *planning to fail or failing to plan?*
 
 With analysis of temporal imagery, the result show a contrasting initial condition of urban renewal's targetted area and its projection. For instance, in Gaziosmanpasa district it is projected to be a forested area in the future, however after looking back up to one year before the approval of the development plans turns out it is highly urbanized area. The contrasting initial condition and urban renewal project in this area will present challenge to the success of the plan, as the development of greening area will fiercely compete with massively built up area.
 
@@ -38,9 +38,9 @@ This finding also underlined the *issues* that projected plan is not carefully c
 
 ![](images/clipboard-3598015637.png){width="728"}
 
-Figure 3 : Comparisan of existing land use and its projection. Source : [@yilmaz2024]
+Figure 3 : Comparisan of existing land use and its projection. Source : @yilmaz2024\]
 
-The case of comparing urban renewal project with old urban areas is interesting in urban management. However, [@urbanre] underlined the challenges to get enough information during the process because the lack of detection methods framework in urban renewal mapping. As we can see from the previous paper, they use random forest algorithm to identify urban and non-urban and validate using Kappa coefficients. In this paper, they propose a complete mapping framework including segmentation in detecting temporal information of urban renewal. Some key take away from their proposed framework are:
+The case of comparing urban renewal project with old urban areas is interesting in urban management. However, @urbanre underlined the challenges to get enough information during the process because **the lack of detection methods framework in urban renewal mapping**. As we can see from the previous paper, they use random forest algorithm to identify urban and non-urban and validate using Kappa coefficients. In this paper, they propose a complete mapping framework including segmentation in detecting temporal information of urban renewal. Some key take away from their proposed framework are:
 
 1.  Data Preparation : define the urban scope and limit its boundary combined with image collections to get time series image stacks
 2.  Identification of old/renewed urban areas : LandTrendr fitting (algorithm to detect inter-annual land cover change) + segmentation of loss/grain (quantifying the dissimilarity) and random forest classification

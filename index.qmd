@@ -2,7 +2,6 @@
 
 ---
 title: "Sneak Peak"
-unnumbered: true
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
@@ -11,9 +10,11 @@ format:
     toc-depth: 2 # Show up to level 2 headings
 ---
 
-This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page \[[here](https://andrewmaclachlan.github.io/CASA0023/.)\].
+# Preface {.unnumbered}
 
-\*For those of you who also want to learn Geographic Information Science beyond 'typical GIS' Software, as in use R-Studio, you could also visit his other github page \[[here](https://andrewmaclachlan.github.io/CASA0005repo/index.html)\].
+This is a Quarto book to document my learning journey in **Remote Sensing Cities and Environments** course during my time at CASA UCL 24/25, offering insights learned, its applications, and my own reflections. The module is based on Dr Andrew Maclachlan github page \[[here](https://andrewmaclachlan.github.io/CASA0023/.)\]. The lecturers are Dr. Andrew Maclachlan—referred to as Andy—and Dr. Ollie Ballinger—referred to as Ollie.
+
+\*For those of you who also want to learn Geographic Information Science beyond 'typical GIS' Software, as in use R-Studio, you could also visit Andy's other github page \[[here](https://andrewmaclachlan.github.io/CASA0005repo/index.html)\].
 
 ------------------------------------------------------------------------
 
@@ -27,9 +28,11 @@ Honestly, I don't have a specific topic of interest to add here because I have m
 
 The reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven't delved further into it and haven't got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data using remote sensing plus analyse various topic across different scale using GEE.
 
-Remote sensing is also an interesting field as it could produce wealth of information without direct contact. Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen of the naked eye.*
+Remote sensing is also an interesting field as it could produce wealth of information without direct contact. Don't you think learning remote sensing makes us have the eye of the bird even beyond? I mean we agree that remote sensing offers perspectives far beyond what our human eyes can naturally perceive : *allowing* to *see things from above and to see the unseen with the naked eye.*
 
 ![](images/clipboard-2217286199.png){width="361"}
+
+Figure 1: Seeing things from above. source : [Chirps Nature Centre](https://chirpforbirds.com/nature-advocacy/biomimicry-and-birds/)
 
 For example, see the ASTER images of San Fransisco Bay below it highlights different object such as vegetation (upper left); soil & rocks in mountainous area (upper right); urban materials (lower left) ; and water temperature (lower right). It's cool !
 
