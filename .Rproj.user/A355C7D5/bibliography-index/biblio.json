@@ -930,6 +930,77 @@
             "id": "wang",
             "title": "Generating high quality visible images from SAR images using CNNs",
             "type": "article-journal"
+        },
+        {
+            "DOI": "10.1080/19376812.2024.2375376",
+            "URL": "https://www.tandfonline.com/doi/full/10.1080/19376812.2024.2375376",
+            "author": [
+                {
+                    "family": "Chamunorwa",
+                    "given": "Brighton"
+                },
+                {
+                    "family": "Shoko",
+                    "given": "Moreblessings"
+                },
+                {
+                    "family": "Magidi",
+                    "given": "James"
+                }
+            ],
+            "container-title": "African Geographical Review",
+            "id": "chamunorwa2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        7,
+                        8
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "1-17",
+            "title": "Low-cost and scalable detection of sparse informal settlements using machine learning in Gcuwa, Eastern Cape, South Africa",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1016/j.compenvurbsys.2019.03.005",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0198971518303545",
+            "author": [
+                {
+                    "family": "Ibrahim",
+                    "given": "Mohamed R."
+                },
+                {
+                    "family": "Titheridge",
+                    "given": "Helena"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Tao"
+                },
+                {
+                    "family": "Haworth",
+                    "given": "James"
+                }
+            ],
+            "container-title": "Computers, Environment and Urban Systems",
+            "id": "ibrahim2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        7,
+                        1
+                    ]
+                ]
+            },
+            "page": "31-56",
+            "title": "predictSLUMS: A new model for identifying and predicting informal settlements and slums in cities from street intersections using machine learning",
+            "title-short": "predictSLUMS",
+            "type": "article-journal",
+            "volume": "76"
         }
     ],
     "project_biblios": [

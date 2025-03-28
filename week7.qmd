@@ -10,7 +10,7 @@ format:
 
 This week continues last week's topic on classification in remote sensing. Here they are.....
 
-![](images/clipboard-2264033458.png)
+![](images/clipboard-2572872984.png)
 
 Note : Confusion Matrix's source : <https://google-earth-engine.com/>
 

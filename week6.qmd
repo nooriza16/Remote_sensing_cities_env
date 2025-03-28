@@ -10,19 +10,29 @@ format:
 
 Take a deep breath okaaay? as today’s lecture is quite intense ! The lecture is divided into 2 main points: **how classification is used** and **how to do the classifications**. Classification process in remote sensing often applied in several topics, such as:
 
-| Topics                                    | Sensor                                                                                         |
-|-------------------------------------------|------------------------------------------------------------------------------------------------|
-| Urban expansion/sprawl                    | Landsat                                                                                        |
-| Land Use Changes on driving air pollution | Sensor : Sentinel 3 Sea & Land Surface Temperature ; Sentinel-5 precursors major air pollution |
-| Urban green spaces                        | *Several options such as high, medium resolution imagery ; Lidar-hyperspectral*                |
-| Monitoring forest and illegal practices   | Landsat                                                                                        |
-| Forest fires                              | landsat                                                                                        |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Topics                                    | Sensor                                                                        |
++===========================================+===============================================================================+
+| Urban expansion/sprawl                    | Landsat                                                                       |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Land Use Changes on driving air pollution | Sentinel 3 : Sea & Land Surface Temperature                                   |
+|                                           |                                                                               |
+|                                           | Sentinel-5: precursors major air pollution                                    |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Urban green spaces                        | Several options such as high, medium resolution imagery ; Lidar-hyperspectral |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Monitoring forest and illegal practices   | Landsat                                                                       |
++-------------------------------------------+-------------------------------------------------------------------------------+
+| Forest fires                              | Landsat                                                                       |
++-------------------------------------------+-------------------------------------------------------------------------------+
 
-In practice, classification in remote sensing is combined remote with machine learning techniques that include training data, build classification model, output. Today’s class focus on classification and regression trees (CART) as a method of classification. As a visual learner, I understand the complex materials better, hope it helps you too.
+In practice, classification in remote sensing is combined with machine learning techniques that include training data and testing data. Today’s class focus on classification and regression trees (CART). As a visual learner, learning using this diagram make me understand the complex materials better, hope it helps you too.
 
 ![](images/clipboard-2998853873.png)
 
-The challenge in using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. To stop our data to be overfitting, there are many ways to deal with this, such as : (a) Limit how the tree grows (b) Pruning – Remove unnecessary branches after the tree is built to simplify (c) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance. (d) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks
+One of the challenge using machine learning is OVERFITTING. In simple terms, overfitting happens when a model fits the training data too well but performs poorly on new data. There are many ways to deal with overfitting, such as : (a) Limit how the tree grows (b) Pruning – Remove unnecessary branches after the tree is built to simplify (c) Pruning with Alpha Regularization – Remove leaves, increase the pruning parameter (α) and find the lowest tree score. The goal is to keep the tree small without sacrificing performance. (d) Data Splitting – Divide data into training (to build the tree) and testing (to evaluate performance) sets and find the lowest sum residuals in regression tasks
+
+One more thing, as decision tree is not good with new data we could use another method called random forest. I like to use the Chatgpt analogy on this: a Decision Tree is like asking one expert for advice meanwhile a Random Forest is like asking 100 experts, each with a unique take, then averaging their answers.
 
 > How does it apply to imagery?
 
@@ -31,6 +41,24 @@ The idea is to turn each pixel in an image into a specific category, you'd use i
 ![](images/clipboard-3670863260.png){width="647"}
 
 ## Application
+
+In my understanding, classification in remote sensing will be easier if object detected having a stark difference. The more differ the object the easier the detection would be. Then I was thinking about dense object with high irregular shape, such as informal settlement. How does the classification work? It must be posing a unique challenge. Thus, I want to explore how the classification of informal settlement in small town of Cape Town, South Africa.
+
+Apparently, there has been studies to map informal settlements with different machine learning algorithm. @chamunorwa2024 tried to compare 4 machine learning algorithm to detect informal settlement using Gradient Boost, KNN, Random Forest, and Support Vector Machine \[SVM\] with data extracted from cloud computing repositories. Each of these are valued because:
+
+-   KNN : simplicity in classification tasks (effective for well-defined clusters).
+
+-   Gradient Boosting : its ability to improve performance through the sequential combination of weak models, (capturing complex interactions within the data)
+
+-   Random Forest : an ensemble method, is good at managing high-dimensional data and deal with overfitting
+
+-   SVM : strong in classifying data with clear margins by creating optimal decision boundaries.
+
+Overall, the Random Forest and Gradient Boosting models were found to be the most effective for delineating informal settlements with accuracy of 89.07 % for RF and 89.05 for Gradient Boosting. It is amazing to see how this machine learning can capture the different cluster of informal settlements.
+
+![](images/clipboard-2349696428.png){width="548"}
+
+Figure 1 Spatial distribution of informal settlement based on random forest
 
 ## Reflection
 
