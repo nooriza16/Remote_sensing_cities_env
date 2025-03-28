@@ -1089,6 +1089,71 @@
             "title-short": "Making railway land productive",
             "type": "article-journal",
             "volume": "122"
+        },
+        {
+            "DOI": "10.1016/j.jag.2023.103384",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S156984322300208X",
+            "author": [
+                {
+                    "family": "Li",
+                    "given": "Saibo"
+                },
+                {
+                    "family": "He",
+                    "given": "Shaoyang"
+                },
+                {
+                    "family": "Yue",
+                    "given": "Tianxiang"
+                },
+                {
+                    "family": "Du",
+                    "given": "Zhengping"
+                },
+                {
+                    "family": "Zhao",
+                    "given": "Na"
+                },
+                {
+                    "family": "Zhao",
+                    "given": "Yapeng"
+                },
+                {
+                    "family": "Jiao",
+                    "given": "Yimeng"
+                },
+                {
+                    "family": "Fan",
+                    "given": "Bin"
+                },
+                {
+                    "family": "Liu",
+                    "given": "Yi"
+                },
+                {
+                    "family": "Xu",
+                    "given": "Zhe"
+                },
+                {
+                    "family": "Yang",
+                    "given": "Yang"
+                }
+            ],
+            "container-title": "International Journal of Applied Earth Observation and Geoinformation",
+            "id": "li2023a",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        7
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "103384",
+            "title": "Mapping bamboo forest and expansion intensity in China by coupling vegetation phenology and C-band SAR with Sentinel-1 and Sentinel-2 images",
+            "type": "article-journal",
+            "volume": "121"
         }
     ],
     "project_biblios": [
