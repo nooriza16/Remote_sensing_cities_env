@@ -1001,6 +1001,94 @@
             "title-short": "predictSLUMS",
             "type": "article-journal",
             "volume": "76"
+        },
+        {
+            "DOI": "10.1016/j.rsase.2024.101275",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S2352938524001393",
+            "author": [
+                {
+                    "family": "Gxokwe",
+                    "given": "Siyamthanda"
+                },
+                {
+                    "family": "Dube",
+                    "given": "Timothy"
+                }
+            ],
+            "container-title": "Remote Sensing Applications: Society and Environment",
+            "id": "gxokwe2024",
+            "issued": {
+                "date-parts": [
+                    [
+                        2024,
+                        11,
+                        1
+                    ]
+                ]
+            },
+            "page": "101275",
+            "title": "Using cloud computing techniques to map the geographic extent of informal settlements in the greater cape town metropolitan area",
+            "type": "article-journal",
+            "volume": "36"
+        },
+        {
+            "DOI": "10.1016/j.firesaf.2019.102828",
+            "URL": "https://www.sciencedirect.com/science/article/pii/S0379711218305423",
+            "author": [
+                {
+                    "family": "Gibson",
+                    "given": "Lesley"
+                },
+                {
+                    "family": "Engelbrecht",
+                    "given": "Jeanine"
+                },
+                {
+                    "family": "Rush",
+                    "given": "David"
+                }
+            ],
+            "container-title": "Fire Safety Journal",
+            "id": "gibson2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        9,
+                        1
+                    ]
+                ]
+            },
+            "page": "102828",
+            "title": "Detecting historic informal settlement fires with sentinel 1 and 2 satellite data - two case studies in cape town",
+            "type": "article-journal",
+            "volume": "108"
+        },
+        {
+            "DOI": "10.1016/j.geoforum.2020.12.015",
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0016718520302992",
+            "author": [
+                {
+                    "family": "Bon",
+                    "given": "Bérénice"
+                }
+            ],
+            "container-title": "Geoforum",
+            "id": "bon2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "118-128",
+            "title": "Making railway land productive: The commodification of public land in Kenyan and Indian cities",
+            "title-short": "Making railway land productive",
+            "type": "article-journal",
+            "volume": "122"
         }
     ],
     "project_biblios": [

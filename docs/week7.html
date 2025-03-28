@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -190,22 +209,44 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>Before summarizing everything, I need to bring this to my self when reflecting back to all the materials for this past 2 weeks.</p>
+<p><img src="images/clipboard-2560646539.png" class="img-fluid" width="528"></p>
+<p>Source : <a href="http://medium.com/nybles/understanding-machine-learning-through-memes-4580b67527bf">Medium</a></p>
 <section id="summary" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
-<p>This week continues last week’s topic on classification in remote sensing. Here they are…..</p>
+<p>This week continues last week’s topic on classification in remote sensing and explores method to assess the accuracy of our classification results. Here they are…..and again with easy-to-digest diagram.</p>
 <p><img src="images/clipboard-2572872984.png" class="img-fluid"></p>
 <p>Note : Confusion Matrix’s source : <a href="https://google-earth-engine.com/" class="uri">https://google-earth-engine.com/</a></p>
 </section>
 <section id="applications" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<p>This week I will explore the application of classification technique I am quite interested in : Object Based Imagery Analysis (OBIA). I am interested in OBIA because there is a segmentation part in generating the result. The reason I am interested in OBIA because to me this method is more human-like classification. It processes image based on meaningful objects rather than individual pixels. Cool isn’t it? So how does it fit into informal settlements detection?</p>
+<p>OBIA need information about relevant bands (such as RGB, NIR, SWIR) and indices (such as NDVI, NDBI, NDWI) to process the algorithm. In GEE, an algorithm called simple non-iterative clustering (SNIC) was used to segment image into super pixels (called it a group of similar pixels) based on color and spatial coordinates. Then, calculated contextual characteristics (height, shape, size, texture) afterwards. The combined spectral and contextual information was used to classify the land cover using machine learning algorithm such as Random Forest. <span class="citation" data-cites="gxokwe2024">Gxokwe and Dube (<a href="#ref-gxokwe2024" role="doc-biblioref">2024</a>)</span> applied this combined with ground truth and Sentinel 2 to map informal settlement in Capetown Metropolitan Area, and the result is shown below, with distribution quite scattered at different places.</p>
+<p><img src="images/clipboard-3948245033.png" class="img-fluid"></p>
+<p>Fig 2. Distribution of informal settlement using Random Forest</p>
+<p>In their publication, they mentioned that there are also misclassification between formal and informal settlements due to similar spectral values as well as it occupies small area between formal settlements. This spectral confusion make the producer and user accuracy lower. I also ponder the same way seeing the result in Figure 2, because even with my own interpretation the predicted informal and formal doesn’t have distinct feature, except the building’s density. Thus, they suggest using SAR (Synthetic Aperture Radar) to <strong>improve deliniation</strong> of informal settlements. Basically, SAR is effective in this setting because it is sensitive to physical characteristics (orientation, shape, and distribution) due to its ability to capture backscatter <span class="citation" data-cites="gibson2019">Gibson, Engelbrecht, and Rush (<a href="#ref-gibson2019" role="doc-biblioref">2019</a>)</span>. <span class="citation" data-cites="gibson2019">(<a href="#ref-gibson2019" role="doc-biblioref">Gibson, Engelbrecht, and Rush 2019</a>)</span> use SAR to complement their analysis on detecting before and after fire in informal settlements. I will write this-SAR thing on next week.</p>
+<p>After brainstorming with Chatgpt, I become more aware of many type of challenges linked to informal settlements and how remote sensing can at least capture this challenges. One of challenges is the dynamic nature of informal settlement where buildings being constructed, demolished, or altered frequently. With Sentinel 1 and 2 revisit time &lt; 5-6 days, it is beneficial to include temporal mapping in monitoring informal settlements.</p>
 </section>
 <section id="reflection" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>Remote sensing is interesting but also complex at the same time for me. It often widens the gap between my willingness to learn and my understanding of the subject. I’m not sure how to build the confidence to execute these methodologies when the interpretation and analysis process is left entirely in my hands. During practical sessions, I can ask the lecturer, but when I’m out in the real world, people might ask me questions. “Am I ready?” or “Do I have a solid foundation to justify what I’m doing with remote sensing and machine learning?” Even though I have a love-hate relationship with regression, I’m sure machine learning will join that club too. However, thinking about the potential insights I can gain from this does soothe the hard feelings toward these advanced methodologies</p>
+<p>Future application : I genuinely believe that mapping informal settlements using open-source data from Sentinel-1 and Sentinel-2 presents an opportunity for valuable analysis. For example, questions like: How does their spatial distribution look? Do they grow rapidly over time? What are the building materials? We can link this analysis to risk mitigation for fire brigades. Because in Global South country, privatization of public lands is common occurrence <span class="citation" data-cites="bon2021">Bon (<a href="#ref-bon2021" role="doc-biblioref">2021</a>)</span>, and public land is potential areas for growing informal settlement . As it is unplanned, there might be no adequate access into this informal settlements. Additionally, the semi-permanent materials will expose them vulnerable to fire incidents. Thus, it is interesting to link the finding in informal settlement mapping with its mitigation risk. We know that Government also needs to be responsible when this happened, even when the informal settlements become challenge for their urban planning projects.</p>
 </section>
 <section id="references" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="references"><span class="header-section-number">8.4</span> References</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-bon2021" class="csl-entry" role="listitem">
+Bon, Bérénice. 2021. <span>“Making Railway Land Productive: The Commodification of Public Land in Kenyan and Indian Cities.”</span> <em>Geoforum</em> 122 (June): 118–28. <a href="https://doi.org/10.1016/j.geoforum.2020.12.015">https://doi.org/10.1016/j.geoforum.2020.12.015</a>.
+</div>
+<div id="ref-gibson2019" class="csl-entry" role="listitem">
+Gibson, Lesley, Jeanine Engelbrecht, and David Rush. 2019. <span>“Detecting Historic Informal Settlement Fires with Sentinel 1 and 2 Satellite Data - Two Case Studies in Cape Town.”</span> <em>Fire Safety Journal</em> 108 (September): 102828. <a href="https://doi.org/10.1016/j.firesaf.2019.102828">https://doi.org/10.1016/j.firesaf.2019.102828</a>.
+</div>
+<div id="ref-gxokwe2024" class="csl-entry" role="listitem">
+Gxokwe, Siyamthanda, and Timothy Dube. 2024. <span>“Using Cloud Computing Techniques to Map the Geographic Extent of Informal Settlements in the Greater Cape Town Metropolitan Area.”</span> <em>Remote Sensing Applications: Society and Environment</em> 36 (November): 101275. <a href="https://doi.org/10.1016/j.rsase.2024.101275">https://doi.org/10.1016/j.rsase.2024.101275</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

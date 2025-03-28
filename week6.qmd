@@ -44,20 +44,22 @@ The idea is to turn each pixel in an image into a specific category, you'd use i
 
 In my understanding, classification in remote sensing will be easier if object detected having a stark difference. The more differ the object the easier the detection would be. Then I was thinking about **dense object with high irregular shape**, such as informal settlement. How does the classification work? It must be posing a unique challenge. Thus, I want to explore how the classification of informal settlement in small town of Cape Town, South Africa.
 
-Apparently,machine learning with its ability to detect pattern or by grouping similar area together is really helpful on this. @chamunorwa2024 tried to compare 4 machine learning algorithm to detect informal settlement using Gradient Boost, KNN, Random Forest, and Support Vector Machine \[SVM\] with data extracted from cloud computing repositories.
+Apparently,machine learning with its ability to detect pattern or by grouping similar area together is really helpful on this. @chamunorwa2024 tried to compare 4 machine learning algorithm to detect sparse informal settlement using Gradient Boost, KNN, Random Forest, and Support Vector Machine \[SVM\] with data extracted from cloud computing repositories.
 
 KNN is valued because its simplicity in classification tasks (effective for well-defined clusters). Gradient Boosting is valued for its ability to improve performance through the sequential combination of weak models, (capturing complex interactions within the data). Meanwhile, Random Forest : an ensemble method, is good at managing high-dimensional data and deal with overfitting. SVM is strong in classifying data with clear margins by creating optimal decision boundaries. Overall, the Random Forest and Gradient Boosting models were found to be the most effective for delineating informal settlements with accuracy of 89.07 % for RF and 89.05 for Gradient Boosting. It is amazing to see how this machine learning can capture the different cluster of informal settlements.
 
-![](images/clipboard-31491687.png)
+![](images/clipboard-31491687.png){width="802"}
 
-Figure 1 RF (a) and KNN (b) predicted outcome
+Figure 1 RF (left) and KNN (left) predicted outcome
 
-Have you ever wondered if this same algorithms are **applied** **to** urban area with **different morphology** what will happen? Because we know that each city experiences different processes and mechanisms, resulting in unique urban conditions and morphologies. The answer is yes ! Although they come from different process @ibrahim2019 highlight that informal settlements still have unique identifier that make them distinguishable from formal settlements. However, they also mentioned that accuracy improves when the model is trained in areas close to the prediction site.
+I wondered if this same algorithms **applied** **to** urban area with **different morphology** what will happen, will it maintain its accuracy or declining. Because we know that each city experiences different processes and mechanisms, resulting in unique urban conditions and morphology. It's even molded with different policy and government's agenda that might shape them into what they are today.
+
+The answer is yes, it can be ! Although they come from different process @ibrahim2019 highlight that informal settlements still have unique identifier that make them distinguishable from formal settlements. However, they also mentioned that accuracy tends to improve when the model is trained in areas close to the prediction site.
 
 ## Reflection
 
 I know that machine learning is really helpful in automation in classification, however I must admit that it will take time for me to fully understand what and why of its underlying process. The complexity of its process and even the interpretation can be overwhelming without foundation in the principles behind them. Nonetheless, with continuous learning, exposure, and practice my understanding will gradually develop, hopefully!
 
-Future applications : I would love to apply classification techniques to quantify the actual proportion of greenery in urban areas. This proportion will then be compared to the designated urban greenery targets. I am particularly interested in this because, in my country, local governments are required to allocate at least 30% of their total area to green spaces. This analysis will help answer important questions such as: Have the governments achieved this target? If so, to what extent? This approach demonstrates how data-driven decision-making can lead to more informed judgments.
+Future applications : I would love to apply classification techniques to quantify the actual proportion of greenery in urban areas, both planned greenery or unplanned one. This proportion will then be compared to the designated urban greenery targets. I am particularly interested in this because, in my country, local governments are required to allocate at least 30% of their total area to green spaces. This analysis will help answer important questions such as: Have the governments achieved this target? If so, to what extent? This approach demonstrates how data-driven decision-making can lead to more informed judgments.
 
 ## References
