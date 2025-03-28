@@ -1,6 +1,5 @@
 ---
 title: "Sneak Peak"
-numbered: false
 author: "Nooriza Maharani"
 date: "January 21, 2025"
 format:
