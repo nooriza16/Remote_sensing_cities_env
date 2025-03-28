@@ -1154,6 +1154,48 @@
             "title": "Mapping bamboo forest and expansion intensity in China by coupling vegetation phenology and C-band SAR with Sentinel-1 and Sentinel-2 images",
             "type": "article-journal",
             "volume": "121"
+        },
+        {
+            "DOI": "10.34133/remotesensing.0072",
+            "URL": "https://spj.science.org/doi/10.34133/remotesensing.0072",
+            "author": [
+                {
+                    "family": "Ni",
+                    "given": "Hao"
+                },
+                {
+                    "family": "Yu",
+                    "given": "Le"
+                },
+                {
+                    "family": "Gong",
+                    "given": "Peng"
+                },
+                {
+                    "family": "Li",
+                    "given": "Xuecao"
+                },
+                {
+                    "family": "Zhao",
+                    "given": "Jiyao"
+                }
+            ],
+            "container-title": "Journal of Remote Sensing",
+            "id": "ni2023",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        1
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "0072",
+            "title": "Urban Renewal Mapping: A Case Study in Beijing from 2000 to 2020",
+            "title-short": "Urban Renewal Mapping",
+            "type": "article-journal",
+            "volume": "3"
         }
     ],
     "project_biblios": [

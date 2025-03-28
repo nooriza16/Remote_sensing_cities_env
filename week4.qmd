@@ -22,39 +22,21 @@ As for the time this published, Nusantara Development is on the phase 2 (2025-20
 
 Figure 1: The Relocation Settings and Vision. source: [@capitalauthority2024]
 
-As the development is still in the initial stage, the detailed planning documents haven’t been launched yet. Thus, I use available published documents regarding the detail of Nusantara's Development which all of them are publicly available, such as [Nusantara Sustainable Development Goals (SDGs) Voluntary Local Review Baseline \[2024\]](https://www.ikn.go.id/storage/pedoman-nusantara/2/nusantara-vlr-baseline-en.pdf) and [Nusantara Biodiversity Management Master Plan](https://ikn.go.id/storage/pedoman-nusantara/1/nusantara-biodiversity-management-master-plan-2024.pdf) \[2024\]
+The new capital city, Nusantara, is designed as a **forest city**, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant **challenges**. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as **malaria**) spreading in the new capital, which are prevalent in tropical regions [@surendra2024]. Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara's sustainability, such as:
 
-> **Policy**
-
-The new capital city, Nusantara, is designed as a **forest city**, with 75% of its designated area being green space. This design aims to create a harmonious blend of urban development and biodiversity hotspots (Borneo Island, where Nusantara is located, is famous for its tropical rainforests). However, the design of being a forest city, its proximity to the rainforest, and its drive on landscape change would present significant **challenges**. One of the major concerns is the increasing likelihood of mosquito-borne diseases (such as **malaria**) spreading in the new capital, which are prevalent in tropical regions @surendra2024. Since malaria is both a global and local challenge, certain goals should be considered to support Nusantara's sustainability, such as:
+### Policy
 
 **A. Global Goals :** Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases
 
 The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia's estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023. To achieve target of Global Goals, [@who2021] have launched global technical strategy for malaria with framework such as:
 
-![](images/clipboard-2410472720.png){width="745"}
+![](images/clipboard-1231673609.png)
 
 Figure 2 : SDGs Goal and WHO Technical Strategy
 
 **B.National Level :** National Action Plan for Acceleration of Malaria Elimination 2020-2026
 
-Translating the global goals on malaria elimination, Indonesia's Ministry of Health [@ministryofhealth2023] had proposed recommendations, including the new capital city such as:
-
--   Malaria elimination policies and implementation need basic research, operational support, and efficient technology development.
-
--   Malaria elimination policies and implementation need basic research, operational support, and efficient technology development
-
--   Planning and implementing malaria elimination activities are based on district endemicity stratification.
-
--   Allocating funds from the central government to improve case finding, surveillance and vector control around Nusantara area
-
-    **C.** **Provincial Level :** Governor Regulation 53/2023 Guidelines For Malaria Elimination Implementation Number 5 point 2
-
--   Suppress the endemic incidents (high and medium risk)
-
--   Eliminate the number of incidents
-
--   Maintain free malaria status (low-none risk)
+![](images/clipboard-3155797595.png)
 
 ## Application
 
@@ -68,21 +50,21 @@ Figure 2: Framework in which Remote Sensing used in Malaria studies. source : @w
 
 To address policy mentioned in section 2, I underlined some dataset that could be used to the analysis:
 
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Data                                                  | Purpose                                                                                                                                                                                                                                                                                           |
-+=======================================================+===================================================================================================================================================================================================================================================================================================+
-| -   **Sentinel-2 (rainy season)**                     | -   *Highlight water bodies and wetlands* – These serve as proxies for mosquito breeding sites.                                                                                                                                                                                                   |
-|                                                       |                                                                                                                                                                                                                                                                                                   |
-|                                                       | -   *Vegetation and land cover* – Provides insight into potential mosquito habitats.                                                                                                                                                                                                              |
-|                                                       |                                                                                                                                                                                                                                                                                                   |
-|                                                       | -   *Surface temperature* – Acts as a proxy for mosquito activity.                                                                                                                                                                                                                                |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| -   **Digital Elevation Model (DEM) Data/Topography** | -   Helps to provide topografy to identify potential inundation areas, which could influence mosquito breeding patterns.                                                                                                                                                                          |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| -   **Microsoft Open Buildings**                      | -   Useful as a proxy for human settlements and potential exposure risk.                                                                                                                                                                                                                          |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| -   **Rainfall Data**                                 | -   The rainfall season can be considered as a timeframe for analysis. However, if locally recorded rainfall data from the Indonesian Climatic Institution is available, it could help refine the identification of rainfall patterns, allowing for a more informed selection of the time series. |
-+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Data                                                  | Purpose                                                                                                                                                                                                                                                                                       |
++=======================================================+===============================================================================================================================================================================================================================================================================================+
+| -   **Sentinel-2 (rainy season)**                     | *Highlight water bodies and wetlands* – These serve as proxies for mosquito breeding sites.                                                                                                                                                                                                   |
+|                                                       |                                                                                                                                                                                                                                                                                               |
+|                                                       | *Vegetation and land cover* – Provides insight into potential mosquito habitats.                                                                                                                                                                                                              |
+|                                                       |                                                                                                                                                                                                                                                                                               |
+|                                                       | *Surface temperature* – Acts as a proxy for mosquito activity.                                                                                                                                                                                                                                |
++-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| -   **Digital Elevation Model (DEM) Data/Topography** | Helps to provide topografy to identify potential inundation areas, which could influence mosquito breeding patterns.                                                                                                                                                                          |
++-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| -   **Microsoft Open Buildings**                      | Useful as a proxy for human settlements and potential exposure risk.                                                                                                                                                                                                                          |
++-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| -   **Rainfall Data**                                 | The rainfall season can be considered as a timeframe for analysis. However, if locally recorded rainfall data from the Indonesian Climatic Institution is available, it could help refine the identification of rainfall patterns, allowing for a more informed selection of the time series. |
++-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ## Reflections
 
@@ -90,7 +72,7 @@ During this week, I got a lot of reflections as I finally found lecture that exp
 
 1.  Combining remote sensing with GIS
 
-    Since Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with malaria incident data, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As [@naserrudin2023] notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.
+    Since Nusantara is still uninhabited, we could model nearby settlements to investigate the remote sensing framework. By combining the results with malaria incident data, we can validate our classification—analyzing what percentage of high-risk areas have recorded incidents and which have not. While global and local malaria elimination frameworks mention aggregating incident data and risk levels, they do not explicitly emphasize mapping. Using maps, we can overlay malaria hotspots with incident data, land use, and socio-economic factors. As @naserrudin2023 notes, people are exposed to malaria due to professions that require them to venture deeper into the forest.
 
 2.  Remote Sensing and GIS is good, but enriching the analysis with **affected communities** make it better
 

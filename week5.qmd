@@ -8,11 +8,7 @@ format:
 
 ## Summary
 
-This week's material is all about GEE (Google Earth Engine). In a simple definition, GEE is a cloud platform that allows us to access satellite imagery for the whole world and spatial-computation on Google for free. GEE hosts massive amounts of satellite imagery and we as a user request their imagery data and analyse it on the cloud-platform without have to worry about the capability of our local machine.
-
-Basically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming language. As someone enthusiastic with GEE, the need to learn 'a new' programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.
-
-However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as 'var' to denote variable. Below are some basic pieces of information from Andy's lecture about the GEE language that GEE starters need to know. Check out this introduction from Google if you're still unconvinced
+This week's material is all about GEE (Google Earth Engine). In a simple definition, GEE is a cloud platform that allows us to access satellite imagery for the whole world and spatial-computation on Google for free. GEE hosts massive amounts of satellite imagery and we as a user request their imagery data and analyse it on the cloud-platform without have to worry about the capability of our local machine. Basically, GEE has an architecture that collects user input (client side) and then process this input (server side). In GEE we could manage both raster and feature (vector) data. We input command on GEE mostly using Java Script programming language. As someone enthusiastic with GEE, the need to learn 'a new' programming language almost discourages me, as I worry that I might mix up all the programming languages I have learnt before.However, when I looked at the way GEE articulates data structures, I found it quite similar to Python, with just a few additional keywords, such as 'var' to denote variable. Below are some basic pieces of information from Andy's lecture about the GEE language that GEE starters need to know. Check out this introduction from Google if you're still unconvinced
 
 ![](images/clipboard-203956171.png){width="508"}
 
@@ -50,7 +46,7 @@ Oh wait....for someone who is not really interested in remote sensing's applicat
 
 ![](images/clipboard-2246403998.png){width="752"}
 
-Figure 4 : Left : index of NDVI in time series with curve from LandTrendr ; right : urban renewal and urban old area. Source : [@urbanre]
+Figure 4 : Left : index of NDVI in time series with curve from LandTrendr ; right : urban renewal and urban old area. Source : [@ni2023]
 
 ## Reflection
 
@@ -58,9 +54,7 @@ The most exciting part of using Google Earth Engine (GEE) for me is the ability 
 
 By using a web map, we make it easier for clients, even those without a technical background, to explore and understand the intuition of the analysis : what layers we have, what imagery we use, what imageries we combined. The interactive map will provide a clearer view of the project, allowing clients to see the bigger picture and stay engaged throughout the process. However, I must admit GEE is only a tool to make best use of it we need a prior fundamental concept of remote sensing, such as spectral band, enhancement, fusion, PCA, and other remote sensing pre-processing steps. Because in every script we write there should be a thinking process on why we do reduction, why we do enhancement, basically need our judgement to navigate each steps.
 
-I would also like to highlight the importance of domain knowledge when using remote sensing sources. As I mentioned before GEE is just a tool–its ability to provide remarkable insights truly depend on the person utilizing it. We might use the same satellite imagery, but with domain knowledge the analysis will yield different results.
-
-For example, *The Economist* uses satellite data to track conflict in real time (FYI, I come across this in CASA Seminar in 2023 during the time I prepared my graduate's school application), *Pediatrics* use remote sensing to understand the association of air pollution with asthma prevalence. *Archaeologists* can utilize remote sensing alongside other methods to understand landscape of historical sites. There are *tons* of use cases, right?!
+I would also like to highlight the importance of domain knowledge when using remote sensing sources. As I mentioned before GEE is just a tool–its ability to provide remarkable insights truly depend on the person utilizing it. We might use the same satellite imagery, but with domain knowledge the analysis will yield different results. For example, *The Economist* uses satellite data to track conflict in real time (FYI, I come across this in CASA Seminar in 2023 during the time I prepared my graduate's school application), *Pediatrics* use remote sensing to understand the association of air pollution with asthma prevalence. *Archaeologists* can utilize remote sensing alongside other methods to understand landscape of historical sites. There are *tons* of use cases, right?!
 
 If you are having curious mind like me, check Dr Ollie Ballinger's github page [here](https://oballinger.github.io/#) to see how powerful remote sensing can be when combined with domain knowledge. Ah yes, he is also a lecturer in Remote Sensing class.
 
