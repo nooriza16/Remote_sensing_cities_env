@@ -28,7 +28,7 @@ The new capital city, Nusantara, is designed as a **forest city**, with 75% of i
 
 **A. Global Goals :** Sustainable Development Goals (SDGs) 3.3 : Fight Communicable Diseases
 
-The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. Meanwhile, Indonesia's estimated malaria incidence per 1000 population at risk is still on range between 1-50 incidents per 1000 population in 2023. To achieve target of Global Goals, [@who2021] have launched global technical strategy for malaria with framework such as:
+The SDGs propose achievable global in combating malaria with target that in include reducing incident, mortality rates, eliminate malaria in 35 countries by 2030 and prevent resurgence of the disease in a malaria-free country. To achieve target of Global Goals, [@who2021] have launched global technical strategy for malaria with framework such as:
 
 ![](images/clipboard-1231673609.png)
 
@@ -36,7 +36,11 @@ Figure 2 : SDGs Goal and WHO Technical Strategy
 
 **B.National Level :** National Action Plan for Acceleration of Malaria Elimination 2020-2026
 
+Meanwhile, in national level the malaria elimination taskforce is under Minsitry of Health and this national action plan become the fundamental handbook for provincial level. Below are the goals targetted by both the national and provincial level. Notice that provincial level targetted malaria elimination 3 years sooner !
+
 ![](images/clipboard-3155797595.png)
+
+Figure 3 : National and Provincial Goals in Malaria Elimination
 
 ## Application
 
@@ -44,7 +48,7 @@ Figure 2 : SDGs Goal and WHO Technical Strategy
 
 In malaria elimination projects, remote sensing can serve as a crucial baseline data source for mapping malaria hotspots by integrating climatic and land-use factors. \@wimberly2021 proposed a framework that leverages Earth observation products to identify mosquito habitats based on climate conditions, human activities, and specific land-use patterns.
 
-![](images/clipboard-687725868.png){width="672"}
+![](images/clipboard-687725868.png){width="447"}
 
 Figure 2: Framework in which Remote Sensing used in Malaria studies. source : @wimberly2021.
 
@@ -78,7 +82,7 @@ During this week, I got a lot of reflections as I finally found lecture that exp
 
     Beyond remote sensing data, incorporating local knowledge can improve the analysis. Understanding how affected communities respond to malaria provides insight into the effectiveness of mitigation efforts [@naserrudin2023a]. These communities have lived near rainforests for generations and are directly affected, making their experiences valuable for practical prevention strategies.
 
-3.  Implementation challenges, the need for collaboration
+3.  Dealing with challenges by stakeholders' collaboration
 
     One the most important key-takeaway from the lecture is that “some academics papers are too technical, without clearly addressed policy; some policy don’t include academic findings they could benefit for." This condition lead to a gap between academics and urban governance. However, in my observation during my work with the government the potential cause is human resources (make the adoption of academics finding hard to implement), annual budget cycles (governments prioritize immediate results and may be reluctant to invest in the long-term experimental processes typical of academia). Bridging the gap on malaria prevention requires collaboration and commitment not only between epidemiologists, healthcare, and geospatial analysts but with the governments to ensure research translates into actionable policies.
 

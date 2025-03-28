@@ -15,13 +15,13 @@ The lecturers in this course are Dr. Andrew Maclachlan—referred to Andy in thi
 
 ------------------------------------------------------------------------
 
-## Introduction
+# Introduction
 
 Hi, I’m Nooriza Maharani, a student currently pursuing a Master's degree in Urban Spatial Science at UCL. I graduated with a degree in Geography, specializing in Regional Development Studies. Over the past five years, I have worked as a technical consultant for various governments in Indonesia, both local or ministry level, ensuring that their decision-making is data-driven. Although the results often need to pass through political and budgeting reviews, that's essentially what I do. Over the years, I have assisted local governments in Indonesia managing and utilizing spatial data to support various agendas, including land management, land consolidation, disaster risk assessment, accessibility analysis, and the development of both basic and thematic databases.
 
 Honestly, I don't have a specific topic of interest to add here because I have many! From health to art, from sport analytic to social analytic. I love to connect them all with spatial. That's why I chose an interdisciplinary course at CASA. One thing for sure is that I love doing analytics for social good. I love to look beyond tools and methodologies, focusing instead on the challenges we can address using these methods. In the end, all the sophisticated methodologies and cutting-edge technical tools are meaningful when we use them to address challenges and solve problems, right?
 
-## Why do I choose this module?
+# Why do I choose this module?
 
 The reason I choose remote sensing is because I want to use its vast open resources to analysis various topics. I had learned the foundations during my undergraduate degree but I haven't delved further into it and haven't got any experience to use GEE yet. Thus, I hope at the end of this class, I will get knowledge on to get alternative of spatial data using remote sensing plus analyse various topic across different scale using GEE.
 

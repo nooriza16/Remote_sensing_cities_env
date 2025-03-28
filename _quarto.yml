@@ -16,8 +16,6 @@ book:
     - week6.qmd
     - week7.qmd
     - week8.qmd
-
-number-sections: true 
 bibliography: references.bib
 format:
   html:
